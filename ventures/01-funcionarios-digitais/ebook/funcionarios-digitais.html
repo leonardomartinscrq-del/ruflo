@@ -1,0 +1,1818 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Funcionários Digitais — O Guia Prático de Agentes de IA para Pequenos Negócios e Autônomos</title>
+<style>
+  :root { --ink:#1d2733; --accent:#0b6e4f; --soft:#f4f6f5; --line:#d8e0dc; }
+  * { box-sizing: border-box; }
+  body { font-family: Georgia, 'Times New Roman', serif; color: var(--ink);
+         line-height: 1.65; max-width: 720px; margin: 0 auto; padding: 2rem 1.2rem; }
+  .cover { text-align:center; padding: 22vh 0 18vh; page-break-after: always; }
+  .cover h1 { font-size: 2.6rem; margin: 0 0 .6rem; color: var(--accent); }
+  .cover p.sub { font-size: 1.15rem; color:#445; max-width: 30rem; margin: 0 auto 2.5rem; }
+  .cover .rule { width: 5rem; height: 4px; background: var(--accent); margin: 0 auto 2.5rem; }
+  nav.toc { page-break-after: always; }
+  nav.toc h2 { color: var(--accent); }
+  nav.toc ol { padding-left: 1.2rem; } nav.toc li { margin: .45rem 0; }
+  nav.toc a { color: var(--ink); text-decoration: none; }
+  .chapter { page-break-before: always; }
+  h1 { font-size: 1.7rem; color: var(--accent); line-height:1.3; margin-top: 0; }
+  h2 { font-size: 1.25rem; margin-top: 2.2rem; border-bottom: 1px solid var(--line); padding-bottom: .25rem; }
+  h3 { font-size: 1.05rem; margin-top: 1.6rem; }
+  pre { background: var(--soft); border: 1px solid var(--line); border-left: 4px solid var(--accent);
+        padding: .9rem 1rem; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;
+        font-size: .82rem; line-height: 1.5; page-break-inside: avoid; }
+  code { font-family: 'SF Mono', Consolas, Menlo, monospace; }
+  p code, li code { background: var(--soft); padding: .08rem .3rem; border-radius: 3px; font-size: .85em; }
+  blockquote { margin: 1.2rem 0; padding: .6rem 1rem; background: var(--soft);
+               border-left: 4px solid var(--accent); font-style: italic; }
+  table { border-collapse: collapse; width: 100%; margin: 1.2rem 0; font-size: .9rem; page-break-inside: avoid; }
+  th, td { border: 1px solid var(--line); padding: .45rem .6rem; text-align: left; vertical-align: top; }
+  th { background: var(--soft); }
+  hr { border: none; border-top: 1px solid var(--line); margin: 2rem 0; }
+  .cb { color: var(--accent); }
+  a { color: var(--accent); }
+  footer { margin-top: 3rem; text-align: center; color: #889; font-size: .85rem; }
+  @media print {
+    body { max-width: none; padding: 0 1.5cm; font-size: 11pt; }
+    a { color: inherit; text-decoration: none; }
+  }
+</style>
+</head>
+<body>
+<div class="cover">
+  <div class="rule"></div>
+  <h1>Funcionários Digitais</h1>
+  <p class="sub">O Guia Prático de Agentes de IA para Pequenos Negócios e Autônomos</p>
+  <p>Edição 2026</p>
+</div>
+<nav class="toc">
+  <h2>Sumário</h2>
+  <ol>
+<li><a href="#cap-0">Introdução — Você não precisa de mais horas. Precisa de funcionários que custam quase nada.</a></li>
+<li><a href="#cap-1">Capítulo 1 — O que são agentes de IA (sem hype)</a></li>
+<li><a href="#cap-2">Capítulo 2 — Seu arsenal: as ferramentas e o custo real</a></li>
+<li><a href="#cap-3">Capítulo 3 — A habilidade-mãe: prompts que funcionam</a></li>
+<li><a href="#cap-4">Capítulo 4 — Funcionário nº 1: O Atendente Digital (WhatsApp e Instagram)</a></li>
+<li><a href="#cap-5">Capítulo 5 — Funcionário nº 2: O Vendedor (propostas e follow-up)</a></li>
+<li><a href="#cap-6">Capítulo 6 — Funcionário nº 3: O Criador de Conteúdo</a></li>
+<li><a href="#cap-7">Capítulo 7 — Funcionário nº 4: O Assistente Administrativo e Financeiro</a></li>
+<li><a href="#cap-8">Capítulo 8 — Funcionário nº 5: O Analista de Mercado</a></li>
+<li><a href="#cap-9">Capítulo 9 — Colocando tudo para rodar: a rotina do dono</a></li>
+<li><a href="#cap-10">Capítulo 10 — Segurança, ética e LGPD sem juridiquês</a></li>
+  </ol>
+</nav>
+<section class="chapter" id="cap-0">
+<h1>Introdução — Você não precisa de mais horas. Precisa de funcionários que custam quase nada.</h1>
+<p>São 22h47 de uma terça-feira. Você acabou de responder a última cliente no WhatsApp — aquela que perguntou o preço pela terceira vez essa semana. Antes disso, você atendeu o dia inteiro, correu para o banco, tentou postar alguma coisa no Instagram (desistiu), prometeu para si mesmo que ia organizar a planilha de gastos (não organizou) e jantou olhando para o celular, com medo de perder uma venda.</p>
+<p>Se essa cena parece familiar, este livro foi escrito para você.</p>
+<p>Você não é desorganizado. Você não é preguiçoso. Você simplesmente está fazendo o trabalho de cinco pessoas: atendente, vendedor, social media, auxiliar administrativo e analista de negócio. Tudo isso além do trabalho que realmente paga as contas — cortar cabelo, atender paciente, consertar instalação elétrica, costurar, advogar, treinar aluno, fazer brigadeiro.</p>
+<p>O problema nunca foi falta de esforço. É que o dia tem 24 horas para todo mundo, e contratar gente custa caro: salário, encargos, treinamento, gestão. Para a maioria dos pequenos negócios e autônomos do Brasil, contratar uma equipe completa é simplesmente impossível.</p>
+<p>É aqui que entra a tese deste livro.</p>
+<h2>A tese: IA como funcionários digitais</h2>
+<p>Nos últimos anos, a inteligência artificial generativa — ferramentas como ChatGPT, Claude e Gemini — ficou boa o suficiente para assumir um tipo específico de trabalho: <strong>tarefas repetitivas baseadas em texto, comunicação e organização</strong>.</p>
+<p>Responder a mesma pergunta pela décima vez. Escrever a legenda do post. Rascunhar o orçamento. Resumir as mensagens da semana. Organizar a lista de clientes. Redigir a mensagem de cobrança educada que você adia há três dias porque não sabe como falar.</p>
+<p>Nada disso exige um ser humano do início ao fim. Exige um ser humano <strong>no final</strong> — para revisar e aprovar. O rascunho, a triagem, a organização e a repetição podem ser feitos por uma IA, hoje, com ferramentas gratuitas ou que custam menos que uma pizza por mês.</p>
+<p>Por isso eu chamo essas ferramentas de <strong>funcionários digitais</strong>. Não porque elas sejam pessoas — não são, e isso importa — mas porque a forma certa de usá-las é exatamente como você usaria um funcionário novo: você explica o negócio, entrega um manual, delega tarefas específicas, confere o trabalho e corrige quando erra. Quem trata a IA como uma máquina de respostas mágicas se frustra. Quem trata como um estagiário esforçado, que trabalha de madrugada e não reclama, colhe resultado.</p>
+<p>Neste livro, você vai montar cinco deles:</p>
+<ol>
+<li><strong>O Atendente</strong> — responde perguntas frequentes, organiza o WhatsApp, rascunha respostas no seu tom de voz.</li>
+<li><strong>O Vendedor</strong> — ajuda a escrever orçamentos, propostas, mensagens de follow-up e respostas a objeções.</li>
+<li><strong>O Criador de Conteúdo</strong> — transforma uma ideia em posts, legendas, roteiros de vídeo curto e textos para status.</li>
+<li><strong>O Auxiliar Administrativo</strong> — rascunha cobranças, organiza informações, cria modelos de documentos e mensagens recorrentes.</li>
+<li><strong>O Analista</strong> — lê seus números simples (vendas, gastos, perguntas dos clientes) e ajuda você a enxergar padrões.</li>
+</ol>
+<h2>O que você vai conseguir fazer ao terminar este livro</h2>
+<p>Sem rodeio, a lista concreta:</p>
+<ul>
+<li>Escrever prompts (instruções para a IA) que geram respostas úteis de primeira, em vez de textos genéricos de robô.</li>
+<li>Criar o <strong>Manual do Funcionário</strong> do seu negócio — um documento único que transforma qualquer IA em alguém que "conhece" sua empresa.</li>
+<li>Montar um sistema de atendimento no WhatsApp Business usando recursos gratuitos que quase ninguém configura, com respostas rascunhadas por IA no seu tom.</li>
+<li>Produzir uma semana de conteúdo para redes sociais em uma sessão de trabalho, partindo de uma ideia sua.</li>
+<li>Gerar orçamentos, propostas e mensagens de cobrança profissionais em minutos, não horas.</li>
+<li>Usar o Google Sheets junto com a IA para entender o básico do seu negócio: o que vende mais, o que os clientes mais perguntam, onde o dinheiro está vazando.</li>
+<li>Saber <strong>o que nunca delegar</strong> para a IA — e como revisar o que ela produz para não pagar mico nem causar prejuízo.</li>
+</ul>
+<p>Repare no verbo de cada item: <em>fazer</em>. Este é um livro de implementação. Cada capítulo termina com algo funcionando no seu negócio.</p>
+<h2>Como o livro está organizado</h2>
+<p><strong>Capítulos 1 a 3 — Fundamentos.</strong> O que são agentes de IA sem o hype, quais ferramentas usar (e quanto custam de verdade), e a habilidade-mãe que sustenta tudo: escrever prompts que funcionam. Não pule esses capítulos. Eles são a diferença entre "testei IA e achei meio burra" e "isso virou parte da minha rotina".</p>
+<p><strong>Capítulos 4 a 8 — Os cinco funcionários.</strong> Um capítulo para cada um: Atendente, Vendedor, Criador de Conteúdo, Auxiliar Administrativo e Analista. Cada um com passo a passo, prompts prontos para copiar e exemplos de negócios reais brasileiros.</p>
+<p><strong>Capítulos 9 e 10 — Operação e segurança.</strong> Como manter tudo rodando sem virar escravo das ferramentas, como revisar o trabalho da IA, o que fazer com dados de clientes (LGPD existe e vale para você também) e os erros mais comuns que fazem as pessoas desistirem.</p>
+<h2>O que este livro NÃO é</h2>
+<p>Vamos combinar algumas coisas antes de começar, porque o mercado de "IA para negócios" está cheio de promessa vazia:</p>
+<ul>
+<li><strong>Não é fórmula de renda mágica.</strong> Você não vai encontrar aqui nenhuma promessa de faturamento. IA não vende por você — ela tira da sua frente o trabalho repetitivo para que <em>você</em> tenha tempo e energia de vender melhor. Quanto isso vale depende do seu negócio, do seu mercado e, principalmente, do que você fizer com as horas liberadas.</li>
+<li><strong>A IA não substitui você.</strong> Ela erra. Inventa informação com confiança (o nome técnico é "alucinação"), confunde preço, promete prazo que não existe. Todo material que sai dela passa por você antes de chegar ao cliente. Essa regra aparece tantas vezes neste livro que você vai sonhar com ela: <em>IA rascunha, você aprova.</em></li>
+<li><strong>Resultados dependem de implementação.</strong> Ler este livro no sofá não muda nada. Os exercícios existem para serem feitos. Quem reserva 30 minutos por capítulo para aplicar sai do outro lado com um sistema funcionando. Quem só lê, sai com mais uma leitura.</li>
+<li><strong>As ferramentas mudam.</strong> Estamos em 2026 e o ritmo é rápido. Nomes de planos e preços citados aqui podem mudar — por isso eu sempre indico que você confira o site oficial. Mas os <em>princípios</em> (delegar bem, dar contexto, revisar) valem para qualquer ferramenta que aparecer.</li>
+</ul>
+<h2>Convenções deste livro</h2>
+<p>Para facilitar sua vida, principalmente se você está lendo no celular:</p>
+<p><strong>Prompts prontos aparecem em blocos como este:</strong></p>
+<pre><code>Você é o atendente da [NOME DO NEGÓCIO]. Responda a mensagem
+abaixo de forma simpática e direta, em até 3 frases.</code></pre>
+<p>É só copiar, colar na sua IA preferida e ajustar.</p>
+<p><strong>Tudo que estiver entre [COLCHETES] é um espaço para você preencher</strong> com a informação do seu negócio: [NOME DO NEGÓCIO], [SEU PREÇO], [SUA CIDADE]. Nunca envie um prompt com os colchetes ainda no lugar — a IA até tenta adivinhar, mas o resultado fica genérico.</p>
+<p><strong>Quando eu citar valores de ferramentas</strong>, vou usar "na faixa de" e mandar você conferir o site oficial, porque preço de software muda mais rápido que livro.</p>
+<hr>
+<p>Uma última coisa antes do Capítulo 1.</p>
+<p>Você não precisa entender de tecnologia para usar este livro. Se você sabe mandar mensagem no WhatsApp e fazer uma pesquisa no Google, você tem todas as habilidades técnicas necessárias. O resto é o que você já tem de sobra: conhecimento do seu próprio negócio. A IA não sabe nada sobre a sua cliente que sempre atrasa, sobre o seu produto que mais sai no fim do mês, sobre o jeito que a sua freguesia gosta de ser tratada.</p>
+<p>Você sabe. E é exatamente por isso que essa parceria funciona: você entra com o conhecimento, a IA entra com a mão de obra.</p>
+<p>Vamos contratar seu primeiro funcionário digital.</p>
+</section>
+<section class="chapter" id="cap-1">
+<h1>Capítulo 1 — O que são agentes de IA (sem hype)</h1>
+<p>Se você já viu algum vídeo na internet dizendo que "agentes de IA vão substituir todos os funcionários" ou que "quem não usar agentes vai quebrar em 6 meses", respire fundo. Metade disso é exagero de quem quer vender curso, e a outra metade é confusão de termos.</p>
+<p>Neste capítulo, vamos colocar os pés no chão: o que essas ferramentas realmente são, o que fazem bem, o que fazem mal, e — o mais importante — quais tarefas do <em>seu</em> negócio elas conseguem assumir hoje.</p>
+<h2>Chatbot burro, assistente de IA e agente: qual a diferença?</h2>
+<p>Esses três termos aparecem misturados por aí, mas na prática são bichos bem diferentes. Vamos usar um exemplo que todo brasileiro conhece: o atendimento da operadora de celular.</p>
+<h3>O chatbot burro (ou chatbot de regras)</h3>
+<p>É aquele robô que diz "Digite 1 para segunda via, digite 2 para suporte". Ele não entende nada — só segue um fluxograma que alguém desenhou. Se você escrever "minha internet tá uma porcaria desde ontem", ele responde "Desculpe, não entendi. Digite 1 para segunda via...".</p>
+<p>Esse tipo de robô existe há mais de uma década. Ele é útil para coisas muito simples e fechadas, mas é também o motivo de tanta gente odiar "robô de atendimento". Não é disso que este livro trata.</p>
+<h3>O assistente de IA</h3>
+<p>É o ChatGPT, o Claude, o Gemini. Uma ferramenta de conversa que entende linguagem natural — você escreve do jeito que fala, e ela compreende a intenção. Se você disser "minha internet tá uma porcaria desde ontem", um assistente de IA entende que você tem um problema técnico, que começou ontem, e que você está irritado. E responde de acordo.</p>
+<p>O assistente é <strong>reativo</strong>: ele faz o que você pede, quando você pede, uma tarefa por vez. Você pede uma legenda de post, ele entrega. Você pede para resumir as mensagens da semana, ele resume. Ele não faz nada sozinho — e isso é uma característica, não um defeito. Você está sempre no controle.</p>
+<p><strong>É com assistentes de IA que você vai trabalhar na maior parte deste livro.</strong> É o nível que resolve 90% dos problemas de um pequeno negócio, sem programar nada.</p>
+<h3>O agente</h3>
+<p>Um agente é um assistente que ganhou autonomia para executar uma sequência de passos sozinho, usando outras ferramentas no caminho. Em vez de só <em>escrever</em> o e-mail, ele escreve, acessa sua agenda, verifica o horário livre e envia. Em vez de só <em>sugerir</em> uma resposta no WhatsApp, ele responde diretamente o cliente.</p>
+<p>Parece ótimo — e em alguns cenários é. Mas autonomia tem dois preços:</p>
+<ol>
+<li><strong>Complexidade técnica.</strong> Montar agentes de verdade geralmente envolve ferramentas de automação (vamos falar delas no Capítulo 2) e alguma configuração que beira o trabalho técnico.</li>
+<li><strong>Risco.</strong> Um assistente que erra entrega um rascunho ruim para <em>você</em>. Um agente que erra entrega uma resposta errada para o <em>seu cliente</em> — preço errado, prazo errado, promessa que não existe. Sem ninguém revisando no meio.</li>
+</ol>
+<p>Por isso, a abordagem deste livro é honesta: <strong>vamos chamar nossos sistemas de "funcionários digitais", e eles vão operar majoritariamente no modo assistente — com você como supervisor.</strong> Conforme você ganhar experiência e confiança, dá para automatizar pedaços do processo. Mas começar por autonomia total é receita para pagar mico.</p>
+<blockquote><strong>Resumo em uma linha:</strong> chatbot segue script, assistente conversa e executa o que você pedir, agente executa sequências sozinho. Você vai usar assistentes como funcionários supervisionados.</blockquote>
+<h2>O que a IA generativa faz muito bem hoje</h2>
+<p>Estamos em 2026, e as IAs de conversa amadureceram muito. No que elas são genuinamente boas — boas a ponto de competir com um profissional mediano em velocidade, custando centavos:</p>
+<p><strong>Escrever e reescrever texto.</strong> Mensagens, legendas, descrições de produto, e-mails, propostas. Dá para pedir qualquer tom: formal, descontraído, carinhoso, direto. E reescrever quantas vezes quiser sem reclamar.</p>
+<p><strong>Resumir.</strong> Jogue uma conversa longa de WhatsApp, um contrato, uma ata de reunião, e peça os pontos principais. Isso sozinho já economiza horas por semana.</p>
+<p><strong>Classificar e organizar.</strong> "Separe essas 40 mensagens de clientes em: dúvida de preço, agendamento, reclamação e elogio." A IA faz isso em segundos, com pouquíssimos erros.</p>
+<p><strong>Rascunhar a partir de poucas informações.</strong> Você dá três tópicos soltos, ela devolve um texto estruturado. É o famoso "tirar do papel em branco" — provavelmente o maior valor para quem trava na hora de escrever.</p>
+<p><strong>Traduzir e adaptar linguagem.</strong> Do "juridiquês" para o português de gente, do técnico para o leigo, do formal para o Instagram.</p>
+<p><strong>Análise simples de dados.</strong> Cole uma lista de vendas do mês e pergunte "qual produto mais saiu?" ou "qual dia da semana vende menos?". Para volumes pequenos e perguntas diretas, funciona bem.</p>
+<p><strong>Gerar variações e ideias.</strong> "Me dê 10 ideias de post para uma loja de roupas em semana de liquidação." Nem todas serão boas — mas 3 serão, e isso resolve seu problema.</p>
+<h2>O que a IA faz mal (e você precisa saber antes de confiar)</h2>
+<p>Aqui está a parte que os vendedores de hype escondem. Anote, porque ignorar esta lista é o que gera prejuízo:</p>
+<p><strong>Fatos precisos sem fonte.</strong> A IA não "consulta um banco de dados de verdades". Ela gera texto provável. Se você perguntar "qual o telefone da prefeitura de Campinas?" ou "qual a alíquota do Simples para o meu CNAE?", ela pode responder com total confiança — e estar errada. Isso se chama <strong>alucinação</strong>, e é o defeito número 1 dessas ferramentas. Informação factual importante, você confere na fonte oficial. Sempre.</p>
+<p><strong>Contas complexas.</strong> Soma simples ela acerta quase sempre. Mas cálculo de margem com vários descontos, juros compostos, rateio de custos — confira na calculadora ou na planilha. A IA pode errar a conta <em>e apresentar o resultado errado com a maior segurança do mundo</em>. O Capítulo 8 (Analista) ensina a usá-la para análise sem cair nessa armadilha.</p>
+<p><strong>Seus dados específicos, se você não fornecer.</strong> A IA não conhece seus preços, seus horários, sua política de troca. Se você não informar, ela <strong>inventa</strong>. Uma confeiteira que pede "responda esse cliente perguntando o preço do bolo" sem informar o preço vai receber um rascunho com um preço inventado. Plausível, educado e errado. A solução para isso é o Manual do Funcionário, no Capítulo 3.</p>
+<p><strong>Decisões finais.</strong> Dar desconto ou não para aquele cliente? Aceitar a encomenda apertada para sexta? Responder ou ignorar o comentário grosseiro? A IA pode listar prós e contras — e é útil nisso — mas a decisão é sua. Ela não conhece o contexto completo, não assume a responsabilidade e não sente o prejuízo.</p>
+<p><strong>Assuntos sensíveis.</strong> Questão jurídica séria, saúde, conflito com cliente que pode virar processo, demissão. Use a IA para se organizar e entender o problema, nunca como palavra final. Profissional de verdade continua sendo necessário.</p>
+<h2>A regra de ouro: IA rascunha, você aprova</h2>
+<p>Se você fechar este livro agora e levar uma única frase, que seja esta:</p>
+<blockquote><strong>IA rascunha, você aprova.</strong></blockquote>
+<p>Todo o sistema deste livro funciona sobre essa regra. Ela resolve, de uma vez:</p>
+<ul>
+<li><strong>O problema da alucinação</strong> — se a IA inventou um preço, você corrige antes de enviar.</li>
+<li><strong>O problema do tom</strong> — se o texto ficou "cara de robô", você ajusta antes de postar.</li>
+<li><strong>O problema da responsabilidade</strong> — o que chega ao cliente passou por você, então a palavra é sua, com a sua garantia.</li>
+</ul>
+<p>E aqui vai a parte que surpreende quem nunca testou: <strong>revisar é muito mais rápido que criar.</strong> Escrever uma proposta do zero leva 40 minutos; revisar uma proposta pronta leva 5. Criar a legenda do post pode consumir sua noite; ajustar uma legenda boa leva um minuto. O ganho não é eliminar você do processo — é mover você da posição de operário para a de supervisor.</p>
+<p>Funcionário novo na sua loja teria as primeiras semanas de trabalho conferidas linha por linha, certo? Com o funcionário digital é igual — com a vantagem de que ele nunca fica ofendido com a correção e melhora na hora, se você explicar o que quer.</p>
+<h2>Mapa de oportunidades: o que dá para automatizar no seu tipo de negócio</h2>
+<p>Chega de teoria. A tabela abaixo mostra 10 tipos de negócio comuns no Brasil e, para cada um, 3 tarefas que um funcionário digital consegue assumir <strong>hoje</strong>, no esquema "IA rascunha, você aprova":</p>
+<table><thead><tr><th>Negócio</th><th>Tarefa 1</th><th>Tarefa 2</th><th>Tarefa 3</th></tr></thead><tbody><tr><td><strong>Salão de beleza</strong></td><td>Rascunhar respostas às perguntas de preço e horário no WhatsApp</td><td>Criar legendas de posts de antes/depois</td><td>Escrever mensagem de reativação para clientes sumidas há 60+ dias</td></tr><tr><td><strong>Loja de roupas</strong></td><td>Escrever descrições de peças novas para Instagram e catálogo</td><td>Responder dúvidas de troca, tamanho e entrega</td><td>Planejar calendário de posts para datas de pico (Dia das Mães, Natal)</td></tr><tr><td><strong>Nutricionista</strong></td><td>Rascunhar respostas a dúvidas frequentes (sem prescrever!)</td><td>Transformar um atendimento comum em ideia de post educativo</td><td>Criar modelos de mensagem de confirmação e lembrete de consulta</td></tr><tr><td><strong>Eletricista</strong></td><td>Montar orçamentos por escrito a partir de anotações soltas</td><td>Responder pedidos de orçamento com perguntas de triagem</td><td>Escrever mensagem pós-serviço pedindo avaliação no Google</td></tr><tr><td><strong>Doceira</strong></td><td>Responder pedidos de encomenda com perguntas-padrão (data, sabor, tamanho)</td><td>Criar legendas e descrições de produtos sazonais</td><td>Rascunhar tabela de preços e política de encomendas por escrito</td></tr><tr><td><strong>Advogado(a)</strong></td><td>Resumir documentos e organizar linha do tempo de casos</td><td>Rascunhar e-mails e comunicados a clientes em linguagem acessível</td><td>Criar conteúdo educativo (o que diz a lei sobre X) para redes</td></tr><tr><td><strong>Personal trainer</strong></td><td>Criar mensagens de acompanhamento e motivação semanais</td><td>Transformar dúvidas dos alunos em conteúdo para stories</td><td>Rascunhar propostas de pacotes (mensal, trimestral) por escrito</td></tr><tr><td><strong>Petshop / banho e tosa</strong></td><td>Responder agendamentos e dúvidas de serviço no WhatsApp</td><td>Escrever lembretes de retorno (banho mensal, vacina)</td><td>Criar posts de dicas de cuidado por raça/estação do ano</td></tr><tr><td><strong>Restaurante / marmitaria</strong></td><td>Escrever o cardápio da semana em formato de mensagem e post</td><td>Responder dúvidas de entrega, horário e formas de pagamento</td><td>Rascunhar respostas educadas a avaliações (boas e ruins)</td></tr><tr><td><strong>Contador(a)</strong></td><td>Traduzir comunicados técnicos em avisos simples para clientes</td><td>Rascunhar e-mails de cobrança de documentos pendentes</td><td>Criar lembretes recorrentes de prazos e obrigações para clientes</td></tr></tbody></table>
+<p>Repare em dois padrões:</p>
+<ol>
+<li><strong>Toda tarefa da tabela é baseada em texto e comunicação.</strong> Nenhuma exige que a IA corte cabelo, conserte fiação ou faça brigadeiro. O funcionário digital trabalha na camada de comunicação e organização que envolve o seu trabalho — e que provavelmente consome metade do seu dia.</li>
+<li><strong>Toda tarefa é repetitiva.</strong> Você já respondeu essas perguntas, já escreveu mensagens parecidas, já fez esses orçamentos dezenas de vezes. Onde há repetição, há padrão. Onde há padrão, a IA brilha.</li>
+</ol>
+<p>Uma observação para profissões regulamentadas (saúde, direito, contabilidade, nutrição): a IA pode rascunhar <strong>comunicação e organização</strong>, nunca o <strong>ato profissional em si</strong>. Nutricionista não delega prescrição, advogado não delega parecer, contador não delega a apuração. Os conselhos profissionais têm regras sobre publicidade e sigilo — e elas continuam valendo com IA no meio. Na dúvida, a tarefa fica com você.</p>
+<h2>O teste rápido: "essa tarefa é automatizável?"</h2>
+<p>A tabela acima cobre 10 negócios, mas o seu caso é único. Então aqui vai o teste de 30 segundos para avaliar <strong>qualquer</strong> tarefa do seu dia. Faça três perguntas:</p>
+<h3>1. É repetitiva?</h3>
+<p>Você faz essa tarefa (ou alguma muito parecida) toda semana? Já fez mais de 10 vezes na vida? Se sim, ponto.</p>
+<h3>2. É baseada em texto ou comunicação?</h3>
+<p>A tarefa acontece em mensagem, e-mail, documento, planilha, post? Ou seja: o "produto final" dela é texto ou informação organizada? Se sim, ponto. (Se a tarefa é física — entregar, consertar, atender presencialmente — a IA pode ajudar na <em>comunicação ao redor</em> dela, mas não nela.)</p>
+<h3>3. Tem padrão?</h3>
+<p>Se você pegasse as últimas 10 vezes que fez essa tarefa, daria para explicar a um estagiário como fazer? Existe um "jeito certo" que se repete? Se sim, ponto.</p>
+<p><strong>Resultado:</strong></p>
+<table><thead><tr><th>Pontos</th><th>Veredito</th></tr></thead><tbody><tr><td>3 de 3</td><td>Automatize agora. É candidata perfeita a virar tarefa de funcionário digital.</td></tr><tr><td>2 de 3</td><td>Automatize parcialmente. A IA faz um pedaço (o rascunho, a organização) e você faz o resto.</td></tr><tr><td>0–1 de 3</td><td>Deixe com você. Ou é estratégica, ou é única, ou é física demais.</td></tr></tbody></table>
+<p><strong>Exemplos rápidos do teste em ação:</strong></p>
+<ul>
+<li><em>"Responder no WhatsApp quanto custa a escova progressiva"</em> → repetitiva (sim), texto (sim), padrão (sim) = <strong>3/3, automatize</strong>.</li>
+<li><em>"Negociar o aluguel do ponto com o dono do imóvel"</em> → repetitiva (não), texto (parcialmente), padrão (não) = <strong>1/3, fica com você</strong> (mas a IA pode ajudar a preparar os argumentos).</li>
+<li><em>"Fazer o orçamento de um serviço de elétrica"</em> → repetitiva (sim), texto (sim), padrão (em parte — cada obra é diferente, mas a estrutura do orçamento se repete) = <strong>2–3/3, a IA monta a estrutura e o texto, você confere medidas e valores</strong>.</li>
+</ul>
+<h3>Exercício do capítulo (10 minutos)</h3>
+<p>Pegue papel ou bloco de notas do celular e:</p>
+<ol>
+<li>Liste <strong>10 tarefas</strong> que você fez nos últimos 7 dias e que não são o seu "trabalho-fim" (não é cortar cabelo, é tudo ao redor).</li>
+<li>Aplique o teste das 3 perguntas em cada uma.</li>
+<li>Marque as que deram 3/3. Essa é a sua <strong>lista de contratação</strong> — as primeiras tarefas que seus funcionários digitais vão assumir nos próximos capítulos.</li>
+</ol>
+<p>Guarde essa lista. Ela volta a aparecer no Capítulo 3, quando você for montar o Manual do Funcionário, e nos capítulos 4 a 8, quando cada funcionário for contratado.</p>
+<hr>
+<p><strong>Resumo do capítulo:</strong></p>
+<ul>
+<li>Chatbot segue script; <strong>assistente de IA</strong> entende linguagem e executa sob demanda; agente age sozinho (e por isso exige mais cuidado).</li>
+<li>A IA é excelente em texto, resumo, classificação, rascunho e organização — e ruim em fatos sem fonte, contas complexas e decisões finais.</li>
+<li>Ela <strong>inventa</strong> o que não sabe sobre o seu negócio. Quem alimenta o contexto é você.</li>
+<li>Regra de ouro: <strong>IA rascunha, você aprova.</strong> Revisar é mais rápido que criar — esse é o ganho real.</li>
+<li>Tarefa repetitiva + baseada em texto + com padrão = automatizável.</li>
+</ul>
+<p>No próximo capítulo, vamos ao arsenal: quais ferramentas usar, o que cada uma faz, e quanto custa de verdade — incluindo o cenário de custo zero.</p>
+</section>
+<section class="chapter" id="cap-2">
+<h1>Capítulo 2 — Seu arsenal: as ferramentas e o custo real</h1>
+<p>Existe uma indústria inteira tentando convencer você de que precisa de ferramenta cara, "plataforma completa de automação" e assinatura de mil coisas para usar IA no negócio. Não precisa.</p>
+<p>O arsenal deste livro cabe em uma lista curta: <strong>uma IA de conversa, o WhatsApp Business, o Canva e o Google Sheets/Docs</strong>. Tudo tem versão gratuita funcional. Neste capítulo você vai entender o que cada peça faz, quando vale a pena pagar, e quanto custa de verdade montar sua operação — começando por R$0.</p>
+<p>Um aviso antes: preços de software mudam o tempo todo. Vou citar valores "na faixa de" com base no que se pratica em 2026, mas <strong>sempre confira o site oficial antes de assinar qualquer coisa</strong>.</p>
+<h2>As três IAs de conversa: ChatGPT, Claude e Gemini</h2>
+<p>Essas são as três principais ferramentas de IA generativa para quem não é técnico. As três funcionam do mesmo jeito básico: você abre um site ou aplicativo, escreve o que precisa em uma caixa de conversa, e a IA responde. As três têm plano gratuito. As três servem para este livro.</p>
+<h3>ChatGPT (chat.openai.com ou app)</h3>
+<p>O mais famoso, e por bom motivo: é completo e fácil de usar. No plano gratuito você conversa, cola textos para resumir, pede rascunhos, manda fotos para analisar. O plano pago (ChatGPT Plus, na faixa de US$20 por mês — algo perto de cem e poucos reais, conforme o dólar) destrava mais uso dos modelos melhores, respostas mais rápidas em horário de pico e recursos extras, como criar "GPTs" personalizados — uma forma prática de salvar seu funcionário digital com as instruções já embutidas.</p>
+<p><strong>Para quem é:</strong> quem quer a opção mais popular, com mais tutorial disponível em português na internet.</p>
+<h3>Claude (claude.ai)</h3>
+<p>O Claude tem fama merecida em duas coisas que interessam muito a você: <strong>escreve com tom mais natural</strong> (menos "cara de robô" em português) e <strong>trabalha muito bem com textos longos</strong> — você pode colar um contrato inteiro, uma planilha grande de mensagens, e ele segura o contexto. O plano gratuito tem limite diário de mensagens que pode incomodar em dia de uso pesado; o plano Pro (também na faixa de US$20/mês) resolve isso e adiciona recursos como os "Projects", que permitem salvar instruções permanentes — ótimo para o Manual do Funcionário que você vai criar no Capítulo 3.</p>
+<p><strong>Para quem é:</strong> quem escreve muito (conteúdo, propostas, atendimento) e quer o melhor texto.</p>
+<h3>Gemini (gemini.google.com)</h3>
+<p>A IA do Google, com uma vantagem imbatível para o orçamento apertado: <strong>o plano gratuito é generoso</strong> e a integração com o ecossistema Google (Gmail, Docs, Sheets, Drive) é nativa. Se a sua operação já vive no Google — e a deste livro vai viver — o Gemini conversa direto com suas planilhas e documentos. Há planos pagos dentro do Google One com modelos mais potentes.</p>
+<p><strong>Para quem é:</strong> quem quer começar 100% grátis e já usa Gmail.</p>
+<h3>Comparação rápida</h3>
+<table><thead><tr><th>Critério</th><th>ChatGPT</th><th>Claude</th><th>Gemini</th></tr></thead><tbody><tr><td>Plano grátis</td><td>Bom</td><td>Bom (limite diário menor)</td><td>Generoso</td></tr><tr><td>Qualidade de escrita em PT-BR</td><td>Muito boa</td><td>Excelente</td><td>Muito boa</td></tr><tr><td>Textos longos / muito contexto</td><td>Bom</td><td>Excelente</td><td>Bom</td></tr><tr><td>Integração com Google Docs/Sheets</td><td>Não nativa</td><td>Não nativa</td><td>Nativa</td></tr><tr><td>Salvar instruções permanentes</td><td>Sim (pago: GPTs; grátis: instruções de perfil)</td><td>Sim (Projects, no Pro)</td><td>Sim (Gems)</td></tr><tr><td>Plano pago</td><td>~US$20/mês</td><td>~US$20/mês</td><td>Via Google One</td></tr></tbody></table>
+<h3>O que dá para fazer 100% no plano grátis</h3>
+<p>Sendo direto: <strong>tudo deste livro funciona no plano gratuito de qualquer uma das três.</strong> Os limites gratuitos são de <em>volume</em> (quantas mensagens por dia) e <em>velocidade</em>, não de capacidade. Para um pequeno negócio começando — algumas dezenas de interações por dia com a IA — o grátis aguenta.</p>
+<h3>Quando vale pagar</h3>
+<p>Pague quando (e somente quando) você sentir uma destas três dores:</p>
+<ol>
+<li><strong>Bateu no limite diário</strong> mais de duas vezes na mesma semana — sinal de que a IA já virou rotina.</li>
+<li><strong>Precisa salvar instruções permanentes</strong> (Projects no Claude, GPTs no ChatGPT, Gems no Gemini) para não colar o Manual do Funcionário toda vez.</li>
+<li><strong>A diferença de qualidade do modelo pago apareceu</strong> num uso real seu — por exemplo, propostas comerciais visivelmente melhores.</li>
+</ol>
+<p>Regra prática: <strong>comece grátis, use por 30 dias, e só assine quando o limite gratuito estiver custando seu tempo.</strong> Assinatura sem uso é o jeito mais rápido de concluir que "IA é caro e não funciona".</p>
+<h3>Qual escolher?</h3>
+<p>Para não te deixar paralisado: <strong>escolha uma e comece.</strong> Se precisar de um empurrão: começando do zero absoluto e sem gastar nada, vá de Gemini; se a sua prioridade é texto de qualidade para atendimento e conteúdo, vá de Claude; se quer o caminho mais documentado em tutoriais, vá de ChatGPT. Dá para migrar depois sem dor — os prompts e o Manual do Funcionário funcionam nas três.</p>
+<h2>WhatsApp Business: a ferramenta gratuita que você já tem e não usa direito</h2>
+<p>Aqui está um segredo aberto: o aplicativo <strong>WhatsApp Business</strong> (a versão para negócios, gratuita, diferente do WhatsApp comum) tem recursos nativos que resolvem metade do atendimento de um pequeno negócio — e a maioria dos donos nunca configurou nenhum deles.</p>
+<p>Antes de qualquer IA, configure isto (leva uma tarde):</p>
+<h3>Respostas rápidas</h3>
+<p>Você salva mensagens prontas com um atalho. Digita <code>/preco</code> e a tabela de preços inteira aparece pronta para enviar. Digita <code>/pix</code> e sai a chave com instruções. <strong>É aqui que os textos rascunhados pela IA vão morar:</strong> no Capítulo 4, você vai gerar respostas excelentes para suas 10 perguntas mais frequentes e salvá-las como respostas rápidas. Atendimento de qualidade em dois toques, custo zero, sem nenhuma automação arriscada.</p>
+<h3>Etiquetas</h3>
+<p>Permitem marcar conversas por categoria: "Novo cliente", "Aguardando pagamento", "Orçamento enviado", "Pós-venda". Parece bobagem; é um mini-CRM gratuito. Quando você quiser, por exemplo, mandar mensagem de reativação para quem pediu orçamento e sumiu, é só filtrar a etiqueta.</p>
+<h3>Mensagem de saudação e mensagem de ausência</h3>
+<p>A saudação é enviada automaticamente para quem chama pela primeira vez (ou depois de 14 dias de silêncio). A de ausência responde fora do horário comercial. São os únicos pontos deste livro em que uma mensagem chega ao cliente <strong>sem você revisar na hora</strong> — por isso o texto delas precisa ser excelente e honesto ("respondo a partir das 9h", e não fingir que há alguém online). A IA rascunha, você lapida, configura uma vez e esquece.</p>
+<h3>Catálogo</h3>
+<p>Sua vitrine dentro do WhatsApp: produtos ou serviços com foto, preço e descrição. Em vez de mandar foto solta e digitar preço toda vez, você envia o item do catálogo. As descrições? Adivinhou: a IA rascunha todas em uma sessão só.</p>
+<blockquote><strong>Custo do WhatsApp Business app: zero.</strong> Existe também a "API do WhatsApp Business", usada por empresas maiores para automação de verdade (robôs respondendo sozinhos). Ela é paga, exige intermediários técnicos e <strong>você não precisa dela para nada deste livro</strong>. Quando alguém tentar te vender "automação completa de WhatsApp", saiba que é dessa camada que estão falando — e que o app gratuito bem configurado entrega a maior parte do valor para um negócio pequeno.</blockquote>
+<h2>Canva: o departamento de design</h2>
+<p>O Canva resolve a parte visual: posts, stories, cartões, tabelas de preço bonitas, cardápios, etiquetas. A versão gratuita tem milhares de modelos e cobre com folga as necessidades de um pequeno negócio.</p>
+<p>O fluxo que você vai usar a partir do Capítulo 6: <strong>a IA escreve (legenda, título, texto do post), o Canva veste (você cola o texto num modelo pronto).</strong> Você não precisa "saber design" — precisa escolher um modelo decente e trocar o texto e as fotos.</p>
+<p>O Canva Pro (pago, há plano mensal e anual — confira o preço no site) adiciona remoção de fundo de fotos, redimensionamento automático (mesmo post nos formatos feed/story/capa), banco maior de imagens e o "Kit de Marca" (suas cores e fontes salvas). Vale a pena quando conteúdo visual virar rotina séria no seu negócio — não antes.</p>
+<h2>Google Sheets e Docs: o banco de dados do pobre (e isso é um elogio)</h2>
+<p>Tem gente que torce o nariz para planilha, achando que negócio sério precisa de "sistema". Deixa eu te falar uma coisa: <strong>o Google Sheets gratuito é provavelmente a ferramenta de gestão com melhor custo-benefício já inventada</strong>, e chamá-lo de "banco de dados do pobre" é elogio — pobre aqui é o orçamento, não o resultado.</p>
+<p>No nosso arsenal, o Google entra assim:</p>
+<ul>
+<li><strong>Google Sheets</strong> guarda os dados do negócio: registro simples de vendas, lista de clientes, controle de encomendas, perguntas frequentes recebidas. Não precisa de fórmula avançada — precisa de colunas organizadas. No Capítulo 8, você vai copiar dados dessas planilhas para a IA e fazer perguntas em português ("qual produto mais saiu em maio?").</li>
+<li><strong>Google Docs</strong> guarda seus textos-mestres: o Manual do Funcionário (Capítulo 3), sua biblioteca de prompts, os modelos de proposta e orçamento.</li>
+</ul>
+<p>Por que Google e não outro? Três motivos práticos: é grátis, sincroniza entre celular e computador automaticamente (você vai usar muito do celular), e é fácil de compartilhar quando você finalmente contratar um humano para ajudar.</p>
+<p><strong>Custo: zero</strong>, com uma conta Google comum.</p>
+<h2>Automação avançada: Make, Zapier, n8n — o aviso honesto</h2>
+<p>Você vai esbarrar nesses nomes em vídeos e cursos: Make, Zapier, n8n. São ferramentas de automação que conectam aplicativos entre si — "quando chegar mensagem no WhatsApp, salve na planilha e dispare a resposta da IA automaticamente". É a tecnologia por trás dos "agentes" autônomos do Capítulo 1.</p>
+<p>A verdade em três frases:</p>
+<ol>
+<li><strong>Existe e é poderoso.</strong> Negócios com volume alto de atendimento montam operações impressionantes com essas ferramentas.</li>
+<li><strong>Não é para agora.</strong> Exige raciocínio técnico, manutenção constante (automação quebra, e quebra em silêncio), planos pagos para uso sério, e — o mais importante — remove a etapa de revisão humana, o que viola a regra de ouro logo na fase em que você mais precisa dela.</li>
+<li><strong>Este livro foca no que funciona sem programar.</strong> Quando o seu sistema manual-assistido estiver redondo e o volume apertar, automatizar será um passo natural — e aí você já vai saber exatamente <em>o que</em> automatizar, porque terá o processo dominado. Construir automação em cima de processo bagunçado só produz bagunça mais rápida.</li>
+</ol>
+<p>Se alguém te oferecer "implantação de agente de IA" por alguns milhares de reais antes de você ter o básico rodando, agora você sabe o que está comprando — e por que pode esperar.</p>
+<h2>Quanto custa de verdade: 3 cenários de orçamento</h2>
+<p>Vamos ao dinheiro, sem rodeio. Três cenários reais, do zero ao confortável:</p>
+<h3>Cenário 1 — R$0/mês: o início completo</h3>
+<table><thead><tr><th>Ferramenta</th><th>Plano</th><th>Custo</th></tr></thead><tbody><tr><td>Gemini (ou ChatGPT/Claude grátis)</td><td>Gratuito</td><td>R$0</td></tr><tr><td>WhatsApp Business app</td><td>Gratuito</td><td>R$0</td></tr><tr><td>Canva</td><td>Gratuito</td><td>R$0</td></tr><tr><td>Google Sheets + Docs</td><td>Gratuito</td><td>R$0</td></tr></tbody></table>
+<p><strong>O que destrava:</strong> todo o conteúdo deste livro. Os cinco funcionários digitais funcionam neste cenário. As limitações são limites diários de mensagens na IA (planeje as tarefas pesadas, como gerar o conteúdo da semana, em uma sessão só) e a necessidade de colar o Manual do Funcionário no início de cada conversa.</p>
+<p><strong>Para quem:</strong> todo mundo, no primeiro mês. Não pule esta fase — ela ensina o que vale a pena pagar depois.</p>
+<h3>Cenário 2 — na faixa de R$120/mês: uma IA paga</h3>
+<table><thead><tr><th>Ferramenta</th><th>Plano</th><th>Custo aproximado</th></tr></thead><tbody><tr><td>ChatGPT Plus <strong>ou</strong> Claude Pro</td><td>Pago</td><td>na faixa de US$20/mês (confira o câmbio e o site)</td></tr><tr><td>Todo o resto</td><td>Gratuito</td><td>R$0</td></tr></tbody></table>
+<p><strong>O que destrava:</strong> fim do limite diário (a IA vira ferramenta de uso contínuo, como o WhatsApp), acesso aos modelos mais capazes, e — o ganho prático maior — <strong>instruções salvas</strong> (Projects/GPTs): seu Manual do Funcionário fica permanentemente carregado, e cada conversa já começa com a IA "sabendo" do seu negócio.</p>
+<p><strong>Para quem:</strong> quem completou 30 dias de uso real e bateu nos limites gratuitos. Para a maioria dos leitores, este é o cenário de regime permanente.</p>
+<h3>Cenário 3 — na faixa de R$300/mês: operação confortável</h3>
+<table><thead><tr><th>Ferramenta</th><th>Plano</th><th>Custo aproximado</th></tr></thead><tbody><tr><td>ChatGPT Plus ou Claude Pro</td><td>Pago</td><td>na faixa de US$20/mês</td></tr><tr><td>Canva Pro</td><td>Pago</td><td>confira o site (plano mensal)</td></tr><tr><td>Ferramenta de agendamento online</td><td>Pago</td><td>na faixa de R$50–100/mês conforme a ferramenta</td></tr></tbody></table>
+<p><strong>O que destrava:</strong> além do cenário 2, produção visual profissional em escala (remoção de fundo, redimensionamento automático, kit de marca) e — para negócios de agenda, como salão, clínica, estúdio e consultoria — <strong>agendamento online</strong> em que o cliente marca sozinho pelo link, com lembrete automático. Isso elimina o vai-e-vem de "que horário você tem?" que consome o WhatsApp desse tipo de negócio.</p>
+<p><strong>Para quem:</strong> negócios de agenda cheia e quem produz conteúdo visual diariamente. Não comece aqui. Chegue aqui.</p>
+<blockquote><strong>A conta que importa:</strong> mesmo o cenário 3 custa menos que um único dia de trabalho de um funcionário CLT com encargos. Não estou dizendo que substitui um funcionário — estou dizendo que o investimento é pequeno o suficiente para ser decidido com base em teste real, não em fé.</blockquote>
+<h2>Antes de seguir: crie as contas do jeito certo</h2>
+<p>Último ponto do capítulo, e ele parece detalhe mas evita dor de cabeça enorme: <strong>crie um e-mail do negócio e cadastre todas as ferramentas nele.</strong></p>
+<p>Algo como <code>contato.docemaria@gmail.com</code> ou <code>studio.anapaula@gmail.com</code>. Por quê:</p>
+<ul>
+<li><strong>Separação:</strong> suas conversas com a IA sobre o negócio, as planilhas e os designs ficam separados da sua vida pessoal.</li>
+<li><strong>Continuidade:</strong> quando você contratar alguém (humano) para ajudar no atendimento ou nas redes, você compartilha o acesso do negócio sem entregar seu e-mail pessoal.</li>
+<li><strong>Organização:</strong> todas as confirmações, faturas e avisos das ferramentas num lugar só.</li>
+<li><strong>Segurança:</strong> ative a verificação em duas etapas nesse e-mail. Ele vai virar a chave do seu negócio digital. (Falaremos mais de segurança e dados de clientes no Capítulo 10.)</li>
+</ul>
+<h3>Checklist do capítulo (30–45 minutos)</h3>
+<ol>
+<li>☐ Criar o e-mail do negócio (com verificação em duas etapas).</li>
+<li>☐ Criar conta em <strong>uma</strong> IA de conversa (Gemini, ChatGPT ou Claude) com esse e-mail.</li>
+<li>☐ Baixar o WhatsApp Business (se ainda usa o WhatsApp comum para o negócio, o app oferece migração do número — pesquise "migrar para WhatsApp Business" antes para fazer com calma).</li>
+<li>☐ Criar conta no Canva com o e-mail do negócio.</li>
+<li>☐ Criar uma pasta no Google Drive chamada "[NOME DO NEGÓCIO] — Funcionários Digitais", que vai receber o Manual e a biblioteca de prompts do próximo capítulo.</li>
+</ol>
+<hr>
+<p><strong>Resumo do capítulo:</strong></p>
+<ul>
+<li>Seu arsenal: <strong>uma IA de conversa + WhatsApp Business + Canva + Google Sheets/Docs.</strong> Tudo começa grátis.</li>
+<li>ChatGPT, Claude e Gemini fazem tudo deste livro no plano gratuito; pague só quando o limite custar seu tempo.</li>
+<li>O WhatsApp Business gratuito (respostas rápidas, etiquetas, saudação/ausência, catálogo) é a infraestrutura de atendimento que quase ninguém configura.</li>
+<li>Google Sheets/Docs é o "banco de dados do pobre" — e isso é elogio: grátis, sincronizado e suficiente.</li>
+<li>Make/Zapier/n8n existem e são poderosos, mas <strong>você não precisa deles para começar</strong>. Processo primeiro, automação depois.</li>
+<li>Três cenários: R$0 (tudo), ~R$120/mês (IA sem limites + instruções salvas), ~R$300/mês (+ Canva Pro + agendamento). Comece no primeiro.</li>
+</ul>
+<p>Arsenal montado. No próximo capítulo, a habilidade que multiplica o valor de tudo isso: escrever prompts que funcionam — e o documento mais importante do livro, o Manual do Funcionário.</p>
+</section>
+<section class="chapter" id="cap-3">
+<h1>Capítulo 3 — A habilidade-mãe: prompts que funcionam</h1>
+<p>Se este livro fosse um curso de culinária, este capítulo seria o de afiar facas. Parece menos empolgante que a receita do prato principal, mas é o que separa quem cozinha bem de quem se machuca.</p>
+<p>Aqui está a verdade que ninguém te conta: <strong>a diferença entre quem acha IA "genérica e inútil" e quem economiza 10 horas por semana não é a ferramenta. É a pergunta.</strong> As duas pessoas usam o mesmo ChatGPT grátis. Uma escreve "faz um post pro meu negócio" e recebe um texto que serve para qualquer loja do planeta. A outra escreve uma instrução de 8 linhas e recebe um post que parece ter saído da cabeça dela num dia inspirado.</p>
+<p>Este capítulo te ensina a segunda forma. E te entrega o documento mais importante do livro inteiro: o <strong>Manual do Funcionário</strong>, que você vai usar em todos os capítulos daqui para frente.</p>
+<h2>Por que 90% das pessoas usa IA do jeito errado</h2>
+<p>A IA não lê mentes. Ela responde exatamente à pergunta que recebeu — e preenche tudo o que você não disse com o "média de tudo": o tom médio, o negócio médio, o cliente médio. Por isso a resposta sai genérica: porque a pergunta foi genérica.</p>
+<p>Veja a diferença na prática:</p>
+<p><strong>Prompt vago:</strong></p>
+<pre><code>Escreve uma mensagem de cobrança pra um cliente.</code></pre>
+<p>O que sai: uma mensagem formal, fria, em português de banco, começando com "Prezado cliente, vimos por meio desta...". Tecnicamente correta. Inútil para o seu negócio.</p>
+<p><strong>Prompt completo:</strong></p>
+<pre><code>Você é assistente de comunicação de um estúdio de pilates de bairro,
+tom acolhedor e direto, sem formalidade de banco.
+
+A cliente [NOME] está com a mensalidade de [MÊS] atrasada há 5 dias.
+Ela é aluna há 2 anos, nunca atrasou antes. Quero lembrar sem
+constranger — provavelmente só esqueceu.
+
+Escreva uma mensagem de WhatsApp de até 4 linhas, leve, que lembre do
+pagamento e já ofereça a chave Pix. Sem a palavra "inadimplente",
+sem tom de aviso. Termine com algo pessoal sobre a aula.</code></pre>
+<p>O que sai: uma mensagem que você enviaria sem mudar quase nada. A diferença não foi a IA. Foi a instrução.</p>
+<p>A boa notícia: instrução boa tem fórmula. E a fórmula cabe numa sigla.</p>
+<h2>A estrutura P-C-T-F-E</h2>
+<p>Todo prompt que funciona bem tem até cinco ingredientes. Você não precisa usar os cinco sempre — mas precisa saber quais existem para escolher.</p>
+<table><thead><tr><th>Letra</th><th>Ingrediente</th><th>O que é</th><th>Exemplo</th></tr></thead><tbody><tr><td><strong>P</strong></td><td><strong>Papel</strong></td><td>Quem a IA deve ser</td><td>"Você é uma vendedora experiente de loja de roupas femininas"</td></tr><tr><td><strong>C</strong></td><td><strong>Contexto</strong></td><td>A situação e os fatos</td><td>"Cliente perguntou o preço, eu respondi, ela sumiu há 3 dias"</td></tr><tr><td><strong>T</strong></td><td><strong>Tarefa</strong></td><td>O que você quer, em verbo</td><td>"Escreva uma mensagem de follow-up"</td></tr><tr><td><strong>F</strong></td><td><strong>Formato</strong></td><td>Como a resposta deve vir</td><td>"Até 3 linhas, tom leve, com 1 pergunta no final"</td></tr><tr><td><strong>E</strong></td><td><strong>Exemplo</strong></td><td>Uma amostra do que você gosta</td><td>"Parecida com esta que funcionou: [colar]"</td></tr></tbody></table>
+<p>Memorize assim: <strong>Papel, Contexto, Tarefa, Formato, Exemplo</strong>. Quando uma resposta da IA vier ruim, volte nessa lista e pergunte: qual ingrediente eu esqueci? Em 9 de 10 casos, foi o Contexto.</p>
+<h3>Os dois ingredientes que mais mudam o resultado</h3>
+<p><strong>Contexto</strong> é o rei. A IA não sabe o que você vende, quanto custa, nem como seus clientes falam. Tudo o que ela não souber, ela inventa ou genericiza. Regra prática: se um funcionário novo, no primeiro dia, precisaria daquela informação para fazer a tarefa, a IA também precisa.</p>
+<p><strong>Formato</strong> é o que poupa retrabalho. Sem formato, a IA adora entregar três parágrafos pomposos quando você queria duas linhas de WhatsApp. Diga o tamanho, o canal, o tom e o que não pode ter ("sem emoji", "sem 'imperdível'", "sem caps lock").</p>
+<h2>Antes e depois: três casos reais</h2>
+<h3>Caso 1 — A doceira e o post de encomenda</h3>
+<p><strong>Antes:</strong> <code>"Faz um post sobre bolo de pote"</code> → texto genérico com "delícia irresistível" e hashtag #bolodepote. Podia ser de qualquer doceria do Brasil.</p>
+<p><strong>Depois:</strong></p>
+<pre><code>Você é social media de uma doceria artesanal de bairro que vende por
+encomenda no WhatsApp (não tem loja física).
+
+Contexto: semana que vem é dia dos namorados. Meu carro-chefe é o bolo
+de pote de ninho com morango (R$ 14). Minhas clientes são mulheres de
+25-45 anos do bairro, que compram para presentear ou para o "momento
+café da tarde". Encomendas fecham quarta-feira.
+
+Tarefa: escreva 1 legenda de post para Instagram anunciando o kit de
+dia dos namorados (2 bolos de pote + cartãozinho, R$ 30).
+
+Formato: gancho na primeira linha (sem "atenção!"), corpo de até 5
+linhas, preço claro, chamada para "pedir no link da bio", 3 hashtags
+locais no máximo. Tom carinhoso, sem ser meloso.</code></pre>
+<p><strong>O que mudou:</strong> a IA agora sabe o produto, o preço, o prazo, a cliente e a ocasião. A legenda sai pronta para publicar.</p>
+<h3>Caso 2 — O eletricista e o orçamento</h3>
+<p><strong>Antes:</strong> <code>"Escreve um orçamento de serviço elétrico"</code> → um documento de empresa grande, com "proposta comercial nº 001/2026" e termos que assustam cliente residencial.</p>
+<p><strong>Depois:</strong></p>
+<pre><code>Você é assistente administrativo de um eletricista autônomo que atende
+residências.
+
+Contexto: visitei o apartamento da cliente [NOME] hoje. Serviço:
+trocar o chuveiro (cliente compra o aparelho), instalar 4 tomadas na
+cozinha e revisar o disjuntor que desarma. Materiais por minha conta:
+[LISTAR]. Mão de obra: R$ [VALOR]. Prazo: 1 dia. Garantia do serviço:
+90 dias. Pagamento: Pix ou cartão (com acréscimo da maquininha).
+
+Tarefa: monte o orçamento em formato de mensagem de WhatsApp.
+
+Formato: saudação curta, lista do que está incluído, valor total
+destacado, validade de 7 dias, forma de pagamento, e fechamento
+perguntando se posso agendar. Linguagem simples, profissional, sem
+"prezado".</code></pre>
+<p><strong>O que mudou:</strong> virou um orçamento que cabe no WhatsApp — onde o cliente dele realmente decide.</p>
+<h3>Caso 3 — A nutricionista e a pergunta de preço</h3>
+<p><strong>Antes:</strong> <code>"Como responder quando perguntam o preço da consulta?"</code> → resposta de blog, com 5 estratégias teóricas e nenhuma mensagem pronta.</p>
+<p><strong>Depois:</strong></p>
+<pre><code>Você é secretária de uma nutricionista que atende online e presencial.
+
+Contexto: recebi no Direct a mensagem "oi, quanto é a consulta?".
+Consulta avulsa: R$ [VALOR]. Acompanhamento trimestral (3 consultas +
+suporte no WhatsApp): R$ [VALOR]. Quero responder o preço sem parecer
+tabela fria — a maioria fecha quando entende o acompanhamento.
+
+Tarefa: escreva a resposta para o Direct.
+
+Formato: até 5 linhas. Responda o preço da avulsa direto (nada de
+"chama no privado"), apresente o acompanhamento como opção mais
+procurada, e termine com uma pergunta sobre o objetivo da pessoa.</code></pre>
+<p><strong>O que mudou:</strong> a resposta sai com estratégia embutida — preço transparente + upgrade natural + pergunta que continua a conversa.</p>
+<p>Percebeu o padrão dos três casos? O trabalho duro não é escrever bonito — a IA escreve. O trabalho é <strong>dar os fatos</strong>. E é aí que mora um problema: você vai usar IA todo dia, várias vezes ao dia. Vai digitar os fatos do seu negócio toda santa vez?</p>
+<p>Não. Você vai escrever uma vez só.</p>
+<h2>O Manual do Funcionário</h2>
+<p>Imagine que você contratou um funcionário excelente, mas com amnésia: toda manhã ele esquece tudo sobre o seu negócio. A solução óbvia seria entregar a ele, toda manhã, uma folha com tudo o que importa: o que vendemos, por quanto, nosso jeito de falar, o que nunca prometer.</p>
+<p>A IA é esse funcionário. E essa folha é o <strong>Manual do Funcionário</strong> — um documento único com os fatos do seu negócio, que você cola <strong>no início de toda conversa com a IA</strong>, antes de qualquer prompt. Ele é o "C" de Contexto da fórmula, resolvido de uma vez por todas.</p>
+<p>A partir deste capítulo, todos os prompts do livro (e os 77 prompts do bônus) assumem que você colou o Manual antes. É o que transforma resposta genérica em resposta do <em>seu</em> negócio.</p>
+<h3>O template completo</h3>
+<p>Copie, preencha e guarde. Linhas que não se aplicam ao seu negócio, apague.</p>
+<pre><code>MANUAL DO FUNCIONÁRIO — [NOME DO NEGÓCIO]
+(Use estas informações como contexto em tudo o que eu pedir nesta
+conversa. Não invente nada que não esteja aqui; se faltar informação,
+me pergunte.)
+
+O NEGÓCIO
+- Nome: [NOME DO NEGÓCIO]
+- O que é: [ex: doceria artesanal por encomenda / salão de beleza /
+  consultório de nutrição]
+- Onde atende: [bairro/cidade, online, delivery, raio de entrega]
+- Desde quando existe: [ANO]
+
+O QUE VENDO (com preços)
+- [PRODUTO/SERVIÇO 1] — R$ [PREÇO] — [observação: prazo, tamanho, o
+  que inclui]
+- [PRODUTO/SERVIÇO 2] — R$ [PREÇO] — [observação]
+- [PRODUTO/SERVIÇO 3] — R$ [PREÇO] — [observação]
+- Mais procurado: [QUAL]
+
+FUNCIONAMENTO
+- Horários: [DIAS E HORAS]
+- Prazo de entrega/agenda: [ex: encomendas com 48h de antecedência]
+- Formas de pagamento: [Pix, cartão, dinheiro; parcelamento?]
+- Políticas: [sinal de X% para encomendar; troca em até X dias;
+  cancelamento até X horas antes; etc.]
+
+MEU CLIENTE
+- Quem é: [idade aproximada, perfil, o que valoriza]
+- Como ele fala comigo: [WhatsApp? Direct? formal? cheio de áudio?]
+- Por que compra de mim e não do concorrente: [seu diferencial real]
+
+TOM DE VOZ
+- 3 palavras que descrevem meu jeito: [ex: acolhedor, direto, alegre]
+- Frases que eu falaria: "[EXEMPLO 1]", "[EXEMPLO 2]"
+- O que eu NUNCA falaria: [ex: "imperdível!!!", gíria de internet,
+  "prezado cliente"]
+- Emoji: [uso moderado / não uso / só esses: ...]
+
+PERGUNTAS FREQUENTES (e a resposta certa)
+- "[PERGUNTA 1]" → [RESPOSTA CERTA]
+- "[PERGUNTA 2]" → [RESPOSTA CERTA]
+- "[PERGUNTA 3]" → [RESPOSTA CERTA]
+
+REGRAS DE OURO (o que a IA nunca deve fazer)
+- Nunca prometer prazo ou desconto que não está neste manual.
+- Nunca inventar preço, ingrediente, técnica ou disponibilidade.
+- Nunca dar conselho [médico/jurídico/financeiro — conforme seu ramo];
+  nesses casos, orientar a falar comigo.
+- Em reclamação ou assunto delicado: rascunhar com calma e me avisar
+  que EU devo revisar antes de enviar.
+
+ASSINATURA PADRÃO
+- [Como você fecha mensagens: "Um abraço, Maria — Doce Maria 🍰"]</code></pre>
+<h3>Exemplo preenchido — Doce Maria</h3>
+<p>Para você ver o tamanho certo (note que é específico sem ser um romance):</p>
+<pre><code>MANUAL DO FUNCIONÁRIO — DOCE MARIA
+(Use estas informações como contexto em tudo o que eu pedir nesta
+conversa. Não invente nada que não esteja aqui; se faltar informação,
+me pergunte.)
+
+O NEGÓCIO
+- Nome: Doce Maria
+- O que é: doceria artesanal por encomenda, sem loja física
+- Onde atende: bairro Jardim das Flores e região (entrego num raio de
+  8 km, taxa R$ 8) — retirada também
+- Desde quando existe: 2022
+
+O QUE VENDO (com preços)
+- Bolo de pote (ninho c/ morango, chocolate, limão) — R$ 14
+- Bolo de festa por kg — R$ 75/kg — encomenda com 5 dias
+- Caixa de brigadeiros gourmet (20 un) — R$ 48
+- Kit festa básico (bolo 1kg + 30 docinhos) — R$ 140
+- Mais procurado: bolo de pote de ninho com morango
+
+FUNCIONAMENTO
+- Horários: respondo das 9h às 19h, seg a sáb
+- Prazo: bolos de pote com 24h; bolos de festa com 5 dias
+- Pagamento: Pix ou dinheiro; encomendas acima de R$ 100 com sinal
+  de 50%
+- Políticas: cancelamento de encomenda até 48h antes devolve o sinal
+
+MEU CLIENTE
+- Mulheres de 25 a 50 anos do bairro; compram para festas de família
+  e para presentear
+- Falam comigo pelo WhatsApp, tom carinhoso, muitas mandam áudio
+- Compram de mim pela massa de bolo molhadinha e porque cumpro prazo
+
+TOM DE VOZ
+- Carinhosa, alegre, próxima
+- Frases minhas: "feito com carinho, do meu forno pra sua festa",
+  "pode deixar comigo!"
+- NUNCA falo: "imperdível", "promoção relâmpago", "prezado cliente"
+- Emoji: moderado, gosto de 🍰 e 💛
+
+PERGUNTAS FREQUENTES
+- "Faz sem lactose?" → Faço sob encomenda com 3 dias, +20% no valor
+- "Entrega quando?" → Bolo de pote: amanhã. Bolo de festa: 5 dias
+- "Tem pronta entrega?" → Só sextas à tarde, anuncio nos stories
+
+REGRAS DE OURO
+- Nunca prometer entrega fora dos prazos acima
+- Nunca inventar sabor ou preço
+- Reclamação: rascunhar com calma e me avisar para EU revisar
+
+ASSINATURA PADRÃO
+- "Um abraço, Maria 🍰 — Doce Maria"</code></pre>
+<h3>Onde guardar e como usar</h3>
+<ol>
+<li>Crie um documento no <strong>Google Docs</strong> chamado "Manual do Funcionário". (Por quê lá? Sincroniza entre celular e computador, e editar é fácil.)</li>
+<li>No celular, deixe-o nos <strong>favoritos/com estrela</strong> para achar em 2 toques.</li>
+<li><strong>Toda vez</strong> que abrir uma conversa nova com a IA: selecionar tudo → copiar → colar → e só então fazer seu pedido.</li>
+<li>Nos apps de IA que têm "instruções personalizadas" ou "projetos" (o ChatGPT e o Claude têm), você pode colar o Manual lá uma vez só — aí toda conversa nova já nasce sabendo do seu negócio. Vale os 5 minutos de configuração.</li>
+</ol>
+<p><strong>Manutenção:</strong> mudou preço, horário ou política? Atualize o Manual <strong>no mesmo dia</strong>. Manual desatualizado é a receita para a IA escrever mensagem com preço velho — e adivinha quem o cliente vai cobrar.</p>
+<h2>A segunda mensagem é onde a mágica acontece</h2>
+<p>Prompt bom não é bola de cristal: a primeira resposta raramente vem 100%. A diferença de quem usa IA bem é que <strong>não aceita nem descarta — ajusta</strong>. A IA lembra do que acabou de escrever, então você pode mandar correções curtas, como faria com um estagiário talentoso:</p>
+<ul>
+<li>"Ficou formal demais. Refaz mais leve, como conversa de WhatsApp."</li>
+<li>"Boa, mas corta pela metade."</li>
+<li>"Tira os emojis e troca 'imperdível' por algo que eu diria."</li>
+<li>"Agora me dá 3 variações dessa, mudando só a primeira linha."</li>
+<li>"Reescreve no tom deste exemplo: [colar uma mensagem sua que funcionou]"</li>
+</ul>
+<p>Regra prática: <strong>até 3 ajustes</strong>. Se na terceira tentativa ainda está ruim, o problema é o prompt original — volte na fórmula P-C-T-F-E e veja o que faltou (quase sempre, Contexto).</p>
+<h2>Sua biblioteca de prompts</h2>
+<p>Todo prompt que funcionar bem para você é um ativo. Não deixe ele morrer na conversa.</p>
+<ol>
+<li>Crie um segundo Google Doc: <strong>"Biblioteca de Prompts"</strong>.</li>
+<li>Seções: Atendimento, Vendas, Conteúdo, Administrativo, Análise (sim, os cinco funcionários deste livro).</li>
+<li>Quando um prompt der uma resposta ótima, cole o prompt lá com um título ("Follow-up de orçamento — tom leve") e uma linha dizendo quando usar.</li>
+<li>Comece a biblioteca com os <strong>77 prompts prontos do bônus</strong> deste livro — eles já vêm organizados nessas mesmas seções. Seu trabalho é só ir adaptando os placeholders ao seu negócio e anotando os que mais funcionam.</li>
+</ol>
+<p>Em um mês, você terá algo valioso: um caderno de receitas testadas no <em>seu</em> negócio, com o <em>seu</em> tom. Isso ninguém copia.</p>
+<h2>Exercício de 15 minutos (faça antes do próximo capítulo)</h2>
+<p>Este é o único dever de casa obrigatório do livro, porque tudo daqui em diante depende dele:</p>
+<ol>
+<li><strong>(10 min)</strong> Copie o template do Manual do Funcionário para o Google Docs e preencha. Não busque perfeição — preencha o que souber de cabeça. Preços e FAQ você completa amanhã.</li>
+<li><strong>(3 min)</strong> Abra sua IA, cole o Manual e mande: <code>Com base neste manual, que informações importantes sobre o negócio ainda estão faltando ou vagas? Liste até 5 perguntas.</code> — responda as perguntas dela e atualize o Manual. (Sim: a IA ajudando a melhorar o documento que alimenta a própria IA. Bem-vindo ao truque mais útil deste livro.)</li>
+<li><strong>(2 min)</strong> Teste: na mesma conversa, peça <code>Escreva a mensagem de saudação do meu WhatsApp Business</code>. Compare com o que você usa hoje.</li>
+</ol>
+<p>Se a saudação que saiu te deu vontade de usar — e costuma dar —, você acabou de sentir o que esse livro promete: o seu contexto + a redação da IA + a sua aprovação final.</p>
+<p>Agora sim. Vamos contratar o primeiro funcionário.</p>
+</section>
+<section class="chapter" id="cap-4">
+<h1>Capítulo 4 — Funcionário nº 1: O Atendente Digital (WhatsApp e Instagram)</h1>
+<p>Chegou a hora de colocar a mão na massa. Você já conheceu as ferramentas (capítulo 2) e já montou seu Manual do Funcionário com a estrutura P-C-T-F-E (capítulo 3). Agora vamos contratar o primeiro funcionário digital do seu negócio: o Atendente.</p>
+<p>Por que começar por ele? Porque atendimento é onde a maioria dos pequenos negócios sangra tempo todos os dias. É a mesma pergunta de preço respondida 14 vezes, o "qual o horário de funcionamento?" às 22h de domingo, o cliente que some porque você demorou 3 horas para responder. O Atendente Digital resolve boa parte disso — sem mensalidade, sem programação, usando o celular que já está na sua mão.</p>
+<p>Uma coisa antes de começar: este capítulo monta um atendimento <strong>semi-automático</strong>. A IA escreve, o aplicativo dispara as mensagens básicas, e <strong>você</strong> revisa e envia o resto. Lá no final do capítulo eu explico, com honestidade, por que essa é a forma certa de começar — e por que os "robôs que respondem sozinhos no WhatsApp" que você vê por aí podem custar caro.</p>
+<h2>O que esse funcionário faz</h2>
+<p>O Atendente Digital é a combinação de duas coisas:</p>
+<ol>
+<li><strong>Os recursos nativos do WhatsApp Business</strong> (saudação automática, mensagem de ausência e respostas rápidas) — que disparam sozinhos ou com dois toques.</li>
+<li><strong>A IA como redatora</strong> — ela escreve todas essas mensagens no tom do seu negócio, monta seu FAQ, rascunha respostas difíceis e padroniza seu Direct do Instagram.</li>
+</ol>
+<p>Na prática, ele faz:</p>
+<ul>
+<li><strong>Recepciona todo mundo na hora.</strong> Cliente manda mensagem às 23h? Recebe uma saudação profissional em segundos, mesmo com você dormindo.</li>
+<li><strong>Responde as perguntas repetidas em 2 toques.</strong> Preço, horário, endereço, formas de pagamento, prazo de entrega — tudo vira resposta rápida com atalho de barra (/).</li>
+<li><strong>Mantém um FAQ blindado.</strong> As 20 perguntas que seus clientes mais fazem, com respostas escritas pela IA, revisadas por você e prontas para copiar e colar.</li>
+<li><strong>Faz triagem.</strong> Ajuda você a separar quem está só curioso de quem está pronto para comprar — e a responder cada um do jeito certo.</li>
+<li><strong>Rascunha as respostas difíceis.</strong> Cliente bravo, reclamação injusta, pedido de reembolso: a IA escreve a primeira versão calma e profissional, você ajusta e envia.</li>
+<li><strong>Padroniza o Direct do Instagram.</strong> Para a pergunta de preço no Direct virar conversa no WhatsApp, onde a venda acontece.</li>
+</ul>
+<h3>O que ele NÃO faz</h3>
+<p>Seja realista desde o início, para não se frustrar depois:</p>
+<ul>
+<li><strong>Não conversa sozinho com o cliente.</strong> Fora a saudação e a mensagem de ausência (que são automáticas e genéricas de propósito), quem envia as mensagens é você. A IA escreve, você aprova.</li>
+<li><strong>Não confirma preço, prazo ou agenda por conta própria.</strong> Nunca. IA inventa informação com a maior cara de pau do mundo — isso tem nome, alucinação, e já falamos disso. Preço e prazo saem do seu Manual do Funcionário e passam pelos seus olhos antes de chegar ao cliente.</li>
+<li><strong>Não substitui o seu jeito.</strong> Cliente de pequeno negócio compra de gente. O Atendente Digital tira o peso do repetitivo para sobrar mais de você nas conversas que importam.</li>
+<li><strong>Não fecha venda.</strong> Ele abre a porta e organiza a fila. Vender é trabalho do Funcionário nº 2, no próximo capítulo.</li>
+</ul>
+<h2>O que você precisa</h2>
+<p>Tudo deste capítulo funciona no plano grátis. Custo total: <strong>R$ 0</strong>.</p>
+<table><thead><tr><th>Ferramenta</th><th>Para quê</th><th>Custo</th></tr></thead><tbody><tr><td>WhatsApp Business (app)</td><td>Saudação, ausência, respostas rápidas, etiquetas</td><td>Grátis</td></tr><tr><td>ChatGPT, Claude ou Gemini (versão grátis)</td><td>Escrever todas as mensagens</td><td>Grátis</td></tr><tr><td>Seu Manual do Funcionário (capítulo 3)</td><td>Dar contexto real à IA</td><td>Já está pronto</td></tr><tr><td>Bloco de notas do celular ou Google Sheets</td><td>Guardar o FAQ blindado</td><td>Grátis</td></tr><tr><td>Instagram (conta comercial)</td><td>Respostas salvas no Direct</td><td>Grátis</td></tr></tbody></table>
+<p><strong>Importante:</strong> o WhatsApp Business é um aplicativo separado do WhatsApp comum, feito pela própria Meta, gratuito. Se você ainda usa o WhatsApp pessoal para atender clientes, a migração leva uns 10 minutos e mantém suas conversas (o app oferece importar os dados na instalação). Dá para usar o mesmo número de sempre ou um número só para o negócio — se puder, prefira um número separado; sua vida pessoal agradece.</p>
+<p>Tempo de montagem total: <strong>1h30 a 2h</strong>, divididas em etapas curtas. Dá para fazer tudo no celular, num domingo à tarde.</p>
+<h2>Montagem passo a passo</h2>
+<p>Vamos montar em 7 etapas. Antes de qualquer prompt deste capítulo, lembre da regra de ouro do capítulo 3: <strong>cole seu Manual do Funcionário no início da conversa com a IA.</strong> Sem o Manual, a IA escreve mensagem genérica de qualquer negócio. Com o Manual, ela escreve mensagem do <em>seu</em> negócio.</p>
+<h3>Etapa 1 — Instale e configure o perfil do WhatsApp Business (15 min)</h3>
+<ol>
+<li>Baixe o <strong>WhatsApp Business</strong> na Play Store ou App Store (ícone verde com um "B").</li>
+<li>Abra, confirme seu número e, se for o mesmo número do WhatsApp comum, aceite <strong>importar suas conversas</strong> quando o app oferecer.</li>
+<li>Toque em <strong>Configurações</strong> (no Android: três pontinhos no canto superior direito → Configurações; no iPhone: aba "Config." no canto inferior direito).</li>
+<li>Toque em <strong>Ferramentas comerciais</strong> → <strong>Perfil comercial</strong>.</li>
+<li>Preencha tudo: nome do negócio, categoria, descrição curta, endereço (se atende presencialmente), horário de funcionamento, e-mail e site ou link do Instagram.</li>
+</ol>
+<p>Não pule o perfil. É a primeira coisa que o cliente novo olha para decidir se você é confiável.</p>
+<h3>Etapa 2 — Mensagem de saudação (15 min)</h3>
+<p>A saudação é enviada automaticamente para quem fala com você pela primeira vez (ou depois de 14 dias sem conversa).</p>
+<ol>
+<li><strong>Configurações → Ferramentas comerciais → Mensagem de saudação.</strong></li>
+<li>Ative <strong>"Enviar mensagem de saudação"</strong>.</li>
+<li>Toque na mensagem para editar.</li>
+<li>Em "Destinatários", escolha <strong>"Todos"</strong> (ou "Todos, exceto..." se quiser excluir contatos pessoais).</li>
+</ol>
+<p>Mas não escreva a mensagem aí dentro. Abra sua IA, cole o Manual do Funcionário e use o Prompt 1 da seção "Prompts prontos". Escolha a melhor das opções que ela gerar, ajuste uma palavra ou outra para soar como você, e aí sim cole no app.</p>
+<p>Uma boa saudação tem 3 ingredientes: boas-vindas com nome do negócio, uma informação útil (horário de resposta, por exemplo) e <strong>uma pergunta</strong> que já avança a conversa ("me conta o que você procura?").</p>
+<h3>Etapa 3 — Mensagem de ausência (10 min)</h3>
+<p>A mensagem de ausência responde automaticamente fora do horário que você definir.</p>
+<ol>
+<li><strong>Configurações → Ferramentas comerciais → Mensagem de ausência.</strong></li>
+<li>Ative <strong>"Enviar mensagem de ausência"</strong>.</li>
+<li>Em "Horário", escolha <strong>"Horário personalizado"</strong> e configure seu fora-de-expediente (ex.: seg a sáb, 19h às 8h, e domingo o dia todo).</li>
+<li>Edite a mensagem — de novo, gerada pela IA com o Prompt 2.</li>
+</ol>
+<p>A ausência bem escrita evita o cliente irritado por "vácuo": ela diz quando você responde e, se fizer sentido, já adianta uma informação (link do catálogo, endereço, horário de funcionamento).</p>
+<h3>Etapa 4 — Respostas rápidas com "/" (20 min)</h3>
+<p>Aqui mora a maior economia de tempo do capítulo. Respostas rápidas são mensagens salvas que você dispara digitando <strong>/</strong> + um atalho. O WhatsApp Business aceita até 50.</p>
+<ol>
+<li><strong>Configurações → Ferramentas comerciais → Respostas rápidas.</strong></li>
+<li>Toque no <strong>+</strong> para criar.</li>
+<li>Em <strong>"Mensagem"</strong>, cole o texto (gerado pela IA, revisado por você).</li>
+<li>Em <strong>"Atalho"</strong>, escolha uma palavra curta e fácil de lembrar: <code>/precos</code>, <code>/horario</code>, <code>/endereco</code>, <code>/pix</code>, <code>/entrega</code>, <code>/agenda</code>.</li>
+<li>Salve. Repita para cada resposta.</li>
+</ol>
+<p>Na conversa com o cliente, digite <strong>/</strong> e a lista aparece. Toque na resposta, ela entra no campo de texto, <strong>você pode editar antes de enviar</strong> (esse detalhe é ouro: dá para personalizar com o nome do cliente em 3 segundos), e envia.</p>
+<p>Comece com estas 10 respostas rápidas básicas — a IA gera todas de uma vez com o Prompt 3:</p>
+<p><code>/precos</code>, <code>/horario</code>, <code>/endereco</code>, <code>/pagamento</code>, <code>/entrega</code> (ou <code>/agenda</code>, se você atende com hora marcada), <code>/obrigado</code> (pós-venda), <code>/aguarde</code> ("já te respondo em instantes"), <code>/catalogo</code>, <code>/garantia</code> (ou política de troca) e <code>/indicacao</code> (resposta para quem chegou por indicação).</p>
+<h3>Etapa 5 — O FAQ blindado: as 20 perguntas (30 min)</h3>
+<p>As respostas rápidas cobrem o básico. O <strong>FAQ blindado</strong> cobre o resto: as 20 perguntas que seus clientes mais fazem, com respostas prontas, revisadas e guardadas num documento que você consulta em segundos.</p>
+<p>Por que "blindado"? Porque cada resposta passou por três filtros: a IA escreveu com base no seu Manual, <strong>você conferiu cada preço, prazo e política contra a realidade</strong>, e você testou o tom. Depois disso, não tem mais "deixa eu ver e te falo" — é copiar, ajustar o nome, enviar.</p>
+<ol>
+<li>Pegue seu celular e percorra as últimas 30 conversas com clientes. Anote toda pergunta que apareceu mais de uma vez. A doceira vai achar "faz bolo sem lactose?"; o eletricista, "você dá orçamento sem compromisso?"; a clínica, "aceita convênio?"; a loja de roupas, "tem troca se não servir?".</li>
+<li>Se não chegar a 20, use o Prompt 4 — a IA sugere as perguntas típicas do seu ramo e você completa a lista.</li>
+<li>Rode o Prompt 4 completo (com o Manual colado antes) para gerar as 20 respostas.</li>
+<li><strong>Revise uma por uma.</strong> Qualquer preço, prazo, marca ou política: confira. Se a IA escreveu algo que você não tem certeza, corte ou corrija.</li>
+<li>Salve no bloco de notas do celular (fixado no topo) ou numa aba do Google Sheets chamada "FAQ". As 8 ou 10 mais usadas, transforme em respostas rápidas no app (Etapa 4).</li>
+</ol>
+<h3>Etapa 6 — Triagem: curioso ou comprador? (15 min)</h3>
+<p>Nem toda mensagem merece a mesma energia. A triagem separa:</p>
+<ul>
+<li><strong>Curioso:</strong> pergunta vaga ("quanto custa?", "como funciona?"), sem contexto, sem urgência. Merece resposta cordial + uma pergunta de qualificação. Custo para você: 30 segundos com resposta rápida.</li>
+<li><strong>Comprador:</strong> dá detalhes ("preciso de um bolo para 30 pessoas sábado que vem", "minha tomada está soltando faísca"), pergunta sobre disponibilidade, prazo ou pagamento. Merece resposta personalizada, rápida e com próximo passo claro.</li>
+</ul>
+<p>A ferramenta de triagem é uma <strong>pergunta de avanço</strong> no fim de cada resposta. Quem responde a pergunta com detalhes é comprador; quem some ou enrola, era curioso — sem problema, a resposta rápida custou quase nada do seu tempo.</p>
+<p>Use o Prompt 5 para gerar suas perguntas de avanço, e as <strong>etiquetas</strong> do WhatsApp Business para organizar (Configurações → Ferramentas comerciais → Etiquetas): crie "Novo contato", "Orçamento enviado", "Cliente" e "Frio". Para etiquetar, abra a conversa, toque no nome do contato → Etiquetas (ou segure a conversa na lista e toque no ícone de etiqueta). Isso vai alimentar o funil do capítulo 5.</p>
+<h3>Etapa 7 — Direct do Instagram (15 min)</h3>
+<p>O Instagram é vitrine; o WhatsApp é balcão. O objetivo do Direct é responder bem e, quando houver interesse real, <strong>trazer a conversa para o WhatsApp</strong>, onde você tem respostas rápidas, etiquetas e histórico organizado.</p>
+<p>Se você tem conta profissional, o Instagram também tem respostas salvas: <strong>Configurações → Ferramentas comerciais e controles → Respostas salvas</strong> (o caminho pode variar um pouco conforme a versão do app; procure por "Respostas salvas"). Crie ao menos 3: preço/catálogo, como comprar/agendar, e localização — todas gerada pela IA com o Prompt 6, todas terminando com o convite para o WhatsApp com seu link <code>wa.me/55SEUNUMERO</code> (esse link abre uma conversa direto com você; troque pelos seus dígitos com DDD).</p>
+<h2>Prompts prontos</h2>
+<p>Regra que vale para todos os prompts abaixo: <strong>cole seu Manual do Funcionário antes do prompt, na mesma mensagem.</strong> Os prompts seguem a estrutura P-C-T-F-E do capítulo 3. Substitua tudo que estiver entre [COLCHETES].</p>
+<h3>Prompt 1 — Mensagem de saudação</h3>
+<p><strong>Quando usar:</strong> na Etapa 2, uma vez, e sempre que quiser renovar a recepção.</p>
+<pre><code>Você é meu assistente de atendimento ao cliente. Acima está o Manual do
+Funcionário do meu negócio — use apenas as informações que estão nele.
+
+TAREFA: escreva 3 opções de mensagem de saudação automática para o
+WhatsApp Business do meu negócio. Essa mensagem é enviada para quem
+entra em contato pela primeira vez.
+
+REGRAS:
+- Máximo de 4 linhas cada
+- Tom: [SEU TOM: ex. simpático e direto / acolhedor / descontraído]
+- Incluir o nome do negócio
+- Informar que respondo pessoalmente em até [TEMPO REAL DE RESPOSTA]
+- Terminar com UMA pergunta que ajude o cliente a dizer o que precisa
+- Não prometer nada que não está no Manual
+- Português do Brasil, sem formalidade excessiva, no máximo 1 emoji
+
+FORMATO: as 3 opções numeradas, prontas para copiar.</code></pre>
+<h3>Prompt 2 — Mensagem de ausência</h3>
+<p><strong>Quando usar:</strong> na Etapa 3, uma vez por configuração de horário.</p>
+<pre><code>Com base no Manual do Funcionário acima, escreva 3 opções de mensagem
+de ausência automática para o WhatsApp Business.
+
+CONTEXTO: ela é enviada quando o cliente escreve fora do meu horário
+de atendimento, que é [SEU HORÁRIO REAL, ex.: seg a sex 9h-18h,
+sáb 9h-13h].
+
+REGRAS:
+- Máximo de 4 linhas
+- Dizer claramente QUANDO o cliente terá resposta
+- Oferecer uma informação útil enquanto espera: [ex.: link do
+  catálogo / endereço / horário de funcionamento]
+- Tom educado e tranquilo, sem parecer robô nem pedir desculpas demais
+- Não prometer resposta imediata nem atendimento 24h
+
+FORMATO: 3 opções numeradas, prontas para copiar.</code></pre>
+<h3>Prompt 3 — Kit de 10 respostas rápidas</h3>
+<p><strong>Quando usar:</strong> na Etapa 4, para criar todas as respostas rápidas de uma vez.</p>
+<pre><code>Com base no Manual do Funcionário acima, escreva as 10 respostas
+rápidas abaixo para o WhatsApp Business do meu negócio:
+
+1. /precos — o que custa quanto (use SOMENTE os preços do Manual)
+2. /horario — horário de funcionamento
+3. /endereco — onde fico / região que atendo
+4. /pagamento — formas de pagamento aceitas
+5. /[ENTREGA OU AGENDA] — como funciona [entrega / agendamento]
+6. /obrigado — agradecimento pós-compra
+7. /aguarde — "estou finalizando um atendimento, já te respondo"
+8. /catalogo — apresentação do catálogo com link [SEU LINK]
+9. /garantia — política de [troca / garantia / cancelamento] do Manual
+10. /indicacao — boas-vindas a quem chegou por indicação de outro cliente
+
+REGRAS:
+- Cada resposta com no máximo 5 linhas
+- Tom do Manual, português do Brasil
+- Cada resposta termina com uma pergunta ou próximo passo, quando
+  fizer sentido
+- Se alguma informação não estiver no Manual, escreva [PREENCHER]
+  no lugar — NÃO invente
+
+FORMATO: lista com o atalho em negrito e a mensagem logo abaixo.</code></pre>
+<h3>Prompt 4 — FAQ blindado (20 perguntas e respostas)</h3>
+<p><strong>Quando usar:</strong> na Etapa 5, uma vez por trimestre ou quando mudar preço/política.</p>
+<pre><code>Você é meu assistente de atendimento. Use APENAS o Manual do
+Funcionário acima como fonte.
+
+TAREFA EM 2 PARTES:
+
+PARTE 1: liste as 20 perguntas mais prováveis que clientes de um(a)
+[SEU TIPO DE NEGÓCIO, ex.: petshop com banho e tosa] fazem pelo
+WhatsApp. Inclua estas que meus clientes já fazem:
+[COLE AQUI AS PERGUNTAS QUE VOCÊ ANOTOU DAS SUAS CONVERSAS]
+
+PARTE 2: responda cada uma das 20 com:
+- Máximo de 4 linhas por resposta
+- Tom do Manual
+- Dados (preço, prazo, política) SOMENTE se estiverem no Manual;
+  caso contrário, escreva [CONFIRMAR COM O DONO] no lugar do dado
+- Sem promessas de resultado, sem superlativo vazio ("o melhor da
+  cidade")
+
+FORMATO: numerado de 1 a 20, pergunta em negrito, resposta abaixo.</code></pre>
+<p>Repare no detalhe <code>[CONFIRMAR COM O DONO]</code>: você está dando à IA uma saída honesta para quando ela não sabe. Isso reduz (não elimina!) o risco de ela inventar.</p>
+<h3>Prompt 5 — Triagem: curioso vs. comprador</h3>
+<p><strong>Quando usar:</strong> na Etapa 6 e sempre que receber aquele "quanto custa?" seco.</p>
+<pre><code>Com base no Manual do Funcionário acima:
+
+CONTEXTO: recebo muitas mensagens vagas como "quanto custa?", "como
+funciona?", "tem disponível?". Preciso responder bem e, ao mesmo
+tempo, descobrir se a pessoa está pronta para comprar ou só
+pesquisando.
+
+TAREFA: para cada uma das 5 mensagens vagas abaixo, escreva uma
+resposta que (a) dê uma informação útil e verdadeira do Manual e
+(b) termine com UMA pergunta de avanço que revele a real intenção
+do cliente (prazo, quantidade, data, necessidade específica).
+
+MENSAGENS:
+1. "Oi, quanto custa?"
+2. "Como funciona?"
+3. "Vocês atendem [BAIRRO/REGIÃO]?"
+4. "Tem horário para essa semana?" (ou "Tem em estoque?")
+5. "Me passa mais informações?"
+
+REGRAS: máximo 4 linhas por resposta, tom do Manual, nunca pressionar,
+nunca inventar preço ou prazo.
+
+FORMATO: numerado, pronto para salvar como resposta rápida.</code></pre>
+<h3>Prompt 6 — Respostas salvas para o Direct do Instagram</h3>
+<p><strong>Quando usar:</strong> na Etapa 7.</p>
+<pre><code>Com base no Manual do Funcionário acima, escreva 3 respostas salvas
+para o Direct do Instagram do meu negócio:
+
+1. Resposta para quem pergunta PREÇO no Direct
+2. Resposta para quem pergunta COMO COMPRAR / COMO AGENDAR
+3. Resposta para quem pergunta ONDE FICA / SE ATENDE [REGIÃO]
+
+REGRAS:
+- Máximo de 3 linhas cada (Direct pede mensagem curta)
+- Tom do Manual, leve, com no máximo 1 emoji
+- TODAS terminam convidando para o WhatsApp com este link:
+  wa.me/[SEU NÚMERO COM DDD, SÓ DÍGITOS, ex.: 5511999998888]
+- A de preço pode dar uma faixa ("a partir de R$ [VALOR DO MANUAL]")
+  mas o valor exato fica para a conversa no WhatsApp
+
+FORMATO: 3 respostas numeradas, prontas para colar.</code></pre>
+<h3>Prompt 7 — Rascunho de resposta para reclamação difícil</h3>
+<p><strong>Quando usar:</strong> na hora H, quando chegar mensagem de cliente insatisfeito e seu sangue subir. <strong>Nunca responda cliente bravo no impulso — esse prompt existe exatamente para isso.</strong></p>
+<pre><code>Você é meu assistente de atendimento, especialista em resolver
+conflitos com clientes. Use o Manual do Funcionário acima (tom de
+voz e políticas).
+
+CONTEXTO: recebi esta reclamação de um cliente:
+"[COLE AQUI A MENSAGEM EXATA DO CLIENTE]"
+
+O que realmente aconteceu, do meu lado: [DESCREVA OS FATOS COM
+HONESTIDADE, ex.: o pedido atrasou 2 dias porque meu fornecedor
+falhou / o cliente entendeu errado o combinado / eu errei mesmo]
+
+TAREFA: escreva 2 opções de resposta que:
+- Reconheçam o sentimento do cliente sem se humilhar nem se defender
+  demais
+- Sejam honestas sobre o que aconteceu
+- Ofereçam um próximo passo concreto baseado na minha política:
+  [SUA POLÍTICA REAL, ex.: refazer o serviço / trocar o produto /
+  devolver o valor — ou escreva "me sugira opções justas"]
+- Tenham no máximo 6 linhas, tom calmo e profissional
+- NÃO prometam nada além do que eu listei acima
+
+FORMATO: opção A (mais formal) e opção B (mais próxima e calorosa).</code></pre>
+<p>Leia o rascunho, respire, ajuste e só então envie. A IA aqui funciona como aquele sócio calmo que segura seu braço antes de você digitar besteira.</p>
+<h2>Teste de qualidade</h2>
+<p>Nada vai ao cliente real sem passar pelo teste. Reserve 20 minutos:</p>
+<p><strong>Teste 1 — O cliente-cobaia.</strong> Peça para um amigo ou familiar mandar mensagem para o seu número como se fosse cliente novo. Ele deve: chegar pela primeira vez (para disparar a saudação), perguntar preço, perguntar algo do FAQ e fazer uma pergunta fora do script. Veja como a experiência flui de fora.</p>
+<p><strong>Teste 2 — A madrugada simulada.</strong> Mande mensagem para você mesmo (ou peça ao cobaia) fora do horário configurado e confira se a mensagem de ausência dispara com o texto certo.</p>
+<p><strong>Teste 3 — A barra.</strong> Abra qualquer conversa, digite <strong>/</strong> e confira se todas as respostas rápidas aparecem e se os atalhos fazem sentido na sua cabeça sem consultar nada.</p>
+<p><strong>Checklist final — só libere o Atendente quando marcar tudo:</strong></p>
+<ul>
+<li><span class="cb">☐</span> Saudação dispara para contato novo e tem pergunta de avanço no final</li>
+<li><span class="cb">☐</span> Mensagem de ausência dispara no horário certo e diz quando você responde</li>
+<li><span class="cb">☐</span> Todas as respostas rápidas testadas, uma a uma, enviadas para você mesmo</li>
+<li><span class="cb">☐</span> <strong>Todos os preços, prazos e políticas do FAQ conferidos contra a realidade</strong> (não contra a memória — abra a tabela de preços e confira)</li>
+<li><span class="cb">☐</span> Nenhuma resposta promete o que você não cumpre (resposta imediata, atendimento 24h, resultado garantido)</li>
+<li><span class="cb">☐</span> Nenhum <code>[PREENCHER]</code> ou <code>[CONFIRMAR COM O DONO]</code> esquecido no meio de um texto</li>
+<li><span class="cb">☐</span> Tom das mensagens lido em voz alta: soa como você falaria?</li>
+<li><span class="cb">☐</span> Link do <code>wa.me</code> testado: abre a conversa certa?</li>
+<li><span class="cb">☐</span> Etiquetas criadas (Novo contato, Orçamento enviado, Cliente, Frio)</li>
+<li><span class="cb">☐</span> FAQ blindado salvo em lugar de acesso rápido (nota fixada ou planilha)</li>
+</ul>
+<p>Repita a conferência de preços e prazos <strong>toda vez que algo mudar</strong> no negócio. FAQ desatualizado é pior que FAQ nenhum.</p>
+<h2>Erros comuns</h2>
+<p><strong>Erro 1 — Colar a resposta da IA sem ler.</strong> É o erro número 1, e o mais perigoso. A IA escreve bonito, e texto bonito engana. Um dia ela escreve que "a entrega leva 2 dias úteis" quando você nunca disse isso, e o cliente cobra. <strong>Correção:</strong> regra inegociável — leu, conferiu dado por dado, depois enviou. Para mensagens do FAQ blindado já revisadas, a leitura é rápida; para texto novo, é leitura atenta.</p>
+<p><strong>Erro 2 — Deixar a IA "completar" preço ou prazo.</strong> Você pergunta "quanto cobro pela progressiva?" e a IA responde com um número confiante e inventado. <strong>Correção:</strong> preço e prazo só existem no seu Manual do Funcionário. Se não está lá, a resposta certa da IA é <code>[CONFIRMAR COM O DONO]</code> — e os prompts deste capítulo já pedem isso. Se ela inventar mesmo assim, corte.</p>
+<p><strong>Erro 3 — Mensagens com cara de robô.</strong> Textão de 12 linhas, "Prezado cliente", três emojis por frase, "Estamos à disposição para quaisquer eventualidades". Cliente de WhatsApp quer conversa, não ofício. <strong>Correção:</strong> limite de 4-5 linhas nos prompts (já está lá), tom do Manual, e o teste de ler em voz alta. Se você não falaria daquele jeito no balcão, reescreva.</p>
+<p><strong>Erro 4 — Esquecer o Manual do Funcionário antes do prompt.</strong> Sem o Manual, a IA gera a saudação genérica que outros 50 mil negócios estão usando. <strong>Correção:</strong> Manual primeiro, prompt depois, sempre na mesma conversa. Se a conversa ficou longa e a IA começou a "esquecer" detalhes, abra uma conversa nova e cole o Manual de novo.</p>
+<p><strong>Erro 5 — Instalar "robô de WhatsApp grátis" de procedência duvidosa.</strong> Esse erro pode custar seu número. A seção a seguir explica em detalhe. <strong>Correção:</strong> por enquanto, só recursos oficiais do app + IA como redatora.</p>
+<p><strong>Erro 6 — Configurar tudo e abandonar.</strong> O Atendente Digital não é tatuagem, é planta: precisa de rega. Preço mudou e o <code>/precos</code> ficou velho; pergunta nova virou frequente e não entrou no FAQ. <strong>Correção:</strong> agende 15 minutos por mês ("manutenção do Atendente") para atualizar respostas rápidas e FAQ. Coloque na agenda com alarme, senão não acontece.</p>
+<p><strong>Erro 7 — Responder reclamação no calor do momento.</strong> Você lê a reclamação injusta, o dedo coça, e a resposta atravessada vira print circulando no bairro. <strong>Correção:</strong> reclamação difícil nunca é respondida em menos de 10 minutos. Prompt 7, rascunho, respiração, ajuste, envio.</p>
+<h2>E os robôs que respondem sozinhos?</h2>
+<p>Pergunta inevitável: <em>"Mas e aqueles atendentes automáticos que respondem tudo sozinhos no WhatsApp? Não era melhor já montar um desses?"</em></p>
+<p>Resposta honesta, em três partes:</p>
+<p><strong>1. Automação total de WhatsApp, do jeito certo, usa a API oficial — e ela é paga.</strong> A Meta oferece a chamada API do WhatsApp Business (WhatsApp Business Platform), que é o caminho oficial para sistemas responderem mensagens automaticamente. Ela é acessada por meio de provedores e plataformas de atendimento, que cobram por isso (mensalidade da plataforma e/ou custo por conversa). É uma estrutura ótima — para quando seu volume de mensagens justificar o custo e a complexidade. Não é por onde se começa.</p>
+<p><strong>2. As ferramentas "grátis" que automatizam o app comum podem custar seu número.</strong> Existem ferramentas não-oficiais que se conectam ao WhatsApp de formas que violam os termos de uso da plataforma para simular um robô respondendo. O risco é real e está nos próprios termos do WhatsApp: número usado com automação não autorizada pode ser <strong>banido</strong> — e banimento de WhatsApp comercial significa perder, da noite para o dia, o canal por onde seus clientes te acham, seu histórico e seus grupos. Para um pequeno negócio, é amputação. Nenhuma economia de mensalidade vale esse risco.</p>
+<p><strong>3. O robô que responde sozinho também erra sozinho.</strong> Mesmo nas plataformas oficiais, um robô com IA respondendo sem supervisão pode confirmar um preço errado, prometer um prazo impossível ou tratar mal um cliente sensível — e você só descobre depois. Lembra da regra deste livro? <em>Nunca deixar a IA confirmar preço ou prazo sozinha.</em> Automação total exige fluxos bem desenhados, testes e acompanhamento. Isso é projeto para um negócio mais maduro nessa jornada, não para a primeira semana.</p>
+<p><strong>O caminho que recomendo:</strong> comece <strong>semi-automático</strong>, exatamente como este capítulo montou — o app dispara saudação e ausência (automação oficial e segura), a IA escreve tudo, e você cola, ajusta e envia. Quando seu volume de mensagens crescer a ponto de o semi-automático não dar conta — e você vai sentir isso claramente no dia a dia — aí sim pesquise plataformas que usam a <strong>API oficial</strong>, compare preços e migre com segurança. Automatizar é uma evolução, não um ponto de partida.</p>
+<h2>Quanto tempo isso economiza</h2>
+<p>Vamos fazer a conta com números modestos, do jeito honesto. Pegue um negócio pequeno que recebe <strong>15 mensagens por dia</strong> no WhatsApp, 6 dias por semana — uma manicure com agenda cheia, um petshop de bairro, uma loja de roupas no Instagram.</p>
+<p><strong>Antes do Atendente Digital:</strong></p>
+<ul>
+<li>Em média, 9 dessas 15 mensagens são repetidas (preço, horário, endereço, pagamento, "como funciona"). Digitar cada resposta do zero, no meio de outra tarefa: ~3 minutos cada (incluindo o custo de largar o que estava fazendo) → <strong>27 min/dia</strong>.</li>
+<li>2 mensagens por dia chegam fora do horário e geram cliente esfriado ou retrabalho no dia seguinte: ~5 min/dia de remendo → <strong>5 min/dia</strong>.</li>
+<li>1 reclamação ou conversa delicada por semana, respondida no sofrimento, com rascunho mental de meia hora → <strong>~6 min/dia</strong> na média.</li>
+</ul>
+<p>Total: <strong>~38 minutos por dia</strong>, ou <strong>3,8 horas por semana</strong> (38 min × 6 dias = 228 min).</p>
+<p><strong>Depois do Atendente Digital:</strong></p>
+<ul>
+<li>As 9 repetidas viram resposta rápida: ~30 segundos cada (achar o atalho, personalizar o nome, enviar) → <strong>4,5 min/dia</strong>.</li>
+<li>Fora do horário, a mensagem de ausência segura o cliente sozinha → <strong>~0 min</strong>.</li>
+<li>A conversa delicada com o Prompt 7 cai para ~10 min por semana → <strong>~2 min/dia</strong>.</li>
+</ul>
+<p>Total: <strong>~7 minutos por dia</strong>, ou <strong>0,7 hora por semana</strong>.</p>
+<p><strong>Economia honesta: em torno de 3 horas por semana</strong> — umas 12 horas por mês. Se você recebe mais mensagens que isso, a economia cresce junto; se recebe menos, encolhe. E há um ganho que não entra na conta de minutos: <strong>velocidade de resposta</strong>. Cliente que pergunta e recebe resposta boa em 1 minuto compra mais do que cliente que espera 3 horas — qualquer pessoa que vende pelo WhatsApp sabe disso na pele, mesmo sem precisar de estatística para provar.</p>
+<p>Essas 3 horas não são para você trabalhar menos (embora possa, e tudo bem). São para o próximo capítulo: porque enquanto o Atendente segura a portaria, o <strong>Funcionário nº 2 — o Vendedor</strong> — vai atrás do dinheiro que hoje está escapando pelo ralo mais caro do pequeno negócio: o orçamento enviado que nunca recebeu um follow-up.</p>
+<p>Vira a página.</p>
+</section>
+<section class="chapter" id="cap-5">
+<h1>Capítulo 5 — Funcionário nº 2: O Vendedor (propostas e follow-up)</h1>
+<p>Existe um dinheiro que quase todo pequeno negócio perde todo mês, e que não aparece em relatório nenhum: o orçamento que você enviou e <strong>nunca mais tocou no assunto</strong>.</p>
+<p>O cliente pediu o preço. Você respondeu — às vezes com capricho, calculando tudo. Ele disse "vou ver e te falo". E aí... silêncio. Você não cobrou resposta porque "não quero ser chato". Ele não respondeu porque a vida dele é corrida igual à sua. A venda não morreu de "não" — morreu de esquecimento.</p>
+<p>O Funcionário nº 2 existe para acabar com isso. Ele não inventa cliente novo: ele <strong>para de desperdiçar os que você já atraiu</strong>. Por isso costuma ser o funcionário com retorno mais rápido do livro inteiro.</p>
+<h2>O que esse funcionário faz</h2>
+<ul>
+<li><strong>Qualifica</strong> quem chega: separa o curioso do comprador com 3 perguntas, para você investir seu tempo em quem decide.</li>
+<li><strong>Monta orçamentos e propostas profissionais em minutos</strong>, no formato que cliente de WhatsApp realmente lê.</li>
+<li><strong>Executa a sequência de follow-up</strong> D+1, D+3, D+7, D+15 — com mensagens prontas, educadas, no seu tom, que não parecem cobrança.</li>
+<li><strong>Ressuscita orçamentos antigos</strong>: aquela lista de gente que pediu preço nos últimos meses e sumiu vira uma campanha de reativação.</li>
+<li><strong>Responde objeções</strong> ("tá caro", "vou pensar", "depois te chamo") com respostas pensadas com calma, em vez do improviso no susto.</li>
+<li><strong>Registra o funil</strong> numa planilha simples, para você saber quantos orçamentos estão abertos e quanto dinheiro está "parado na mesa".</li>
+</ul>
+<h3>O que ele NÃO faz</h3>
+<ul>
+<li><strong>Não envia mensagem sozinho.</strong> Como tudo neste livro: a IA escreve, você revisa e envia. (No capítulo 9 falo de quando vale automatizar de verdade.)</li>
+<li><strong>Não transforma produto ruim em venda.</strong> Follow-up multiplica o que já funciona; não conserta oferta que ninguém quer.</li>
+<li><strong>Não pressiona cliente.</strong> A sequência que você vai montar é de <em>lembrete útil</em>, não de insistência. Cliente pressionado some para sempre; cliente lembrado com educação agradece.</li>
+<li><strong>Não decide preço nem desconto.</strong> Limites são seus, definidos no Manual do Funcionário. A IA trabalha dentro deles.</li>
+</ul>
+<h2>O que você precisa</h2>
+<table><thead><tr><th>Ferramenta</th><th>Para quê</th><th>Custo</th></tr></thead><tbody><tr><td>ChatGPT, Claude ou Gemini (grátis)</td><td>Escrever propostas, follow-ups e respostas a objeções</td><td>Grátis</td></tr><tr><td>Seu Manual do Funcionário (cap. 3)</td><td>Preços, políticas e tom</td><td>Pronto</td></tr><tr><td>Google Sheets</td><td>Planilha de funil</td><td>Grátis</td></tr><tr><td>WhatsApp Business (cap. 4)</td><td>Respostas rápidas com as mensagens de follow-up</td><td>Grátis</td></tr></tbody></table>
+<p>Custo total: <strong>R$ 0</strong>. Tempo de montagem: <strong>1h a 1h30</strong> — e depois a operação semanal cabe em 30 minutos (segunda-feira, como você verá no capítulo 9).</p>
+<h2>Montagem passo a passo</h2>
+<h3>Etapa 1 — As 3 perguntas de qualificação (15 min)</h3>
+<p>Nem toda pergunta de preço merece um orçamento completo. Antes de calcular qualquer coisa, você precisa de três informações — elas mudam conforme o ramo, mas o esqueleto é sempre: <strong>o quê, quando e referência de tamanho/orçamento.</strong></p>
+<p>Cole seu Manual na IA e peça:</p>
+<pre><code>Crie as 3 perguntas de qualificação ideais para o meu negócio — as que
+eu deveria fazer SEMPRE antes de montar um orçamento. Critérios:
+1. Cada pergunta deve mudar o valor ou a viabilidade do orçamento.
+2. Linguagem de WhatsApp, simpática, uma linha cada.
+3. Me explique em 1 frase por que cada pergunta importa.
+Depois, junte as 3 numa única mensagem natural (sem parecer
+formulário), que eu possa salvar como resposta rápida.</code></pre>
+<p>Salve o resultado no WhatsApp Business como resposta rápida <code>/qualificar</code>. A partir de hoje, pergunta de preço vaga recebe <code>/qualificar</code> — e você só monta orçamento com as respostas em mãos.</p>
+<p><strong>Bônus da etapa:</strong> as respostas já te dizem a temperatura. Quem responde as 3 perguntas em seguida está comprando. Quem some na primeira, era curioso — e você não gastou 40 minutos calculando nada.</p>
+<h3>Etapa 2 — O template de orçamento que fecha (20 min)</h3>
+<p>Esqueça o PDF de 3 páginas com logotipo gigante (a não ser que seu ramo exija — serviços B2B, por exemplo). Para a maioria dos pequenos negócios, <strong>o orçamento que fecha é o que chega como mensagem clara no WhatsApp</strong>, com estes blocos:</p>
+<ol>
+<li>Saudação curta usando o nome do cliente</li>
+<li>Resumo do que foi pedido (mostra que você ouviu)</li>
+<li>O que está incluído (em lista)</li>
+<li><strong>Valor total em destaque</strong> (e condições: sinal, parcelas)</li>
+<li>Prazo de entrega/execução</li>
+<li>Validade do orçamento (7 dias — motivo real: seus custos mudam)</li>
+<li>Fechamento com pergunta que avança ("posso reservar sua data?")</li>
+</ol>
+<p>Monte o seu uma única vez:</p>
+<pre><code>Crie meu template padrão de orçamento em formato de mensagem de
+WhatsApp, seguindo esta estrutura: saudação com [NOME DO CLIENTE],
+resumo do pedido, lista do que está incluído, valor total em destaque,
+condições de pagamento conforme meu manual, prazo, validade de 7 dias
+e fechamento com uma pergunta que convida a fechar.
+Deixe entre [COLCHETES] tudo que eu preencho a cada orçamento.
+Tom: profissional e caloroso, sem "prezado", sem juridiquês.</code></pre>
+<p>Guarde na sua Biblioteca de Prompts. Nos próximos orçamentos, é só colar o template + os dados do pedido e pedir para a IA preencher — <strong>revisando o valor com seus próprios olhos antes de enviar.</strong> (Regra de ouro: número que vai para cliente, você confere. Sempre.)</p>
+<h3>Etapa 3 — A sequência de follow-up D+1, D+3, D+7, D+15 (25 min)</h3>
+<p>Aqui está o coração do Vendedor. Quatro mensagens, cada uma com um papel diferente — <strong>nenhuma delas é "e aí, vai fechar?"</strong>:</p>
+<table><thead><tr><th>Quando</th><th>Papel da mensagem</th><th>Tom</th></tr></thead><tbody><tr><td><strong>D+1</strong> (1 dia depois do orçamento)</td><td>Disponibilidade: "qualquer dúvida sobre o orçamento, estou aqui"</td><td>Leve, serviço</td></tr><tr><td><strong>D+3</strong></td><td>Valor: acrescenta uma informação útil (um detalhe do serviço, uma foto de trabalho recente, uma opção alternativa)</td><td>Útil, sem cobrar</td></tr><tr><td><strong>D+7</strong></td><td>Direta e gentil: pergunta se faz sentido continuar a conversa, abre porta para o "não"</td><td>Honesta</td></tr><tr><td><strong>D+15</strong></td><td>Última: comunica que vai arquivar o orçamento, deixa porta aberta</td><td>Elegante, sem drama</td></tr></tbody></table>
+<p>Por que funciona: a maioria dos concorrentes não manda <strong>nem a primeira</strong>. Você, mandando quatro mensagens educadas e úteis, fecha os clientes que estavam só esperando um empurrão da vida corrida — e libera da sua cabeça os que não iam fechar mesmo.</p>
+<p>Gere as suas:</p>
+<pre><code>Crie minha sequência de follow-up de orçamento em 4 mensagens de
+WhatsApp:
+
+D+1: me coloco à disposição para dúvidas sobre o orçamento enviado
+ontem. Curta, leve, sem pressionar.
+
+D+3: agrego valor — sugira o que um negócio como o meu pode
+acrescentar de útil (ex: foto de trabalho recente, detalhe do que
+está incluído, opção mais em conta). Sem repetir o preço.
+
+D+7: pergunta honesta e gentil se a proposta faz sentido, deixando
+claro que um "não" também é uma resposta bem-vinda.
+
+D+15: aviso elegante de que vou arquivar o orçamento para manter
+minha agenda organizada, com porta aberta para retomar quando o
+cliente quiser.
+
+Regras: até 4 linhas cada; nada de "imperdível", "última chance" ou
+tom de cobrança; cada mensagem deve fazer sentido se for a única que
+o cliente ler. Use [NOME] e [SERVIÇO/PRODUTO] como variáveis.</code></pre>
+<p>Revise no seu tom e salve as quatro como respostas rápidas: <code>/f1</code>, <code>/f3</code>, <code>/f7</code>, <code>/f15</code>. A sequência inteira agora custa 8 toques por cliente.</p>
+<h3>Etapa 4 — A planilha de funil (20 min)</h3>
+<p>Sem registro, follow-up não existe — você não vai lembrar de cabeça quem está no D+3 e quem está no D+7. A planilha resolve com 6 colunas. Peça à IA:</p>
+<pre><code>Vou controlar meus orçamentos no Google Sheets. Monte a estrutura de
+uma planilha simples com estas colunas: Data do orçamento | Cliente |
+Telefone | O que pediu | Valor (R$) | Status | Próximo follow-up |
+Observações.
+
+Para a coluna Status, sugira uma lista suspensa com etapas que façam
+sentido (ex: Orçamento enviado, Follow-up 1, Follow-up 2, Fechou,
+Arquivado).
+
+Me explique passo a passo, como para iniciante, como criar a lista
+suspensa na coluna Status e como usar formatação condicional para
+pintar de verde a linha de quem fechou e de cinza os arquivados.
+Depois, me dê a fórmula para somar o valor total dos orçamentos
+ainda abertos, e me explique onde colar.</code></pre>
+<p>A última fórmula é a mais importante da planilha: ela mostra, em um número, <strong>quanto dinheiro está parado na sua mesa esperando follow-up</strong>. É o número que vai te fazer não pular a segunda-feira de vendas.</p>
+<h3>Etapa 5 — Ressuscitando a lista antiga (15 min + envios)</h3>
+<p>Agora a parte divertida: você provavelmente tem dezenas de orçamentos mortos no histórico do WhatsApp. Eles são sua primeira campanha.</p>
+<ol>
+<li>Role o histórico e liste na planilha todo mundo que pediu orçamento nos últimos 3–6 meses e não fechou (10 minutos, vale ouro).</li>
+<li>Gere a mensagem de reativação:</li>
+</ol>
+<pre><code>Escreva uma mensagem de reativação para clientes que pediram orçamento
+há mais de 1 mês e não responderam. Requisitos:
+- Não fingir intimidade nem cobrar a resposta antiga.
+- Retomar o assunto com naturalidade ("organizando minha agenda do
+  mês, lembrei do seu [SERVIÇO]...").
+- Incluir UMA novidade ou facilidade real que eu ofereça hoje
+  (me pergunte o que mudou por aqui antes de escrever, se precisar).
+- Terminar com pergunta simples de responder ("ainda faz sentido
+  pra você?").
+- Até 4 linhas. Me dê 3 variações.</code></pre>
+<ol>
+<li>Envie em lotes de 10–15 por dia (mensagem individual, nunca lista de transmissão para isso — reativação pede pessoalidade).</li>
+</ol>
+<p>Não se assuste com o resultado: é comum uma lista de 30 orçamentos mortos devolver 2 ou 3 vendas. São vendas que custaram <strong>zero real</strong> de anúncio — estavam só esquecidas.</p>
+<h3>Etapa 6 — A matriz de objeções (20 min)</h3>
+<p>Objeção respondida no improviso sai defensiva. Objeção respondida com preparo sai segura. As oito universais:</p>
+<ol>
+<li>"Tá caro" / "achei caro"</li>
+<li>"Vou pensar"</li>
+<li>"Preciso falar com meu marido/esposa/sócio"</li>
+<li>"Depois te chamo"</li>
+<li>"Vi mais barato em outro lugar"</li>
+<li>"Faz por menos?" (pedido de desconto direto)</li>
+<li>"Não é prioridade agora"</li>
+<li>Silêncio total (a objeção que ninguém verbaliza)</li>
+</ol>
+<pre><code>Com base no meu manual, monte minha matriz de objeções. Para cada uma
+das 8 objeções abaixo, escreva uma resposta de WhatsApp com até 4
+linhas que: valide o cliente sem concordar que está caro, reforce UM
+diferencial concreto meu, e termine com uma pergunta ou alternativa
+(ex: opção mais simples, condição de pagamento) — sem dar desconto
+além do limite do meu manual e sem desvalorizar concorrente.
+
+Objeções: [colar a lista acima]
+
+Formato: tabela com colunas Objeção | Resposta | Quando NÃO insistir.</code></pre>
+<p>A coluna "Quando NÃO insistir" importa: a matriz também ensina a soltar. Cliente que disse "não é prioridade" duas vezes vai para Arquivado com elegância — e entra na campanha de reativação dali a 3 meses.</p>
+<h2>Prompts prontos</h2>
+<p>Além dos prompts das etapas, estes seis cobrem o dia a dia (cole o Manual antes, sempre):</p>
+<p><strong>1. Orçamento expresso</strong> — <em>quando usar: cliente qualificado, pedido claro.</em></p>
+<pre><code>Preencha meu template de orçamento com estes dados: cliente [NOME],
+pedido: [DESCREVER], itens incluídos: [LISTAR], valor: R$ [VALOR],
+prazo: [PRAZO]. Confira se as condições de pagamento batem com meu
+manual. Me devolva pronto para enviar no WhatsApp.</code></pre>
+<p><strong>2. Proposta para cliente indeciso entre duas opções</strong> — <em>quando usar: cliente pediu dois orçamentos diferentes.</em></p>
+<pre><code>O cliente [NOME] está em dúvida entre [OPÇÃO A, R$ X] e [OPÇÃO B,
+R$ Y]. Escreva uma mensagem comparando as duas com honestidade (para
+quem cada uma faz mais sentido), recomendando a que for melhor PARA O
+CASO DELE: [DESCREVER O CASO]. Sem empurrar a mais cara por ser mais
+cara. Até 6 linhas.</code></pre>
+<p><strong>3. Follow-up de pós-venda que gera recompra</strong> — <em>quando usar: 7 dias depois de entregar.</em></p>
+<pre><code>Escreva uma mensagem para enviar 7 dias após a entrega de [PRODUTO/
+SERVIÇO] ao cliente [NOME]: perguntar como foi a experiência, de forma
+genuína (não formulário), e plantar a próxima compra com leveza
+[ex: mencionar manutenção, recorrência ou novidade do mês]. Até 4
+linhas.</code></pre>
+<p><strong>4. Pedido de indicação sem constrangimento</strong> — <em>quando usar: cliente acabou de elogiar.</em></p>
+<pre><code>O cliente [NOME] acabou de elogiar meu trabalho com esta mensagem:
+"[COLAR ELOGIO]". Escreva uma resposta que agradeça de verdade e peça
+indicação de forma natural e específica ("se conhecer alguém que
+precise de [SERVIÇO]..."), sem parecer script. Até 3 linhas.</code></pre>
+<p><strong>5. Aumento de preço para cliente antigo</strong> — <em>quando usar: reajuste anual ou de custo.</em></p>
+<pre><code>Preciso comunicar reajuste de preço de [PRODUTO/SERVIÇO] de R$ [ATUAL]
+para R$ [NOVO] a partir de [DATA], para clientes recorrentes. Escreva
+a mensagem com: aviso com antecedência, motivo honesto e curto (sem
+choramingo), valorização da relação, e uma condição de transição
+[ex: manter preço antigo para quem agendar até DATA]. Tom firme e
+caloroso ao mesmo tempo.</code></pre>
+<p><strong>6. Resposta ao "me passa um desconto?"</strong> — <em>quando usar: pedido direto de desconto dentro de negociação saudável.</em></p>
+<pre><code>Cliente pediu desconto no orçamento de R$ [VALOR]. Meu limite real é
+[X% / R$ X / nenhum]. Escreva 2 respostas: uma para quando POSSO
+flexibilizar (concedendo algo em troca: pagamento à vista, data
+flexível, pacote maior) e uma para quando NÃO posso (segurando o
+valor com elegância e oferecendo alternativa mais simples). Até 4
+linhas cada.</code></pre>
+<h2>Teste de qualidade</h2>
+<p>Antes de usar com cliente de verdade:</p>
+<ul>
+<li><span class="cb">☐</span> Gere um orçamento de teste e confira <strong>cada número</strong> contra seu Manual (preço, sinal, prazo, validade).</li>
+<li><span class="cb">☐</span> Leia as 4 mensagens de follow-up em voz alta. Alguma soa como cobrança? Refaça com "mais leve, menos vendedor".</li>
+<li><span class="cb">☐</span> Mande a sequência para o seu próprio WhatsApp e leia como se fosse o cliente, com um dia de intervalo mental entre elas.</li>
+<li><span class="cb">☐</span> Peça para alguém de confiança ler a resposta ao "tá caro" e dizer se compraria ou se sairia correndo.</li>
+<li><span class="cb">☐</span> Confira se a planilha soma certo: cadastre 3 orçamentos falsos e veja o total de abertos.</li>
+</ul>
+<h2>Erros comuns</h2>
+<ol>
+<li><strong>Mandar follow-up sem registrar.</strong> Sem planilha, no D+7 você já não lembra quem é quem — e manda mensagem duplicada ou esquece de vez. A planilha é parte do funcionário, não um extra.</li>
+<li><strong>Aceitar o "vou pensar" como fim de papo.</strong> "Vou pensar" é o início da sequência D+1/D+3/D+7, não o fim. A maioria das suas vendas perdidas no passado morreu exatamente aqui.</li>
+<li><strong>Follow-up que só cobra.</strong> Se as 4 mensagens dizem só "e aí?", o cliente se sente devedor e some. A do D+3 <strong>agrega</strong> algo — é ela que diferencia lembrete útil de insistência.</li>
+<li><strong>Deixar a IA confirmar valor sem revisar.</strong> A IA pode preencher o template com preço desatualizado do Manual (ou inventar, se o dado faltar). Número para cliente passa pelos seus olhos, sem exceção.</li>
+<li><strong>Dar desconto no primeiro "tá caro".</strong> Desconto automático ensina o cliente a sempre reclamar do preço. Use a matriz: validar, reforçar valor, oferecer alternativa — desconto é a última carta, dentro do limite do Manual.</li>
+<li><strong>Reativar lista antiga com mensagem de venda agressiva.</strong> Quem sumiu há 3 meses não quer "PROMOÇÃO SÓ HOJE". Quer uma retomada natural e uma pergunta fácil de responder.</li>
+</ol>
+<h2>Quanto tempo isso economiza</h2>
+<p>A conta do Vendedor é menos sobre tempo e mais sobre <strong>dinheiro recuperado</strong> — mas vamos às duas:</p>
+<p><strong>Tempo:</strong> se você monta 6 orçamentos por semana, a 30–40 minutos cada (calcular, escrever, formatar), são ~3,5 h/semana. Com qualificação + template + IA preenchendo, cada um cai para 10–12 minutos: <strong>~2,4 h/semana economizadas</strong>. O follow-up, que antes não existia, custa 30 min/semana com as respostas rápidas — e é o melhor investimento da sua semana.</p>
+<p><strong>Dinheiro:</strong> a conta que importa. Suponha que você envie 25 orçamentos por mês com ticket médio de R$ 200, e que hoje feche 30% (R$ 1.500/mês) — números para você trocar pelos seus. Follow-up estruturado tipicamente recupera parte dos que "iam pensar": se a taxa for de 30% para 40%, são <strong>R$ 500/mês a mais, sem um real de anúncio</strong>. Faça a conta com os seus números na planilha de ROI do bônus — é o indicador mais motivador do livro.</p>
+<p>E quando o cliente fechar? Aí entra o Funcionário nº 3, que faz o mundo ficar sabendo do seu trabalho. Vira a página.</p>
+</section>
+<section class="chapter" id="cap-6">
+<h1>Capítulo 6 — Funcionário nº 3: O Criador de Conteúdo</h1>
+<p>Pergunta honesta: quantas vezes você já postou três dias seguidos, sumiu duas semanas, voltou pedindo desculpa nos stories e sumiu de novo?</p>
+<p>Sem culpa — é o ciclo normal de quem toca um negócio sozinho. Conteúdo é a primeira tarefa sacrificada quando a semana aperta, porque é a única que não grita quando você a ignora. Cliente esperando grita. Boleto grita. O feed parado fica ali, quieto, só corroendo devagar a sua presença na cabeça de quem um dia vai precisar do que você vende.</p>
+<p>O Funcionário nº 3 quebra esse ciclo com uma mudança de método: <strong>você para de criar conteúdo todo dia e passa a criar uma vez por mês.</strong> Uma sessão de 1 hora com a IA produz o material do mês inteiro; durante as semanas, você só publica e aparece nos bastidores. É o sistema 1×10.</p>
+<h2>O que esse funcionário faz</h2>
+<ul>
+<li><strong>Monta o calendário editorial do mês em 30 minutos</strong> — 12 ideias de post alinhadas ao seu negócio, ao seu cliente e à época do ano.</li>
+<li><strong>Escreve legendas de Instagram</strong> com gancho, corpo e chamada — no seu tom, não no tom de "agência".</li>
+<li><strong>Roteiriza Reels de 30 segundos</strong> que você grava no celular sem aparecer horas editando.</li>
+<li><strong>Sugere stories de bastidor e enquetes</strong> que mantêm presença diária com 5 minutos de esforço.</li>
+<li><strong>Redige a mensagem mensal da lista de transmissão</strong> (ou e-mail), o canal que mais vende e que quase ninguém usa direito.</li>
+<li><strong>Multiplica:</strong> transforma 1 conteúdo bom em 10 formatos (o "1×10").</li>
+</ul>
+<h3>O que ele NÃO faz</h3>
+<ul>
+<li><strong>Não posta sozinho.</strong> Você publica (ou agenda nas ferramentas gratuitas da própria Meta).</li>
+<li><strong>Não cria fotos e vídeos do seu trabalho.</strong> A matéria-prima visual é sua: foto do prato, do corte de cabelo, da obra entregue. A IA escreve em volta dela. (Canva ajuda na arte; o capítulo 2 falou dele.)</li>
+<li><strong>Não traz resultado em uma semana.</strong> Conteúdo é o funcionário de retorno mais lento do livro — os outros quatro pagam a conta enquanto este constrói. Falo disso com números honestos no fim.</li>
+<li><strong>Não substitui sua cara e sua voz.</strong> Pequeno negócio vende confiança. A IA organiza e redige; a autenticidade vem das suas fotos, dos seus casos, do seu jeito.</li>
+</ul>
+<h2>O que você precisa</h2>
+<table><thead><tr><th>Ferramenta</th><th>Para quê</th><th>Custo</th></tr></thead><tbody><tr><td>ChatGPT, Claude ou Gemini (grátis)</td><td>Calendário, legendas, roteiros</td><td>Grátis</td></tr><tr><td>Manual do Funcionário (cap. 3)</td><td>Tom, produtos, cliente</td><td>Pronto</td></tr><tr><td>Canva (grátis)</td><td>Artes simples quando precisar</td><td>Grátis</td></tr><tr><td>Instagram + WhatsApp Business</td><td>Publicação e lista de transmissão</td><td>Grátis</td></tr><tr><td>10–15 fotos/vídeos do seu trabalho no celular</td><td>Matéria-prima visual do mês</td><td>Grátis</td></tr></tbody></table>
+<p>Custo total: <strong>R$ 0</strong>. Tempo: <strong>1h por mês</strong> de produção + <strong>15 min/dia</strong> de publicação e resposta (a maior parte disso você já gasta hoje, só que sem sistema).</p>
+<h2>Montagem passo a passo</h2>
+<h3>Etapa 0 — Ensine seu tom à IA (uma vez só, 10 min)</h3>
+<p>Antes do primeiro calendário, faça isto uma única vez: pegue os <strong>3 posts seus que melhor funcionaram</strong> (mais comentários, mais clientes chamando) e adicione ao final do seu Manual do Funcionário, numa seção nova:</p>
+<pre><code>MEUS POSTS QUE FUNCIONARAM (use como referência de tom e estilo)
+1. "[COLAR LEGENDA 1]"
+2. "[COLAR LEGENDA 2]"
+3. "[COLAR LEGENDA 3]"</code></pre>
+<p>Isso é o "E" de Exemplo da fórmula P-C-T-F-E aplicado de vez. A diferença na saída é enorme: a IA para de escrever "como social media" e começa a escrever <strong>como você num dia bom</strong>.</p>
+<p>Se você nunca postou nada: pule sem culpa. Depois do primeiro mês, volte e preencha com os melhores.</p>
+<h3>Etapa 1 — O calendário editorial do mês (30 min, 1x por mês)</h3>
+<p>Todo dia 25, você monta o mês seguinte. Cole o Manual e:</p>
+<pre><code>Monte meu calendário editorial de [MÊS] com 12 posts (3 por semana).
+
+Contexto do mês: [datas que importam para meu negócio neste mês —
+ex: dia das mães, volta às aulas, baixa temporada; + o que quero
+empurrar: PRODUTO/SERVIÇO].
+
+Distribua os 12 posts entre estes 4 tipos, nesta proporção:
+- 4 posts de PROVA (trabalho feito, antes/depois, bastidor de
+  produção, depoimento real que eu fornecer)
+- 3 posts de EDUCAÇÃO (dica útil que meu cliente agradeceria, erro
+  comum que ele comete, "como escolher...")
+- 3 posts de OFERTA (produto/serviço com preço e chamada direta)
+- 2 posts de PESSOA (minha história, rotina, por que faço o que faço)
+
+Para cada post: dia sugerido, tipo, ideia em 1 frase, e qual
+foto/vídeo eu preciso ter (seja específico: "foto do bolo cortado
+mostrando o recheio", não "foto bonita").
+
+Formato: tabela. Considere a sazonalidade brasileira e o meu cliente
+descrito no manual.</code></pre>
+<p>Duas observações de quem já viu muito feed de pequeno negócio:</p>
+<ul>
+<li><strong>A proporção importa.</strong> Feed que só tem oferta vira panfleto e o alcance morre; feed que nunca tem oferta dá likes e zero vendas. 4-3-3-2 equilibra.</li>
+<li><strong>A coluna "qual foto eu preciso"</strong> é o segredo operacional: ela vira sua lista de captação. Num único dia de trabalho normal, você tira as 12 fotos do mês em 20 minutos, porque sabe exatamente o que precisa.</li>
+</ul>
+<h3>Etapa 2 — As legendas da semana (20 min, 1x por semana)</h3>
+<p>Não gere as 12 legendas de uma vez — o mês muda, e legenda envelhece. Toda semana, pegue os 3 posts da semana no calendário e:</p>
+<pre><code>Escreva as legendas dos 3 posts desta semana do meu calendário:
+
+Post 1: [COLAR LINHA DA TABELA]
+Post 2: [COLAR LINHA DA TABELA]
+Post 3: [COLAR LINHA DA TABELA]
+
+Estrutura de cada legenda:
+- GANCHO: primeira linha que para o dedo (pergunta, afirmação forte ou
+  situação que meu cliente vive). Proibido: "Você sabia?", "Atenção!".
+- CORPO: 3 a 5 linhas, frases curtas, espaçadas (pula linha entre as
+  frases — legenda compacta não se lê no celular).
+- CTA: chamada final coerente com o tipo do post (post de oferta →
+  "chama no WhatsApp"; educação → "salva esse post"; prova →
+  "marca alguém que precisa ver isso").
+- Hashtags: no máximo 5, locais e específicas ([#bairro] [#cidade] +
+  nicho). Nada de #love #instagood.
+
+Use meu tom de voz e meus posts de referência do manual.</code></pre>
+<p>Revisão de 2 minutos por legenda: troque qualquer palavra que você não falaria. A legenda deve passar no teste do "eu diria isso em voz alta para um cliente?".</p>
+<h3>Etapa 3 — Roteiros de Reels de 30 segundos (15 min, 2x por mês)</h3>
+<p>Reels é onde o Instagram entrega seu conteúdo para quem <strong>ainda não</strong> te segue — ou seja, é seu canal de cliente novo. E roteiro de 30 segundos tem fórmula:</p>
+<pre><code>Roteirize 2 Reels de 30 segundos sobre: [PEGAR 2 IDEIAS DO CALENDÁRIO,
+de preferência dos tipos EDUCAÇÃO ou PROVA].
+
+Estrutura de cada roteiro:
+- GANCHO (0-3s): frase dita ou escrita na tela que segura quem está
+  rolando o feed. Me dê 2 opções.
+- CONTEÚDO (3-25s): o que eu mostro e o que eu falo, em passos
+  numerados gravavéis com celular na mão ou apoiado (sem edição
+  complexa, sem cortes a cada 2 segundos).
+- CTA (25-30s): fechamento + o que a pessoa deve fazer.
+
+Considere que eu [me sinto à vontade aparecendo / prefiro mostrar só
+as mãos e o produto — ESCOLHA]. Inclua sugestão de texto na tela e
+de descrição do áudio (ex: "voz explicando" ou "música tranquila de
+fundo").</code></pre>
+<p>Grave os 2 no mesmo dia, de uma vez. Reel não precisa de produção — precisa de gancho bom e luz de janela.</p>
+<h3>Etapa 4 — Stories: presença diária em 5 minutos (sistema, não inspiração)</h3>
+<p>Stories não se planeja por mês; se planeja por <strong>cardápio</strong>. Gere o seu uma vez:</p>
+<pre><code>Crie meu "cardápio de stories": 15 ideias de story de no máximo 15
+segundos que eu possa fazer em menos de 5 minutos durante um dia
+normal de trabalho, divididas em:
+- 5 de BASTIDOR (mostrando produção/atendimento real)
+- 5 de INTERAÇÃO (enquete, caixinha de pergunta, "isso ou aquilo" —
+  com a pergunta pronta)
+- 5 de OFERTA LEVE (mostrando produto disponível, agenda da semana,
+  última vaga — sem tom de liquidação)
+
+Formato: lista numerada, cada ideia com o texto/pergunta pronto para
+copiar no story.</code></pre>
+<p>Imprima mentalmente a regra: <strong>1 story de bastidor por dia útil + 1 interação por semana + oferta leve quando houver o que ofertar.</strong> Quem te acompanha nos stories compra sem você perceber que estava vendendo.</p>
+<h3>Etapa 5 — A lista de transmissão mensal (20 min, 1x por mês)</h3>
+<p>Aqui está o canal mais subestimado do pequeno negócio brasileiro: a lista de transmissão do WhatsApp. Diferente do Instagram, a mensagem chega para <strong>100% da lista</strong>, no canal onde o brasileiro decide compra.</p>
+<p>Regras de ouro antes do prompt: só entra na lista quem <strong>pediu ou autorizou</strong> (peça no balcão, no fechamento de venda, nos stories — "quer receber as novidades do mês no zap?"); frequência máxima de 1–2 por mês (mais que isso vira spam e bloqueio); e sempre dê opção de sair ("se não quiser mais receber, me avisa por aqui, sem problema nenhum" — além de educado, é o espírito da LGPD, que o capítulo 10 explica).</p>
+<pre><code>Escreva a mensagem mensal da minha lista de transmissão de [MÊS].
+
+Conteúdo: [1 novidade ou destaque do mês + 1 oferta ou agenda + 1
+dica rápida útil].
+
+Regras: até 8 linhas; começar com algo que NÃO pareça mala direta
+(nada de "Olá, cliente!"); soar como mensagem que eu mandaria para
+uma cliente conhecida; uma única chamada para ação no final; incluir
+a linha de saída educada.</code></pre>
+<h3>Etapa 6 — O multiplicador 1×10 (quando um conteúdo funcionar)</h3>
+<p>Quando um post performar acima do normal (mais salvamentos, mais "vim pelo post"), não comemore e siga em frente — <strong>multiplique</strong>:</p>
+<pre><code>Este post funcionou muito bem: "[COLAR LEGENDA]".
+
+Transforme-o em:
+1. Um roteiro de Reel de 30s com outro gancho
+2. 3 stories em sequência (bastidor + conteúdo + CTA)
+3. Uma mensagem de lista de transmissão
+4. Uma versão "parte 2" aprofundando um detalhe
+5. Uma resposta pronta para quando perguntarem disso no Direct
+
+Mantenha a mesma ideia central; mude o formato e o ângulo. Meu tom,
+conforme o manual.</code></pre>
+<p>Um conteúdo validado pelo seu público vale por dez apostas novas. Os melhores perfis de negócio que você conhece fazem exatamente isso — repetem o que funciona com roupa nova.</p>
+<h2>Prompts prontos</h2>
+<p>Os seis de uso mais frequente (Manual colado antes, como sempre):</p>
+<p><strong>1. Legenda relâmpago para foto avulsa</strong> — <em>quando usar: fez uma foto boa agora e quer postar hoje.</em></p>
+<pre><code>Tirei esta foto: [DESCREVER A FOTO]. Escreva uma legenda com gancho +
+corpo curto + CTA, no meu tom. Tipo do post: [prova/educação/oferta].
+Me dê 2 opções.</code></pre>
+<p><strong>2. Resposta a comentário (inclusive os chatos)</strong> — <em>quando usar: comentário que merece resposta pensada.</em></p>
+<pre><code>Recebi este comentário no post sobre [TEMA]: "[COLAR]". Escreva uma
+resposta no meu tom: [simpática e breve / firme e educada — para
+crítica injusta / agradecida — para elogio]. Até 2 linhas.</code></pre>
+<p><strong>3. Post de data comemorativa sem clichê</strong> — <em>quando usar: véspera de data que mexe com seu nicho.</em></p>
+<pre><code>Semana que vem é [DATA]. Crie 3 ideias de post para meu negócio que
+fujam do óbvio (nada de "feliz dia de X" com arte genérica): quero
+ideias que conectem a data ao que eu vendo e gerem conversa ou
+venda. Para cada uma: ideia, legenda e foto necessária.</code></pre>
+<p><strong>4. Descrição de produto/serviço para o catálogo</strong> — <em>quando usar: cadastrando itens no catálogo do WhatsApp ou no Instagram Shopping.</em></p>
+<pre><code>Escreva a descrição de catálogo de [PRODUTO/SERVIÇO]: 2 a 3 linhas,
+benefício primeiro, detalhes práticos depois (tamanho/duração/o que
+inclui), sem adjetivo vazio ("incrível", "maravilhoso"). Preço:
+R$ [VALOR] — inclua se for política do meu manual.</code></pre>
+<p><strong>5. Conteúdo "respondendo a caixinha"</strong> — <em>quando usar: depois de uma caixinha de perguntas nos stories.</em></p>
+<pre><code>Recebi estas perguntas na caixinha: [COLAR 5-8 PERGUNTAS]. Agrupe as
+repetidas, escolha as 4 melhores para responder em stories e escreva
+a resposta de cada uma em até 3 linhas, no meu tom. Marque qual
+delas renderia um post completo depois.</code></pre>
+<p><strong>6. Bio do Instagram que vende</strong> — <em>quando usar: 1x a cada 6 meses, ou quando mudar o foco.</em></p>
+<pre><code>Reescreva minha bio do Instagram (máx. 150 caracteres) com: o que eu
+faço + para quem + diferencial ou prova + chamada para o link.
+Me dê 3 versões: uma direta, uma com personalidade, uma minimalista.
+Bio atual: "[COLAR]".</code></pre>
+<h2>Teste de qualidade</h2>
+<ul>
+<li><span class="cb">☐</span> Gere o calendário de teste e confira: as ideias servem para o <strong>seu</strong> negócio ou serviriam para qualquer um? Se genérico, seu Manual está raso na seção "Meu cliente" — engorde-a.</li>
+<li><span class="cb">☐</span> Leia 3 legendas em voz alta. Têm palavra que você nunca diria? Ajuste o tom de voz no Manual (a correção certa é na fonte, não no resultado).</li>
+<li><span class="cb">☐</span> Mostre uma legenda para um cliente de confiança sem dizer que foi IA. Se ele não estranhar, passou.</li>
+<li><span class="cb">☐</span> Grave 1 Reel de teste seguindo o roteiro. Se travou na gravação, o roteiro está complexo demais — peça "simplifica para gravar em uma tomada".</li>
+<li><span class="cb">☐</span> Confira as hashtags: são locais e específicas? #love e #instagood não trazem cliente do seu bairro.</li>
+</ul>
+<h2>Erros comuns</h2>
+<ol>
+<li><strong>Gerar o mês inteiro de legendas de uma vez.</strong> Legenda de 3 semanas atrás sai datada e você perde a flexibilidade de reagir ao que acontecer. Calendário é mensal; legenda é semanal.</li>
+<li><strong>Publicar a primeira versão sem revisar.</strong> A IA escorrega em clichê de marketing ("venha conferir!", "qualidade e compromisso"). Seu trabalho de 2 minutos por legenda é caçar essas frases e trocar pelo seu jeito.</li>
+<li><strong>Só postar oferta.</strong> O alcance despenca e o perfil vira panfleto. Confie na proporção 4-3-3-2 — a oferta vende mais quando os outros posts construíram a confiança.</li>
+<li><strong>Ignorar a coluna "qual foto eu preciso".</strong> Sem captação planejada, chega quarta-feira e você não tem a foto — e o sistema desmorona. A sessão de 20 minutos de fotos resolve o mês.</li>
+<li><strong>Tratar lista de transmissão como megafone.</strong> Mandar 2 por semana para quem não pediu = bloqueio em massa e número queimado. Mensal, útil, com porta de saída.</li>
+<li><strong>Desistir no dia 20.</strong> Conteúdo composto: os primeiros posts falam com 50 pessoas; seis meses de constância falam com milhares. Quem desiste no primeiro mês paga o custo e não recebe o retorno.</li>
+</ol>
+<h2>Quanto tempo isso economiza</h2>
+<p>Comparação honesta — porque aqui o ganho tem duas faces:</p>
+<p><strong>Contra quem já tenta fazer conteúdo:</strong> o método caótico (pensar o que postar na hora, escrever do zero, travar, desistir) custa facilmente 30–45 min <em>por post</em> + a energia mental de decidir todo dia. O sistema custa: 30 min de calendário (1x/mês) + 20 min de legendas (1x/semana) + 15 min de Reels (2x/mês) + 5 min de story por dia ≈ <strong>45 min por semana, tudo incluso</strong>. Para 3 posts semanais, é menos da metade do tempo — e a decisão diária de "o que postar?" simplesmente deixa de existir, porque está na tabela.</p>
+<p><strong>Contra quem não faz nada:</strong> o custo não é tempo, é a invisibilidade — impossível de medir, fácil de sentir quando o concorrente que posta há um ano abre fila de espera.</p>
+<p>E o aviso honesto prometido: <strong>conteúdo paga em meses, não em dias.</strong> As primeiras semanas vão parecer que você fala sozinho. É normal e é a fase que elimina 90% dos concorrentes. Enquanto isso, o Atendente e o Vendedor seguram o caixa — e o próximo funcionário arruma a casa por dentro. Vamos a ele.</p>
+</section>
+<section class="chapter" id="cap-7">
+<h1>Capítulo 7 — Funcionário nº 4: O Assistente Administrativo e Financeiro</h1>
+<p>Tem uma cena que se repete em quase todo pequeno negócio do Brasil, e ela não acontece no balcão. Acontece à noite, em casa.</p>
+<p>É a marceneira de Curitiba que precisa mandar um orçamento desde anteontem, mas trava na hora de montar o documento. É o personal trainer de Salvador que tem três alunos com mensalidade atrasada e não cobra porque "fica chato". É a dona da loja de roupas infantis em Goiânia que jurou que esse mês ia anotar tudo que entra e sai — e já é dia 19.</p>
+<p>O trabalho administrativo é o que menos aparece e o que mais pesa. Ninguém abre um negócio porque ama emitir recibo. E é exatamente por isso que ele é o serviço perfeito para o seu quarto funcionário digital: é repetitivo, é baseado em texto e segue padrões. O tipo de tarefa em que a IA é melhor — desde que você confira o resultado, como sempre.</p>
+<p>Neste capítulo, você vai montar o assistente que cuida de orçamentos, cobranças, controle financeiro básico, agenda e documentos simples. Como nos capítulos anteriores, tudo parte do seu Manual do Funcionário (aquele documento-mestre do Capítulo 3): cole o Manual no início da conversa, e só depois use os prompts daqui.</p>
+<h2>O que esse funcionário faz (e o que NÃO faz)</h2>
+<p><strong>O que ele faz bem:</strong></p>
+<ul>
+<li><strong>Orçamentos padronizados.</strong> Você dá os dados (serviço, quantidade, prazo, preço), ele devolve um orçamento formatado, profissional, no seu padrão, em minutos.</li>
+<li><strong>Mensagens de cobrança em três níveis.</strong> Do lembrete amistoso ao aviso formal, com o tom certo em cada etapa — sem você ter que escolher cada palavra com medo de ofender.</li>
+<li><strong>Estrutura de controle financeiro no Google Sheets.</strong> Ele desenha a planilha de entradas e saídas, escreve as fórmulas e explica o que cada uma faz. Você só cola.</li>
+<li><strong>Mensagens de agenda.</strong> Confirmação de horário, lembrete de véspera, reagendamento educado. É a arma mais barata que existe contra o no-show (cliente que marca e não aparece).</li>
+<li><strong>Minutas de documentos simples.</strong> Rascunho de recibo, rascunho de termo de serviço. Atenção à palavra <em>rascunho</em> — daqui a pouco eu explico o limite disso, e ele é sério.</li>
+</ul>
+<p><strong>O que ele NÃO faz:</strong></p>
+<ul>
+<li><strong>Não substitui contador.</strong> Imposto, MEI, nota fiscal, pró-labore, regime tributário: isso é trabalho de contador, e errar aí custa caro. A IA pode te ajudar a <em>entender</em> um termo que o contador usou, mas não pode assumir a função dele.</li>
+<li><strong>Não substitui advogado.</strong> Minuta de IA é rascunho. Contrato que protege você de verdade precisa passar por um profissional. Vou repetir isso com todas as letras na seção de montagem.</li>
+<li><strong>Não acessa sua conta bancária nem paga boleto.</strong> Ele organiza, redige e calcula em cima do que você informa. Quem digita os números e aperta os botões do banco é você.</li>
+<li><strong>Não sabe quem já pagou.</strong> Se você mandar a IA gerar uma cobrança para alguém que pagou ontem, ela gera — caprichada e tudo. Conferir o pagamento antes de cobrar é trabalho seu, sempre.</li>
+<li><strong>Não decide preço, prazo nem desconto.</strong> Ele formata a decisão que você já tomou.</li>
+</ul>
+<h2>O que você precisa</h2>
+<p>A lista é curta:</p>
+<ol>
+<li><strong>Seu Manual do Funcionário</strong> (Capítulo 3) atualizado, com: nome do negócio, CNPJ ou CPF profissional se tiver, lista de serviços/produtos com preços, formas de pagamento aceitas, chave Pix, política de prazo e de sinal (se houver).</li>
+<li><strong>Uma conta no ChatGPT, Claude ou Gemini</strong> — a mesma que você já usa desde o Capítulo 2. Plano gratuito serve para começar.</li>
+<li><strong>Google Sheets</strong> (gratuito, no celular ou computador) para o controle financeiro.</li>
+<li><strong>WhatsApp Business</strong> para enviar orçamentos, cobranças e confirmações.</li>
+<li><strong>Trinta minutos de dados reunidos:</strong> seus últimos 3 orçamentos enviados (do jeito que saíram, mesmo que feios), e a lista de quem está te devendo hoje, com valor e data de vencimento.</li>
+<li><strong>Cerca de 2 horas para a montagem inicial</strong>, de preferência divididas em dois dias para não cansar.</li>
+</ol>
+<h2>Montagem passo a passo</h2>
+<h3>Passo 1 — Crie seu template de orçamento (30 min)</h3>
+<p>Um orçamento padronizado faz duas coisas: passa profissionalismo e evita esquecimento (validade, prazo, forma de pagamento — itens que, quando faltam, viram dor de cabeça depois).</p>
+<p>Abra uma conversa nova com sua IA, cole o Manual do Funcionário e use o <strong>Prompt 1</strong> da seção de prompts. A IA vai te devolver um modelo com campos fixos. Revise: tire o que não faz sentido para o seu tipo de negócio, ajuste o tom. Salve esse template num lugar fácil (uma nota no celular, um doc no Drive). Ele vira parte do seu Manual.</p>
+<p>A partir daí, gerar um orçamento novo é só usar o <strong>Prompt 2</strong>: você informa os dados do pedido, a IA preenche o template. Você confere os números — <em>sempre</em> os números — e envia.</p>
+<h3>Passo 2 — Monte sua régua de cobrança em 3 níveis (30 min)</h3>
+<p>"Régua de cobrança" é só um nome bonito para uma sequência combinada de mensagens. A sua terá três níveis:</p>
+<table><thead><tr><th>Nível</th><th>Quando</th><th>Tom</th></tr></thead><tbody><tr><td>1 — Lembrete amistoso</td><td>1 dia após o vencimento (D+1)</td><td>Leve, dá o benefício da dúvida ("pode ter passado batido")</td></tr><tr><td>2 — Cobrança firme</td><td>7 dias após o vencimento (D+7)</td><td>Educado, mas direto: cita valor, data e pede retorno</td></tr><tr><td>3 — Aviso formal</td><td>15 dias após o vencimento (D+15)</td><td>Sério, menciona consequência real (pausa do serviço, por exemplo)</td></tr></tbody></table>
+<p>Use os <strong>Prompts 3, 4 e 5</strong> para gerar os três modelos de uma vez, já no seu tom de voz. Guarde os três prontos. Quando alguém atrasar, você só troca o nome, o valor e a data — 2 minutos, sem o desgaste emocional de redigir do zero.</p>
+<p>Duas regras de ouro aqui:</p>
+<ul>
+<li><strong>Antes de enviar qualquer cobrança, confira se o pagamento realmente não caiu.</strong> Cobrar quem já pagou queima a relação mais rápido do que o atraso queimaria.</li>
+<li><strong>Consequência anunciada no nível 3 tem que ser real e proporcional.</strong> Não escreva "medidas judiciais" por um corte de cabelo de R$ 60. Se for pausar o serviço, diga que vai pausar o serviço.</li>
+</ul>
+<h3>Passo 3 — Crie seu controle financeiro no Google Sheets (40 min)</h3>
+<p>Aqui está o pulo do gato deste capítulo: você não precisa saber fórmula de planilha. <strong>A IA escreve a fórmula, explica o que ela faz, e você cola.</strong></p>
+<ol>
+<li>Crie uma planilha nova no Google Sheets, chamada "Financeiro [SEU NEGÓCIO] 2026".</li>
+<li>Cole o Manual na IA e use o <strong>Prompt 6</strong>. Ele pede a estrutura completa: aba de entradas, aba de saídas, categorias adequadas ao seu ramo e as fórmulas de soma por categoria e saldo do mês.</li>
+<li>A IA vai responder com algo assim: "Na célula B2 da aba Resumo, cole: <code>=SOMASE(Saídas!C:C;"Insumos";Saídas!B:B)</code> — esta fórmula soma tudo que você marcou como Insumos na aba de Saídas."</li>
+<li>Cole as fórmulas exatamente onde a IA indicar. Se aparecer erro (acontece, principalmente por causa de ponto-e-vírgula ou nome de aba diferente), copie a mensagem de erro e cole de volta na conversa: "deu este erro, corrija". A IA corrige.</li>
+<li><strong>Teste com dados fictícios antes de usar de verdade.</strong> Lance três entradas e três saídas inventadas, some na calculadora do celular e confira se a planilha bate. Só depois apague os testes e comece a usar.</li>
+</ol>
+<p>O hábito que sustenta tudo: lançar entradas e saídas <strong>uma vez por semana</strong> (não diariamente — combinaremos isso na rotina do Passo 6). Planilha perfeita abandonada vale menos que planilha simples alimentada.</p>
+<h3>Passo 4 — Mensagens de agenda e antídoto contra no-show (20 min)</h3>
+<p>Se o seu negócio trabalha com horário marcado — salão, consultório, estúdio de tatuagem, aula particular, assistência técnica com visita — o no-show é dinheiro evaporando. A defesa é simples e comprovada na prática de qualquer recepção bem treinada: <strong>confirmação na marcação + lembrete na véspera</strong>.</p>
+<p>Use o <strong>Prompt 7</strong> para gerar seu kit de mensagens de agenda: confirmação de horário marcado, lembrete de véspera pedindo um "confirmado?", e mensagem de reagendamento sem clima ruim. Salve as três como respostas rápidas no WhatsApp Business (você aprendeu a fazer isso no Capítulo 4, com o Atendente).</p>
+<p>Não elimina o no-show — nada elimina — mas reduzir de, digamos, quatro faltas por semana para uma ou duas já paga o capítulo inteiro.</p>
+<h3>Passo 5 — Minutas de documentos simples (20 min)</h3>
+<p>A IA rascunha bem dois documentos que todo pequeno negócio precisa:</p>
+<ul>
+<li><strong>Recibo de pagamento</strong> — simples, de baixo risco, e o <strong>Prompt 8</strong> resolve.</li>
+<li><strong>Termo simples de prestação de serviço</strong> — uma página descrevendo o que será feito, valor, prazo, o que está incluído e o que não está.</li>
+</ul>
+<p>E aqui vem o aviso, sem suavizar:</p>
+<blockquote><strong>⚠️ AVISO IMPORTANTE — leia duas vezes.</strong><br>Minuta gerada por IA <strong>não substitui advogado</strong>. A IA não conhece a lei brasileira em profundidade, não conhece as particularidades do seu caso e pode escrever cláusulas inválidas ou que te prejudicam — com a maior confiança do mundo. Use a minuta como <strong>rascunho para baratear e acelerar a revisão profissional</strong>: chegar para um advogado com um rascunho organizado custa menos do que pedir um contrato do zero. Para serviços de valor alto, contratos com obrigações de longo prazo, locação, sociedade ou qualquer coisa que envolva risco real, a revisão por advogado não é opcional. É a diferença entre economizar algumas centenas de reais hoje e perder alguns milhares depois.</blockquote>
+<p>Para o termo simples do dia a dia (o combinado de um serviço de R$ 200, por exemplo), o rascunho da IA revisado por você já organiza a relação e evita o famoso "mas você não falou que...". Para tudo acima disso: advogado.</p>
+<h3>Passo 6 — A rotina administrativa de 40 minutos (fixe no calendário)</h3>
+<p>Tudo que você montou acima só funciona com uma rotina. A boa notícia: ela cabe em <strong>40 minutos, uma vez por semana</strong>. Sugestão: sexta-feira no fim do expediente, ou o dia que for mais calmo no seu ramo.</p>
+<table><thead><tr><th>Bloco</th><th>Tempo</th><th>O que fazer</th></tr></thead><tbody><tr><td>1. Lançamentos</td><td>15 min</td><td>Lançar entradas e saídas da semana na planilha (extrato do banco aberto do lado)</td></tr><tr><td>2. Cobranças</td><td>10 min</td><td>Olhar quem venceu, conferir quem pagou, disparar nível 1, 2 ou 3 conforme o caso</td></tr><tr><td>3. Orçamentos pendentes</td><td>10 min</td><td>Algum orçamento prometido e não enviado? Gera e envia agora</td></tr><tr><td>4. Agenda da semana seguinte</td><td>5 min</td><td>Conferir horários marcados e programar confirmações</td></tr></tbody></table>
+<p>Quarenta minutos. Coloque alarme recorrente no celular com o nome "Reunião com meu assistente administrativo". Parece bobagem, mas nomear ajuda a não pular.</p>
+<h2>Prompts prontos</h2>
+<p>Lembrete que vale para todos: <strong>cole primeiro o seu Manual do Funcionário na conversa</strong>, depois o prompt. E nunca envie com os [COLCHETES] sem preencher.</p>
+<p><strong>Prompt 1 — Criar o template de orçamento</strong></p>
+<p><em>Quando usar: uma vez só, na montagem. Depois, é só reutilizar o template.</em></p>
+<pre><code>Com base no Manual do Funcionário acima, crie um modelo de orçamento
+profissional para eu enviar por WhatsApp e por PDF.
+
+O modelo deve ter os campos:
+- Cabeçalho com [NOME DO NEGÓCIO] e contato
+- Nome do cliente e data
+- Descrição do serviço/produto em itens, com quantidade e valor unitário
+- Valor total em destaque
+- Prazo de execução/entrega
+- Formas de pagamento: [SUAS FORMAS DE PAGAMENTO]
+- Validade do orçamento: [X DIAS]
+- Observações (o que está incluso e o que NÃO está incluso)
+
+Tom: profissional e simpático, sem formalidade exagerada.
+Me entregue em duas versões: uma curta para mensagem de WhatsApp
+e uma completa para documento.</code></pre>
+<p><strong>Prompt 2 — Preencher um orçamento novo</strong></p>
+<p><em>Quando usar: toda vez que um cliente pedir orçamento.</em></p>
+<pre><code>Use o template de orçamento que criamos. Preencha com estes dados:
+
+- Cliente: [NOME DO CLIENTE]
+- Serviço/produto: [DESCRIÇÃO DO QUE O CLIENTE PEDIU]
+- Quantidade: [QUANTIDADE]
+- Valor: [VALOR QUE VOCÊ DEFINIU — a IA não inventa preço]
+- Prazo: [PRAZO QUE VOCÊ CONSEGUE CUMPRIR]
+- Observações: [INCLUSOS E NÃO INCLUSOS DESTE CASO]
+
+Gere a versão WhatsApp e a versão completa. Não altere nenhum valor
+e não acrescente serviços que eu não listei.</code></pre>
+<p><strong>Prompt 3 — Cobrança nível 1: lembrete amistoso (D+1)</strong></p>
+<p><em>Quando usar: 1 dia após o vencimento, depois de conferir que o pagamento não caiu.</em></p>
+<pre><code>Escreva uma mensagem curta de WhatsApp lembrando um cliente de um
+pagamento que venceu ontem. Contexto:
+
+- Cliente: [NOME]
+- Serviço: [SERVIÇO PRESTADO]
+- Valor: [VALOR]
+- Venceu em: [DATA]
+- Chave Pix: [SUA CHAVE PIX]
+
+Tom: leve e amistoso, assumindo que provavelmente foi esquecimento.
+Sem tom de cobrança pesada. No máximo 4 frases. Termine se colocando
+à disposição para qualquer dúvida.</code></pre>
+<p><strong>Prompt 4 — Cobrança nível 2: firme e educada (D+7)</strong></p>
+<p><em>Quando usar: 7 dias após o vencimento, se o nível 1 não resolveu.</em></p>
+<pre><code>Escreva uma mensagem de cobrança para um pagamento atrasado há 7 dias.
+Já enviei um lembrete leve e não tive retorno. Contexto:
+
+- Cliente: [NOME]
+- Serviço: [SERVIÇO PRESTADO]
+- Valor: [VALOR]
+- Venceu em: [DATA]
+- Chave Pix: [SUA CHAVE PIX]
+
+Tom: educado, mas firme e direto. Cite o valor e a data de vencimento.
+Pergunte se houve algum problema e peça uma previsão de pagamento.
+Ofereça [SUA ALTERNATIVA, ex.: parcelamento ou nova data] se fizer
+sentido. No máximo 6 frases.</code></pre>
+<p><strong>Prompt 5 — Cobrança nível 3: aviso formal (D+15)</strong></p>
+<p><em>Quando usar: 15 dias após o vencimento, antes de qualquer providência concreta.</em></p>
+<pre><code>Escreva uma mensagem formal de cobrança para um pagamento atrasado
+há 15 dias, após dois contatos sem solução. Contexto:
+
+- Cliente: [NOME]
+- Serviço: [SERVIÇO PRESTADO]
+- Valor: [VALOR]
+- Venceu em: [DATA]
+- Consequência real se não houver retorno até [DATA-LIMITE]:
+  [EX.: suspensão do serviço / não agendamento de novos trabalhos]
+
+Tom: formal, respeitoso e objetivo. Sem ameaças vazias e sem
+mencionar medidas que eu não citei. Deixe claro que prefiro
+resolver por acordo e indique um prazo final para contato.</code></pre>
+<p><strong>Prompt 6 — Estrutura da planilha financeira + fórmulas</strong></p>
+<p><em>Quando usar: uma vez, na montagem do controle financeiro.</em></p>
+<pre><code>Quero montar um controle financeiro simples no Google Sheets para o
+meu negócio: [TIPO DE NEGÓCIO, ex.: marmitaria com entrega].
+Não entendo de fórmulas, então me guie célula por célula.
+
+Crie:
+1. Aba "Entradas": data, descrição, categoria, forma de pagamento, valor
+2. Aba "Saídas": data, descrição, categoria, valor
+3. Sugira de 5 a 8 categorias de saída adequadas ao meu ramo
+4. Aba "Resumo do Mês" com: total de entradas, total de saídas,
+   saldo, e total por categoria
+
+Para cada fórmula: diga em QUAL célula colar, escreva a fórmula
+pronta para o Google Sheets em português (com ponto-e-vírgula),
+e explique em uma frase o que ela faz.</code></pre>
+<p><strong>Prompt 7 — Kit de mensagens de agenda (anti no-show)</strong></p>
+<p><em>Quando usar: uma vez, para criar os modelos; depois é só usar as respostas rápidas.</em></p>
+<pre><code>Crie 3 mensagens de WhatsApp para a agenda do meu negócio
+[TIPO DE NEGÓCIO]:
+
+1. CONFIRMAÇÃO DE AGENDAMENTO: enviada na hora em que o cliente
+   marca. Deve repetir dia, horário e [ENDEREÇO OU LINK], e citar
+   minha política de cancelamento: [SUA POLÍTICA, ex.: avisar com
+   24h de antecedência].
+2. LEMBRETE DE VÉSPERA: enviada um dia antes, pedindo uma
+   confirmação simples (responder "confirmado").
+3. REAGENDAMENTO SEM CLIMA RUIM: para quando o cliente desmarca,
+   mantendo a porta aberta e já oferecendo dois novos horários:
+   [OPÇÃO 1] e [OPÇÃO 2].
+
+Tom: [SEU TOM, ex.: simpático e informal, com no máximo 1 emoji].
+Use [NOME] como espaço para o nome do cliente.</code></pre>
+<p><strong>Prompt 8 — Minuta de recibo e termo simples de serviço</strong></p>
+<p><em>Quando usar: para gerar os rascunhos-base; revise sempre, e leve ao advogado o que tiver valor ou risco relevante.</em></p>
+<pre><code>Preciso de dois rascunhos de documentos simples para o meu negócio
+[TIPO DE NEGÓCIO]. Sei que isso é apenas uma minuta e que vou revisar
+com um profissional o que for além do básico.
+
+1. RECIBO DE PAGAMENTO com campos: nome e CPF/CNPJ de quem paga,
+   valor por extenso e em números, referente a quê, data, cidade
+   [SUA CIDADE] e assinatura.
+
+2. TERMO SIMPLES DE PRESTAÇÃO DE SERVIÇO (1 página, linguagem
+   clara) com: partes, descrição do serviço [SERVIÇO], valor e
+   forma de pagamento, prazo, o que está incluído, o que NÃO está
+   incluído, e política de cancelamento [SUA POLÍTICA].
+
+Não invente cláusulas sobre multas ou juros — deixe o campo
+indicado como [A DEFINIR] para eu decidir com orientação adequada.</code></pre>
+<h2>Teste de qualidade</h2>
+<p>Antes de considerar o funcionário "contratado", rode esta bateria de testes. Quinze minutos, papel e caneta (ou bloco de notas):</p>
+<ol>
+<li><strong>Teste do orçamento com pegadinha.</strong> Gere um orçamento pelo Prompt 2, mas confira número por número: valor unitário, total, prazo. A IA errou ou "completou" algo que você não pediu? Se sim, ajuste o prompt acrescentando "não inclua nada que eu não informei" e teste de novo.</li>
+<li><strong>Teste da planilha com dados fictícios.</strong> Três entradas e três saídas inventadas, soma na calculadora, comparação com o Resumo. Tem que bater centavo por centavo. Se não bater, cole o erro na IA e peça correção.</li>
+<li><strong>Teste da cobrança lida em voz alta.</strong> Leia os três níveis em voz alta, imaginando que você é o cliente. O nível 1 parece leve mesmo? O nível 3 parece sério sem ser ofensivo? Se algo soar como você jamais falaria, peça para a IA reescrever "mais parecido com este exemplo meu" e cole uma mensagem sua real.</li>
+<li><strong>Teste do recibo.</strong> Gere um recibo com dados fictícios e confira se todos os campos obrigatórios estão lá (valor por extenso é o que a IA mais esquece).</li>
+<li><strong>Teste de envio real supervisionado.</strong> Na primeira semana, use tudo em casos reais, mas com atenção redobrada. Depois de 5 a 10 usos sem sustos, você confia no fluxo — nunca a ponto de parar de revisar números.</li>
+</ol>
+<h2>Erros comuns</h2>
+<p><strong>1. Deixar a IA "estimar" valores.</strong> Se você não informa o preço, a IA inventa um — plausível, formatado e errado. Todo prompt de orçamento deste capítulo exige que <em>você</em> informe o valor. Mantenha assim.</p>
+<p><strong>2. Cobrar sem conferir o extrato.</strong> O cliente pagou ontem à noite, você cobra hoje cedo. Resultado: constrangimento e cliente com razão para reclamar. Conferência de pagamento vem antes de qualquer mensagem de cobrança, sempre.</p>
+<p><strong>3. Confiar na fórmula sem testar.</strong> Fórmula de planilha errada é pior que planilha nenhuma, porque te dá um número falso com cara de verdade. O teste com dados fictícios do Passo 3 não é opcional.</p>
+<p><strong>4. Tratar a minuta como contrato pronto.</strong> Imprimir o termo gerado pela IA, assinar com cliente em serviço de R$ 15 mil e descobrir depois que uma cláusula não vale nada. Minuta é rascunho. Valor alto ou risco real = advogado. Sem exceção.</p>
+<p><strong>5. Colar dados sensíveis do cliente na IA.</strong> CPF, dados de cartão, informações de saúde: nada disso entra em ferramenta de IA. Use "[NOME]", "[CPF]" e preencha depois, fora da ferramenta. O Capítulo 10 trata disso a fundo, mas a regra começa a valer agora.</p>
+<p><strong>6. Abandonar a planilha na terceira semana.</strong> O erro não é técnico, é de rotina. Quem tenta lançar todo dia desiste; quem lança uma vez por semana, com alarme marcado, continua. Se você pulou uma semana, não tente reconstituir tudo: lance o que conseguir pelo extrato e siga em frente. Planilha 85% completa e viva vale mais que planilha perfeita e morta.</p>
+<p><strong>7. Mandar os três níveis de cobrança de uma vez.</strong> A régua funciona porque dá tempo e escala o tom aos poucos. Pular direto para o nível 3 com dois dias de atraso queima relacionamento por nada.</p>
+<h2>Quanto tempo isso economiza</h2>
+<p>A conta honesta, sem inflar:</p>
+<table><thead><tr><th>Tarefa</th><th>Sem assistente</th><th>Com assistente</th><th>Frequência típica</th></tr></thead><tbody><tr><td>Montar e enviar orçamento</td><td>20–40 min (e muitas vezes nem sai)</td><td>5–10 min</td><td>2–8 por semana</td></tr><tr><td>Redigir cobrança</td><td>15 min + dias de adiamento</td><td>2–3 min</td><td>2–6 por mês</td></tr><tr><td>Controle financeiro</td><td>Não existia, ou 2h de sofrimento no fim do mês</td><td>15 min por semana</td><td>semanal</td></tr><tr><td>Confirmações de agenda</td><td>5–10 min improvisando</td><td>1 min com resposta rápida</td><td>diária, se trabalha com horário</td></tr><tr><td>Recibo/termo simples</td><td>30 min ou "depois eu faço"</td><td>5 min + revisão</td><td>eventual</td></tr></tbody></table>
+<p>Somando para um negócio típico: algo entre <strong>2 e 4 horas por semana</strong>, <em>depois</em> das 2 horas de montagem inicial e do primeiro mês de ajustes. Se na sua realidade der 1 hora e meia, ainda é um turno inteiro recuperado por mês.</p>
+<p>Mas a verdade é que o maior ganho deste funcionário não é tempo — é <strong>dinheiro que deixava de entrar</strong>. Cobrança adiada é, na prática, desconto involuntário. Orçamento que demora três dias é venda que esfria. Horário vago por no-show é custo fixo sem receita. O assistente administrativo não vende nada; ele só fecha as torneiras por onde o seu dinheiro vazava em silêncio.</p>
+<p>E tem um efeito que não cabe em tabela: a sensação de ter o financeiro sob controle. Quem nunca passou um dia 19 sem saber se o mês está no azul não sabe o peso que isso tira das costas.</p>
+<p>No próximo capítulo, você contrata o quinto e último funcionário — o Analista de Mercado, que pega justamente os números desta planilha e transforma em decisões.</p>
+</section>
+<section class="chapter" id="cap-8">
+<h1>Capítulo 8 — Funcionário nº 5: O Analista de Mercado</h1>
+<p>Os quatro primeiros funcionários trabalham <strong>dentro</strong> do balcão: atendem, vendem, divulgam, organizam. O quinto trabalha de fora, olhando para o jogo inteiro — o que o concorrente está fazendo, se o seu preço está certo, o que os clientes dizem pelas costas (nas avaliações) e o que os números do mês significam.</p>
+<p>Grande empresa paga caro por isso: chama-se consultoria. Você vai montar a sua por R$ 0 — com uma condição que eu preciso deixar clara já no primeiro parágrafo, porque é a regra número um deste capítulo:</p>
+<p><strong>A IA não conhece a sua cidade.</strong> Ela não sabe o preço do salão da esquina, nem quantos concorrentes abriram no seu bairro este ano. Se você perguntar, ela responde mesmo assim — inventando com a maior confiança do mundo (a alucinação do capítulo 1). Por isso, o Analista funciona num esquema fixo: <strong>você coleta os dados, a IA organiza e analisa.</strong> Você é o repórter; ela é a redação inteira. Nunca o contrário.</p>
+<h2>O que esse funcionário faz</h2>
+<ul>
+<li><strong>Pesquisa de concorrência estruturada:</strong> transforma sua coleta de informações (preços, ofertas, presença digital dos concorrentes) numa análise comparativa com conclusões acionáveis.</li>
+<li><strong>Precificação:</strong> analisa seus custos e posicionamento e sugere faixas de preço — com a decisão final sempre na sua mão.</li>
+<li><strong>Mineração de avaliações:</strong> lê dezenas de reviews (suas e dos concorrentes) e extrai os padrões que ninguém tem paciência de tabular.</li>
+<li><strong>Teste de ofertas:</strong> desenha variações de promoção e um jeito simples de medir qual funcionou.</li>
+<li><strong>Relatório mensal do dono:</strong> pega os números da sua planilha (capítulo 7) e devolve um diagnóstico com 3 ações para o mês seguinte.</li>
+</ul>
+<h3>O que ele NÃO faz</h3>
+<ul>
+<li><strong>Não sabe fatos do mundo real por conta própria.</strong> Preço de concorrente, demanda do bairro, salário médio da categoria: tudo que ela "souber" sem você fornecer é chute verossímil. Dados entram por você.</li>
+<li><strong>Não decide por você.</strong> Ele recomenda com argumentos. Subir preço, abrir filial, cortar produto — decisões com consequência são do dono.</li>
+<li><strong>Não substitui sentir o cliente.</strong> Análise organiza o que você já meio que sabia; a intuição de quem está no balcão todo dia continua sendo seu melhor sensor. O Analista existe para confirmá-la ou desafiá-la com dados.</li>
+</ul>
+<h2>O que você precisa</h2>
+<table><thead><tr><th>Ferramenta</th><th>Para quê</th><th>Custo</th></tr></thead><tbody><tr><td>ChatGPT, Claude ou Gemini (grátis)</td><td>Toda a análise</td><td>Grátis</td></tr><tr><td>Manual do Funcionário (cap. 3)</td><td>Contexto do negócio</td><td>Pronto</td></tr><tr><td>Google Sheets (planilha do cap. 7)</td><td>Fonte dos seus números</td><td>Pronta</td></tr><tr><td>Google Maps, Instagram, iFood (os que valerem)</td><td>Coleta de dados de concorrência e avaliações</td><td>Grátis</td></tr><tr><td>1h por mês</td><td>A rotina do Analista</td><td>—</td></tr></tbody></table>
+<p>Custo total: <strong>R$ 0</strong>. Este funcionário trabalha 1 vez por mês — mas é a hora mais bem paga do seu mês.</p>
+<h2>Montagem passo a passo</h2>
+<h3>Etapa 1 — O censo de concorrentes (30 min, 1x; atualiza a cada 3 meses)</h3>
+<p>Primeiro, a coleta. Escolha seus <strong>5 concorrentes mais diretos</strong> (mesmo serviço, mesma região ou mesmo público) e, para cada um, anote num bloco de notas:</p>
+<ul>
+<li>Nome e onde atende</li>
+<li>Preços que conseguir ver (site, cardápio, Instagram, perguntando como cliente — sim, pode)</li>
+<li>O que prometem (rapidez? luxo? preço baixo?)</li>
+<li>Presença digital: seguidores, frequência de post, responde comentário?</li>
+<li>Nota e quantidade de avaliações (Google Maps, iFood, etc.)</li>
+<li>Algo que fazem e você não (e vice-versa)</li>
+</ul>
+<p>Não precisa ser perfeito; precisa ser real. Com a coleta em mãos, cole o Manual e:</p>
+<pre><code>Organize minha pesquisa de concorrência. Dados que eu coletei:
+
+[COLAR SUAS ANOTAÇÕES DOS 5 CONCORRENTES]
+
+Tarefa:
+1. Monte uma tabela comparativa: eu + os 5 concorrentes, nas colunas
+   preço, promessa principal, presença digital, avaliação, diferencial.
+2. Aponte: onde estou mais caro/mais barato e se a diferença se
+   justifica pelo que ofereço; o que 3 ou mais concorrentes fazem e
+   eu não (pode ser padrão do mercado que o cliente já espera); e
+   qual espaço NINGUÉM está ocupando.
+3. Conclua com as 2 oportunidades mais práticas para mim nos
+   próximos 30 dias.
+
+Use SOMENTE os dados que forneci — onde faltar informação, escreva
+"não coletado" em vez de estimar.</code></pre>
+<p>A última linha do prompt é a trava de segurança contra alucinação. Use-a em toda análise.</p>
+<h3>Etapa 2 — A revisão de preços (40 min, a cada 6 meses ou quando o custo mudar)</h3>
+<p>Precificação no pequeno negócio costuma nascer assim: "cobrei mais ou menos o que o concorrente cobra". O Analista melhora isso em uma sessão. Antes, colete: seus custos diretos por produto/serviço (material, taxa de entrega, embalagem), suas horas envolvidas, e os preços de concorrência da Etapa 1.</p>
+<pre><code>Me ajude a revisar o preço de [PRODUTO/SERVIÇO].
+
+Dados:
+- Custos diretos por unidade: [LISTAR: material R$ X, embalagem R$ Y,
+  taxa Z...]
+- Meu tempo por unidade: [HORAS] (considere que quero que minha hora
+  valha pelo menos R$ [VALOR — se não souber, me ajude a calcular
+  perguntando minha meta de renda mensal e horas disponíveis])
+- Preço atual: R$ [VALOR]
+- Concorrentes: [FAIXAS DA ETAPA 1]
+- Meu posicionamento: [mais barato / na média / premium — e por quê]
+
+Tarefa:
+1. Calcule meu custo real por unidade e minha margem atual (mostre a
+   conta passo a passo).
+2. Sugira 3 faixas de preço (defensiva, recomendada, ousada), cada
+   uma com justificativa e risco.
+3. Se a recomendada for acima da atual, sugira como comunicar o
+   reajuste (sei que o capítulo 5 tem o prompt da mensagem).
+
+A decisão final é minha: termine com as 3 perguntas que eu deveria
+me fazer antes de bater o martelo.</code></pre>
+<p>O resultado mais comum dessa sessão, na vida real? Descobrir que a sua hora está valendo menos que o salário mínimo depois dos custos. Doloroso e libertador — porque agora é um número, não uma sensação, e número se corrige.</p>
+<h3>Etapa 3 — Mineração de avaliações (30 min, 1x por trimestre)</h3>
+<p>Avaliações são pesquisa de mercado grátis que os clientes escreveram de graça — e quase nenhum dono lê de forma sistemática. Colete: todas as suas avaliações (Google Maps, iFood, comentários relevantes) e 20–30 dos seus 2 maiores concorrentes.</p>
+<pre><code>Analise estas avaliações de clientes.
+
+MINHAS ([N] avaliações):
+[COLAR]
+
+CONCORRENTE A ([N] avaliações):
+[COLAR]
+
+CONCORRENTE B ([N] avaliações):
+[COLAR]
+
+Tarefa:
+1. Padrões de ELOGIO meus: o que os clientes mais valorizam (isso é
+   meu diferencial real — o que devo falar nos posts e na bio).
+2. Padrões de RECLAMAÇÃO meus: agrupados por tema, com frequência.
+3. Reclamações recorrentes DOS CONCORRENTES: cada uma é uma
+   oportunidade minha (o que o mercado quer e não recebe).
+4. Elogios recorrentes dos concorrentes que eu não recebo: o que
+   eles fazem melhor (sem rodeio, preciso ouvir).
+5. Conclua: 1 coisa para começar a fazer, 1 para corrigir, 1 para
+   comunicar melhor.
+
+Use somente o texto fornecido; se uma categoria tiver poucos dados,
+diga isso em vez de extrapolar.</code></pre>
+<p>Dica de ouro escondida no item 1: <strong>os elogios recorrentes são a sua copy pronta.</strong> Se 8 clientes escreveram "entrega sempre no horário", a sua bio e seus posts de oferta deveriam gritar pontualidade — é o diferencial que o mercado já validou, com as palavras do próprio cliente.</p>
+<h3>Etapa 4 — Teste de oferta com medição de pobre (que funciona) (30 min por rodada)</h3>
+<p>Promoção sem medição é palpite caro. O ciclo do Analista tem 3 passos:</p>
+<p><strong>1. Gerar as variações:</strong></p>
+<pre><code>Quero testar uma oferta de [OBJETIVO: ex. aumentar movimento nas
+terças / desovar estoque de X / atrair cliente novo].
+
+Crie 3 variações de oferta com mecânicas DIFERENTES entre si (ex:
+desconto direto vs. combo vs. brinde/upgrade vs. condição "traga um
+amigo"), todas dentro destes limites: desconto máximo [X%], válidas
+por [PERÍODO], sem comprometer [O QUE NÃO PODE: ex. margem do
+carro-chefe, agenda de sábado].
+
+Para cada uma: nome, mecânica, texto de divulgação de 3 linhas, e o
+risco principal.</code></pre>
+<p><strong>2. Medir sem sistema caro</strong> — dois truques de balcão:</p>
+<ul>
+<li><strong>Código no resgate:</strong> cada variação tem uma palavra ("ME DIGA *TERÇA10*") — quem usa, você marca um risquinho. Conta exata, custo zero.</li>
+<li><strong>A pergunta de ouro:</strong> todo cliente novo no período ouve "como você ficou sabendo?" — e a resposta vai para uma nota no celular.</li>
+</ul>
+<p><strong>3. Fechar a rodada:</strong> depois do período, volte à IA com os números ("variação A: 12 resgates, B: 3, C: 7; vendas totais...") e peça o veredito + a próxima rodada. Promoção vira experimento, e experimento acumula aprendizado.</p>
+<h3>Etapa 5 — O Relatório Mensal do Dono (30 min, todo início de mês)</h3>
+<p>A joia da coroa — e o prompt mais importante do capítulo. Todo dia 1º, pegue da planilha do capítulo 7: faturamento do mês, gastos por categoria, e da planilha de funil (capítulo 5): orçamentos enviados/fechados. Aí:</p>
+<pre><code>Você é meu analista de negócio. Aqui estão meus números de [MÊS]:
+
+- Faturamento: R$ [X] (mês anterior: R$ [Y])
+- Gastos por categoria: [COLAR DA PLANILHA]
+- Orçamentos enviados: [N] | Fechados: [N] | Taxa: [%]
+- Ticket médio: R$ [X]
+- Observações do mês: [o que aconteceu de atípico: feriado, você
+  doente, promoção rodando, equipamento quebrado...]
+
+Tarefa:
+1. Diagnóstico em até 10 linhas: o que melhorou, o que piorou e a
+   provável causa (considere as observações antes de concluir
+   tendência).
+2. O número mais preocupante e o mais animador do mês.
+3. EXATAMENTE 3 ações para o próximo mês, em ordem de impacto, cada
+   uma com: o que fazer, qual funcionário digital deste livro ajuda
+   nisso, e como saber se funcionou no fim do mês.
+
+Seja direto. Se os dados não sustentam uma conclusão, diga "não dá
+para afirmar com um mês de dado" em vez de inventar tendência.</code></pre>
+<p>Nos primeiros meses, o relatório será simples — pouca série histórica. Do terceiro mês em diante, quando a IA puder comparar tendências, ele vira a reunião de diretoria que o seu negócio nunca teve. Guarde cada relatório no mesmo Google Doc, em ordem: esse histórico é um ativo.</p>
+<h2>Prompts prontos</h2>
+<p>Seis situações recorrentes do Analista (Manual colado antes):</p>
+<p><strong>1. Concorrente novo abriu na região</strong> — <em>quando usar: na semana em que você descobrir.</em></p>
+<pre><code>Abriu um concorrente novo: [O QUE VOCÊ SABE: nome, proposta, preços
+vistos, promoção de inauguração]. Sem alarmismo: o que ele ameaça de
+verdade no meu negócio, o que é só barulho de inauguração, e quais 2
+movimentos defensivos fazem sentido AGORA (sem guerra de preço)?
+Use só o que informei; liste o que mais eu deveria descobrir sobre ele.</code></pre>
+<p><strong>2. Devo adicionar este produto/serviço?</strong> — <em>quando usar: antes de expandir o cardápio/portfólio.</em></p>
+<pre><code>Estou pensando em oferecer [NOVO PRODUTO/SERVIÇO]. Contexto: [por que
+estou considerando: clientes pedem? concorrente tem? margem boa?].
+Monte uma análise prós/contras específica do meu negócio: encaixe com
+meu cliente atual, impacto na operação (tempo/equipamento), faixa de
+preço coerente com meu posicionamento, e os 3 riscos principais.
+Termine com as perguntas que eu deveria responder antes de decidir
+— inclusive como testar pequeno antes de comprometer.</code></pre>
+<p><strong>3. Tradutor de sazonalidade</strong> — <em>quando usar: planejando o trimestre.</em></p>
+<pre><code>Para meu tipo de negócio, monte o mapa de sazonalidade dos próximos 3
+meses no Brasil: datas comemorativas relevantes, períodos
+historicamente fortes e fracos PARA O MEU SETOR (se não tiver certeza
+sobre meu setor específico, diga e pergunte), e 1 ação de preparação
+para cada momento-chave, com antecedência sugerida.</code></pre>
+<p><strong>4. Autópsia de mês ruim</strong> — <em>quando usar: quando o faturamento despencar e o pânico bater.</em></p>
+<pre><code>Meu faturamento caiu [X%] em [MÊS]. Fatos: [TUDO QUE SOUBER: chuva,
+obra na rua, concorrente em promoção, você postou menos, feriados,
+economia local...]. Liste as hipóteses de causa em ordem de
+probabilidade, separando o que estava sob meu controle do que não
+estava, e me diga que dado coletar para confirmar cada hipótese
+antes de eu sair mudando tudo.</code></pre>
+<p><strong>5. Pesquisa rápida com clientes (feita certa)</strong> — <em>quando usar: 2x por ano, ou antes de mudança grande.</em></p>
+<pre><code>Quero ouvir meus clientes sobre [TEMA: novo horário? novo produto?
+por que compram aqui?]. Crie uma mini-pesquisa de NO MÁXIMO 4
+perguntas para WhatsApp: 3 fechadas (fáceis de responder com um
+toque) e 1 aberta. Inclua a mensagem-convite (curta, explicando que
+leva 1 minuto e como o cliente se beneficia) e me diga como tabular
+as respostas numa planilha simples.</code></pre>
+<p><strong>6. Comparador de fornecedores</strong> — <em>quando usar: cotação de insumo ou serviço relevante.</em></p>
+<pre><code>Cotei [INSUMO/SERVIÇO] com 3 fornecedores: [COLAR: preço, prazo,
+mínimo, frete, observações de cada]. Monte a comparação incluindo o
+custo TOTAL real de cada um (não só o preço de tabela), aponte
+pegadinhas comuns nesse tipo de contratação que eu deveria conferir,
+e recomende com justificativa. Decisão final é minha.</code></pre>
+<h2>Teste de qualidade</h2>
+<ul>
+<li><span class="cb">☐</span> Rode a pesquisa de concorrência e procure na resposta algum "fato" que você <strong>não</strong> forneceu. Achou? A IA extrapolou — reforce a trava ("use somente os dados que forneci") e refaça.</li>
+<li><span class="cb">☐</span> Na revisão de preço, refaça a conta de custo no papel ou na calculadora. A IA erra aritmética com confiança; a estrutura da análise vale mais que a conta — a conta é sua.</li>
+<li><span class="cb">☐</span> No relatório mensal, confira se as 3 ações são executáveis por você em um mês. "Melhore seu marketing" não é ação; "publique os 12 posts do calendário e meça quantos 'vim pelo Instagram' aparecem" é.</li>
+<li><span class="cb">☐</span> Releia uma análise 24h depois, com cabeça fria. Continua fazendo sentido ou você se empolgou junto com a IA?</li>
+</ul>
+<h2>Erros comuns</h2>
+<ol>
+<li><strong>Perguntar à IA o que ela não tem como saber.</strong> "Quanto cobra o salão X do bairro Y?" — ela responde, e é chute. Tudo que é fato local entra coletado por você. Sem exceção.</li>
+<li><strong>Terceirizar a decisão.</strong> "A IA mandou subir o preço" não existe. Ela monta o caso; quem assina é você — inclusive porque é você quem conhece o cliente que vai reagir.</li>
+<li><strong>Análise sem dado mínimo.</strong> Relatório mensal com "faturamento: uns 5 mil, acho" devolve análise no mesmo nível. O Analista é o motivo de manter a planilha do capítulo 7 em dia — eles trabalham em dupla.</li>
+<li><strong>Coletar uma vez e usar para sempre.</strong> Pesquisa de concorrência de 8 meses atrás descreve um mercado que não existe mais. Censo a cada 3 meses, preço a cada 6.</li>
+<li><strong>Mudar três coisas ao mesmo tempo depois de uma análise.</strong> Se você muda preço, oferta e horário na mesma semana, nunca saberá o que causou o quê. Uma mudança por vez, medida pelo truque do código de resgate.</li>
+<li><strong>Ignorar a conclusão que doeu.</strong> A mineração de avaliações às vezes devolve "os clientes do concorrente elogiam a rapidez; os seus reclamam da demora". Análise que só confirma o que você queria ouvir é horóscopo.</li>
+</ol>
+<h2>Quanto tempo isso economiza</h2>
+<p>Aqui a régua certa não é tempo economizado — é <strong>acesso ao que você não tinha</strong>. Uma consultoria júnior cobraria algumas centenas de reais por uma análise de concorrência ou revisão de precificação; o Analista faz versões úteis disso por zero, em 1h por mês.</p>
+<p>Mas dá para fazer uma conta honesta de tempo também: tabular 60 avaliações à mão (ler, agrupar, contar temas) leva facilmente 3–4 horas — a IA faz a tabulação em 1 minuto e você gasta 20 revisando. Montar uma comparação de concorrência apresentável: uma tarde inteira no Excel vs. 40 minutos no esquema coleta-sua + análise-dela. Por mês, a rotina completa do Analista (relatório mensal + 1 análise pontual) custa <strong>~1h e devolve o que antes simplesmente não era feito</strong> — e decisão melhor não aparece na planilha de horas, aparece na de faturamento.</p>
+<p>Cinco funcionários contratados. Falta o mais importante: fazer todos trabalharem juntos sem virar mais uma fonte de caos na sua semana. É o assunto do próximo capítulo.</p>
+</section>
+<section class="chapter" id="cap-9">
+<h1>Capítulo 9 — Colocando tudo para rodar: a rotina do dono</h1>
+<p>Você chegou aqui com cinco funcionários contratados. Agora vem a parte em que a maioria dos leitores de livros como este tropeça — e não é por preguiça. É por excesso de entusiasmo.</p>
+<p>O erro clássico: terminar a leitura num domingo, empolgado, e tentar implantar os cinco funcionários na segunda-feira. Na quarta, o WhatsApp está meio configurado, a planilha pela metade, o calendário de conteúdo abandonado no terceiro post — e a sensação é de que "isso de IA não funciona pra mim". Funciona. O que não funciona é trocar o motor do carro com ele andando.</p>
+<p>Este capítulo é o manual de implantação e operação: em que ordem contratar cada funcionário, qual é a sua rotina semanal depois que tudo roda, como saber se está funcionando — e, com a honestidade de sempre, quando este sistema deixa de ser suficiente.</p>
+<h2>A ordem certa de implantação</h2>
+<p>Um funcionário por semana (ou por quinzena, se a sua semana for um incêndio — sem culpa). A ordem não é aleatória; cada um prepara o terreno do seguinte:</p>
+<table><thead><tr><th>Semana</th><th>Funcionário</th><th>Por que nesta ordem</th></tr></thead><tbody><tr><td>0</td><td><strong>Manual do Funcionário</strong> (cap. 3)</td><td>É a fundação. Sem ele, nenhum dos cinco funciona direito. 1 hora bem gasta.</td></tr><tr><td>1</td><td><strong>Atendente</strong> (cap. 4)</td><td>Alívio imediato e visível: as perguntas repetidas somem da sua frente já na primeira semana. A vitória rápida que dá fôlego para o resto.</td></tr><tr><td>2</td><td><strong>Vendedor</strong> (cap. 5)</td><td>Com o atendimento organizado, o follow-up começa a recuperar dinheiro que estava na mesa. É ele que "paga" o projeto inteiro.</td></tr><tr><td>3</td><td><strong>Administrativo</strong> (cap. 7)</td><td>A planilha financeira precisa de algumas semanas de dados para alimentar o Analista depois. Quanto antes começar a registrar, melhor.</td></tr><tr><td>4</td><td><strong>Criador de Conteúdo</strong> (cap. 6)</td><td>Entra por último entre os operacionais porque é o de retorno mais lento — e porque agora você tem o que mostrar: atendimento ágil e casos recentes.</td></tr><tr><td>5+</td><td><strong>Analista</strong> (cap. 8)</td><td>Só faz sentido com pelo menos um mês de números na planilha. Primeira sessão: pesquisa de concorrência; primeiro relatório mensal: no fechamento do mês seguinte.</td></tr></tbody></table>
+<p>Se você só puder implantar <strong>um</strong> funcionário, que seja o Atendente. Se puder dois, Atendente + Vendedor — essa dupla resolve a maior parte da dor de quase todo pequeno negócio.</p>
+<p>E use o <strong>Checklist de 7 Dias</strong> dos bônus se preferir o caminho intensivo: ele compacta as semanas 0–5 em uma semana de implantação guiada, dia a dia, para quem tem um período mais calmo (férias coletivas, baixa temporada) e quer montar tudo de uma vez.</p>
+<h2>A rotina semanal de 2 horas</h2>
+<p>Implantado o sistema, ele se sustenta com <strong>2 horas por semana, divididas em 4 blocos de 30 minutos</strong>. A regra mais importante: blocos marcados na agenda como compromisso — com hora, alarme e tudo. "Quando der" é o cemitério das rotinas.</p>
+<table><thead><tr><th>Dia</th><th>Bloco</th><th>O que acontece</th></tr></thead><tbody><tr><td><strong>Segunda, 30 min</strong></td><td><strong>Vendas</strong></td><td>Abrir a planilha de funil → enviar os follow-ups vencidos (D+1/D+3/D+7/D+15, com as respostas rápidas <code>/f1</code>...<code>/f15</code>) → atualizar status → olhar o número de "dinheiro na mesa"</td></tr><tr><td><strong>Quarta, 30 min</strong></td><td><strong>Conteúdo</strong></td><td>Gerar as legendas da semana com o calendário → revisar no seu tom → publicar/agendar → conferir a foto que falta captar</td></tr><tr><td><strong>Sexta, 30 min</strong></td><td><strong>Financeiro</strong></td><td>Lançar a semana na planilha → enviar cobranças pendentes (níveis 1, 2 ou 3) → confirmar agendamentos da semana seguinte</td></tr><tr><td><strong>Flutuante, 30 min</strong></td><td><strong>Reserva</strong></td><td>O que transbordou: resposta difícil que precisa de calma, ajuste no Manual, story atrasado, leitura das respostas da caixinha</td></tr></tbody></table>
+<p>O que <strong>não</strong> está nos blocos: o atendimento do dia a dia (respostas rápidas e mensagens revisadas na hora, dentro do fluxo normal do seu trabalho — o Atendente já tornou isso rápido) e os 5 minutos de story diário, que entram no piloto automático junto com o cafezinho.</p>
+<h3>A rotina mensal (1 hora)</h3>
+<p>Todo início de mês, um bloco único de 1 hora, de preferência num momento quieto:</p>
+<ol>
+<li><strong>(30 min)</strong> Relatório Mensal do Dono (cap. 8): colete os números das planilhas, rode o prompt, leia o diagnóstico, anote as 3 ações no papel ou na agenda.</li>
+<li><strong>(20 min)</strong> Calendário editorial do mês seguinte (cap. 6).</li>
+<li><strong>(10 min)</strong> Manutenção: o Manual do Funcionário está atualizado (preços? horários? novidades?)? Alguma resposta rápida ficou obsoleta?</li>
+</ol>
+<p>Total do sistema em regime: <strong>~9 horas por mês</strong>. Para cinco funções que, feitas no improviso, consumiam o dobro — ou simplesmente não eram feitas.</p>
+<h2>Como saber se está funcionando: os 4 indicadores</h2>
+<p>Sem medição, em dois meses você não saberá dizer se o sistema vale a pena — e rotina sem resultado percebido morre. Quatro números bastam, e a <strong>Planilha de ROI dos bônus</strong> registra todos em 5 minutos por semana:</p>
+<ol>
+<li><strong>Tempo de resposta ao cliente.</strong> Antes: horas (ou "quando eu via"). Meta: minutos no horário comercial, saudação automática fora dele. É o indicador que o <strong>cliente</strong> sente.</li>
+<li><strong>Orçamentos enviados por semana.</strong> Mede se a máquina de vendas está girando. Se caiu, o problema é fluxo de interessados (acende o farol do Conteúdo); se está alto e as vendas não, o problema é conversão (revise preço ou follow-up).</li>
+<li><strong>Taxa de follow-up feito.</strong> Dos orçamentos que venceram o prazo (D+1, D+3...), quantos % receberam a mensagem? Meta: 100% — é literalmente abrir a planilha na segunda e enviar. É o indicador de <strong>disciplina</strong>, o único 100% sob seu controle.</li>
+<li><strong>Horas economizadas por semana.</strong> A estimativa honesta que você lança na planilha de ROI, multiplicada pelo valor da sua hora. É o indicador que justifica o sistema — e o que você olha quando bater a preguiça num domingo de calendário editorial.</li>
+</ol>
+<p>Regra de leitura: olhe os indicadores <strong>na sexta-feira do bloco financeiro</strong>, tendência de 4 semanas, não o número da semana isolada. Uma semana ruim é ruído; um mês caindo é sinal.</p>
+<h2>Quando este sistema deixa de bastar (e isso é uma boa notícia)</h2>
+<p>Tudo neste livro foi desenhado para o modelo <strong>semi-automático</strong>: a IA produz, você aprova, custo perto de zero. É o modelo certo para começar — e para muita gente, é o modelo certo para sempre. Mas existem sinais claros de que o seu negócio cresceu além dele:</p>
+<p><strong>Sinais de que é hora de automatizar de verdade</strong> (WhatsApp via API oficial, com chatbot respondendo sozinho as perguntas do FAQ; automações em ferramentas como Make ou n8n conectando formulário → planilha → mensagem):</p>
+<ul>
+<li>Você recebe <strong>mais de 30–50 conversas novas por dia</strong> e as respostas rápidas viraram gargalo físico;</li>
+<li>As mesmas 10 perguntas do FAQ blindado representam a maioria esmagadora das mensagens;</li>
+<li>Você já tem caixa para pagar ferramenta (a API oficial do WhatsApp e as plataformas que a usam custam a partir de algumas centenas de reais por mês — o preço de não perder cliente por demora).</li>
+</ul>
+<p>Nesse estágio, contrate a implantação com quem faz isso profissionalmente ou estude as ferramentas com calma — e leve junto o seu maior patrimônio: o FAQ blindado, o Manual e as mensagens que você validou na prática. A automação profissional vai apenas executar mais rápido o que você já sabe que funciona. Quem automatiza sem esse acervo automatiza o achismo.</p>
+<p><strong>Sinais de que é hora de contratar um humano</strong> (e a IA não resolve):</p>
+<ul>
+<li>O gargalo é <strong>físico</strong>: produção, entrega, atendimento presencial. IA não faz bolo nem corta cabelo;</li>
+<li>Você recusa trabalho com agenda cheia — o problema é capacidade, não organização;</li>
+<li>O atendimento exige <strong>julgamento e vínculo</strong> o tempo todo (casos delicados, clientes de alto valor) e o volume passou da sua conta.</li>
+</ul>
+<p>A honestidade final: o objetivo deste livro nunca foi você operar prompts para sempre. Foi <strong>comprar de volta as suas horas</strong> — para produzir mais, vender mais, ou simplesmente viver mais. Quando o sistema semi-automático ficar pequeno, ele terá cumprido o papel: financiado, com tempo e com caixa, o próximo degrau.</p>
+<p>Falta um capítulo. Ele é curto, e é o que protege tudo o que você construiu até aqui: segurança, ética e a famosa LGPD — sem juridiquês. Não pule.</p>
+</section>
+<section class="chapter" id="cap-10">
+<h1>Capítulo 10 — Segurança, ética e LGPD sem juridiquês</h1>
+<p>Este é o capítulo que quase todo livro de IA esconde no apêndice e quase todo leitor pula. Vou pedir 20 minutos da sua atenção, e ofereço um motivo egoísta, não moral: <strong>tudo o que você construiu nos capítulos anteriores depende da confiança do cliente — e confiança é o único ativo do pequeno negócio que não tem conserto rápido.</strong> Um vazamento de dados, uma IA inventando promoção, uma mensagem automática fria na hora errada: qualquer um desses desfaz em uma tarde o que o Atendente e o Conteúdo levaram meses construindo.</p>
+<p>A boa notícia: para o tamanho do seu negócio, a segurança cabe em poucas regras simples. Sem juridiquês, como prometido.</p>
+<blockquote><strong>Aviso honesto antes de começar:</strong> o que segue é orientação geral de boas práticas, escrita em linguagem simples. Não é aconselhamento jurídico. Se o seu negócio lida com dados sensíveis em volume (saúde, por exemplo) ou se você tiver uma situação concreta de conflito, uma consulta com advogado vale cada centavo.</blockquote>
+<h2>A regra de ouro: o que NUNCA entra numa ferramenta de IA</h2>
+<p>Trate o campo de texto do ChatGPT, do Claude e do Gemini como você trata um <strong>balcão com gente estranha por perto</strong>: dá para conversar sobre o negócio, mas tem coisas que você não fala em voz alta ali.</p>
+<p><strong>Nunca cole:</strong></p>
+<ul>
+<li><strong>CPF, RG ou dados de documento</strong> de cliente (seu também não);</li>
+<li><strong>Dados de cartão ou conta bancária</strong> — de ninguém, nunca, em hipótese alguma;</li>
+<li><strong>Senhas</strong> de qualquer coisa (nem "só pra IA me ajudar a criar uma melhor" — descreva o padrão que quer, sem digitar a atual);</li>
+<li><strong>Dados de saúde de clientes</strong> identificáveis (diagnóstico, tratamento, medicação ligados a um nome) — se você é da área da saúde, este item é lei, não sugestão;</li>
+<li><strong>Endereço completo de cliente</strong> junto com nome e rotina ("a Maria da rua X viaja toda sexta") — você não percebe, mas acabou de montar um mapa para problema.</li>
+</ul>
+<p>Por quê? Dois motivos práticos. Primeiro: dependendo do plano e das configurações, o que você digita pode ser usado para treinar os modelos ou ser lido em revisões — você perdeu o controle do dado no momento em que colou. Segundo: ainda que a ferramenta seja séria, <strong>a sua conta pode não ser segura</strong> (celular perdido, senha fraca, sessão aberta). O dado que não foi colado é o único 100% protegido.</p>
+<h2>O truque que resolve quase tudo: anonimizar</h2>
+<p>A beleza é que a IA <strong>não precisa</strong> do dado real para trabalhar bem. Ela precisa do <strong>contexto</strong>, não da identidade:</p>
+<table><thead><tr><th>Em vez de...</th><th>Cole...</th></tr></thead><tbody><tr><td>"A Fernanda Souza, CPF 123..., não pagou"</td><td>"Cliente A, mensalidade atrasada há 5 dias, 2 anos de casa, nunca atrasou"</td></tr><tr><td>"Endereço de entrega: Rua das Acácias, 142, ap 31"</td><td>"Entrega no bairro [X], pedido de R$ 90"</td></tr><tr><td>"Paciente João, diabético, faltou à consulta"</td><td>"Paciente em acompanhamento contínuo faltou pela 2ª vez"</td></tr></tbody></table>
+<p>A resposta da IA sai igualzinha — e o "Cliente A" você traduz de volta na hora de enviar. Custo do hábito: dois segundos. É de longe a prática de segurança com melhor custo-benefício deste capítulo.</p>
+<h2>LGPD em linguagem de gente</h2>
+<p>A Lei Geral de Proteção de Dados assusta pelo nome, mas o espírito dela cabe numa frase: <strong>o dado do cliente é do cliente — você é só o guardião temporário, e precisa de um bom motivo para cada uso.</strong> Para um pequeno negócio usando as ferramentas deste livro, o essencial se resume a quatro princípios:</p>
+<p><strong>1. Finalidade: use o dado para o que ele foi dado.</strong> O telefone que o cliente deixou para "avisar quando o pedido ficar pronto" não é automaticamente uma inscrição na sua lista de promoções. Parece detalhe; é o coração da lei — e da confiança.</p>
+<p><strong>2. Consentimento na lista de transmissão.</strong> Já dito no capítulo 6, agora com o peso da lei: só entra na lista quem <strong>pediu ou autorizou</strong>. Pergunte explicitamente ("quer receber as novidades do mês por aqui?") e guarde mentalmente a regra do par: <strong>pedir para entrar, facilitar para sair</strong>.</p>
+<p><strong>3. Direito de exclusão: o "me tira da lista" é sagrado e imediato.</strong> Cliente pediu para sair, saiu — naquele dia, sem "tem certeza?", sem reentrar três meses depois. Além de lei, é o jeito mais barato de nunca ser denunciado.</p>
+<p><strong>4. Minimização: colete só o que usa.</strong> Se para agendar um horário bastam nome e telefone, não peça CPF, endereço e data de nascimento "para o cadastro ficar completo". Dado que você não tem é dado que não vaza, não exige cuidado e não gera dor de cabeça. No pequeno negócio, <strong>menos cadastro é mais segurança</strong>.</p>
+<p>E o famoso "vazamento"? No seu tamanho, o risco número um não é hacker de filme — é o <strong>celular do negócio</strong>: perdido, sem bloqueio, com o WhatsApp de 500 clientes aberto. O que nos leva ao checklist do fim do capítulo.</p>
+<h2>Os 5 erros de IA que queimam o negócio</h2>
+<p>Agora os erros operacionais — os que este livro passou dez capítulos prevenindo, reunidos com a prevenção em uma linha cada:</p>
+<p><strong>1. A IA inventa preço, prazo ou promoção — e você envia sem ler.</strong> É O erro. A IA preenche lacunas com inventividade e confiança ("aproveite 20% off!" que você nunca ofereceu). <em>Prevenção:</em> a regra inegociável do livro — <strong>número que vai para cliente passa pelos seus olhos</strong>, e o Manual do Funcionário sempre atualizado (a IA inventa mais quando o contexto está incompleto).</p>
+<p><strong>2. Tom errado na hora errada.</strong> Resposta com emoji e exclamação para um cliente furioso; mensagem promocional engatilhada para alguém que acabou de relatar um problema sério. <em>Prevenção:</em> assunto delicado <strong>nunca</strong> recebe resposta rápida — recebe o rascunho calmo da IA, a sua revisão e, nos casos graves, uma ligação. Robô pede desculpa; gente resolve.</p>
+<p><strong>3. Conteúdo genérico demais — o "cheiro de IA".</strong> Posts que poderiam ser de qualquer negócio do país, com "venha conferir!" e adjetivo vazio. Não queima em uma tarde como os outros; corrói devagar a sua autenticidade. <em>Prevenção:</em> o Manual com tom de voz e posts de referência (cap. 6), e a revisão de 2 minutos trocando o que você não diria.</p>
+<p><strong>4. Resposta automática em assunto que pedia gente.</strong> A mensagem de ausência respondendo "Olá! Volto às 9h 😊" para um cliente comunicando uma emergência ou um luto. Raro — e inesquecível para quem recebeu. <em>Prevenção:</em> mensagens automáticas curtas e neutras (sem festa, sem piada), e o hábito de varrer as conversas da noite logo de manhã para corrigir qualquer contexto desastroso à mão.</p>
+<p><strong>5. Dependência total, revisão zero.</strong> Depois de semanas tudo dando certo, vem a tentação de parar de ler o que a IA escreve. É estatística: quanto mais mensagens sem revisão, mais perto o dia do erro público. <em>Prevenção:</em> os 30 segundos de leitura <strong>sempre</strong> — o sistema deste livro é semi-automático por projeto, não por limitação.</p>
+<h2>Transparência: precisa avisar que usa IA?</h2>
+<p>Pergunta cada vez mais comum, resposta em dois níveis:</p>
+<ul>
+<li><strong>Mensagens automáticas de máquina</strong> (saudação, ausência, futuro chatbot): <strong>sim, deixe claro</strong> — "essa é uma mensagem automática; já te respondo pessoalmente". Custa nada e evita a sensação de ser enganado, que é o que de fato irrita as pessoas.</li>
+<li><strong>IA como rascunhadora</strong> (tudo o mais neste livro): é ferramenta de escrita, como o corretor ortográfico — quem decide, revisa e assina é você. Não há obrigação nem expectativa de etiqueta "feito com IA" em cada mensagem. A régua ética é simples: <strong>o cliente está falando com você de verdade?</strong> Se sim, está tudo certo. Se um robô conversa fingindo ser você, volte ao item anterior.</li>
+</ul>
+<p>E se um cliente perguntar diretamente? Verdade, com tranquilidade: "uso IA para agilizar a escrita, mas sou eu que leio e respondo tudo". Em 2026, isso soa como profissionalismo, não como trapaça.</p>
+<h2>Checklist final de segurança (10 itens)</h2>
+<p>Passe uma vez agora, e de novo a cada 6 meses:</p>
+<ul>
+<li><span class="cb">☐</span> 1. Celular do negócio com <strong>bloqueio de tela</strong> (digital/rosto) e WhatsApp com <strong>confirmação em duas etapas</strong> ativada (Configurações → Conta).</li>
+<li><span class="cb">☐</span> 2. Contas de IA, e-mail e redes com <strong>senhas fortes e diferentes entre si</strong> (anote num gerenciador ou caderno guardado — não num bloco de notas chamado "senhas" no celular).</li>
+<li><span class="cb">☐</span> 3. <strong>Nunca</strong> colei CPF, cartão, senha ou dado de saúde identificável em ferramenta de IA — e sei anonimizar ("Cliente A").</li>
+<li><span class="cb">☐</span> 4. Minha <strong>lista de transmissão</strong> só tem gente que autorizou, e o pedido de saída é atendido no mesmo dia.</li>
+<li><span class="cb">☐</span> 5. Coleto de cliente <strong>só o dado que uso de verdade</strong>.</li>
+<li><span class="cb">☐</span> 6. <strong>Todo número</strong> (preço, prazo, desconto) é conferido por mim antes de chegar ao cliente.</li>
+<li><span class="cb">☐</span> 7. Assunto <strong>delicado</strong> não recebe resposta rápida — recebe rascunho + revisão + (se grave) ligação.</li>
+<li><span class="cb">☐</span> 8. Minhas mensagens <strong>automáticas</strong> se apresentam como automáticas.</li>
+<li><span class="cb">☐</span> 9. O <strong>Manual do Funcionário</strong> não contém dado pessoal de cliente — só informações do negócio.</li>
+<li><span class="cb">☐</span> 10. Se eu perder o celular agora, sei o que fazer: bloquear o chip na operadora, desconectar o WhatsApp pelo site (WhatsApp Web → dispositivos) e trocar as senhas principais — <em>nessa ordem</em>.</li>
+</ul>
+<h2>Fechando o livro: seus cinco funcionários</h2>
+<p>Respira. Olha o caminho andado:</p>
+<ul>
+<li><strong>O Atendente</strong> (cap. 4) recepciona na hora, responde o repetitivo em dois toques e rascunha as conversas difíceis.</li>
+<li><strong>O Vendedor</strong> (cap. 5) qualifica, orça em minutos e — principalmente — nunca mais deixa um orçamento morrer de esquecimento.</li>
+<li><strong>O Criador de Conteúdo</strong> (cap. 6) transformou "o que eu posto hoje?" numa sessão mensal de 1 hora e presença constante.</li>
+<li><strong>O Administrativo</strong> (cap. 7) padronizou orçamento, cobrança educada e a planilha que virou o painel do negócio.</li>
+<li><strong>O Analista</strong> (cap. 8) trouxe a reunião de diretoria que você nunca teve: concorrência, preço e um relatório mensal com 3 ações.</li>
+</ul>
+<p>Tudo sustentado pela habilidade-mãe (cap. 3) e pelo Manual do Funcionário, operado em 2 horas semanais (cap. 9) e protegido pelas regras deste capítulo.</p>
+<p><strong>O próximo passo é um só:</strong> abra o <strong>Checklist de Implantação em 7 Dias</strong> dos bônus e marque o Dia 1 na agenda — de preferência para esta semana, enquanto a leitura está quente. Livro lido organiza a cabeça; checklist executado muda a rotina.</p>
+<p>Daqui a alguns meses, quando alguém perguntar como você dá conta de tudo, você vai dar aquele sorriso de quem tem segredo. Cinco funcionários, custo perto de zero, trabalhando enquanto você faz o que só você sabe fazer.</p>
+<p>Bom trabalho — e bem-vindo ao time de quem contratou primeiro.</p>
+</section>
+<footer>Funcionários Digitais — O Guia Prático de Agentes de IA para Pequenos Negócios e Autônomos · Todos os direitos reservados.</footer>
+</body>
+</html>
