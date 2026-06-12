@@ -1,7 +1,7 @@
 # Página de Vendas — Funcionários Digitais
 
 > Produto: Ebook "Funcionários Digitais — O Guia Prático de Agentes de IA para Pequenos Negócios e Autônomos"
-> Preço: R$47 | Plataforma: Hotmart | Garantia: 7 dias (incondicional, padrão Hotmart)
+> Preço: R$97 | Plataforma: Hotmart | Garantia: 7 dias (incondicional, padrão Hotmart)
 > Uso: montar na Hotmart Pages ou construtor similar. Cada seção está marcada com H2 e comentário de estrutura.
 
 ---
@@ -38,7 +38,7 @@ O guia prático que ensina donos de pequenos negócios e autônomos a montar age
 Ebook com 10 capítulos + introdução (~35.000 palavras) • 5 blueprints completos • 4 bônus práticos • Linguagem de gente, não de programador.
 
 **CTA primário:**
-[ QUERO MONTAR MEU PRIMEIRO FUNCIONÁRIO DIGITAL — R$47 ]
+[ QUERO MONTAR MEU PRIMEIRO FUNCIONÁRIO DIGITAL — R$97 ]
 
 **Texto abaixo do botão:**
 Acesso imediato após a compra • Garantia incondicional de 7 dias pela Hotmart
@@ -291,7 +291,7 @@ O acesso chega no seu e-mail imediatamente após a confirmação do pagamento, p
 
 ## [CTA FINAL] A pergunta não é se você tem tempo para isso. É quanto tempo você ainda vai perder sem isso.
 
-Recapitulando o que você leva por **R$47**:
+Recapitulando o que você leva por **R$97**:
 
 - Ebook completo: 10 capítulos + introdução (~35.000 palavras), em linguagem simples;
 - O método **Manual do Funcionário** com modelos prontos para adaptar;
@@ -305,7 +305,7 @@ Recapitulando o que você leva por **R$47**:
 Este ebook não vai mudar sua vida sozinho — nenhum produto digital muda. Mas se você implementar nem que seja UM dos cinco funcionários, a próxima vez que alguém perguntar "vocês atendem sábado?" às 22h47... não vai ser você quem responde.
 
 **CTA:**
-[ QUERO MEU ACESSO AGORA — R$47, COM GARANTIA DE 7 DIAS ]
+[ QUERO MEU ACESSO AGORA — R$97, COM GARANTIA DE 7 DIAS ]
 
 **Texto abaixo do botão:**
 Pagamento seguro processado pela Hotmart • Acesso imediato • Reembolso integral em até 7 dias, sem perguntas

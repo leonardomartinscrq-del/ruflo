@@ -1,6 +1,6 @@
 # Sequência de E-mails Pós-Venda (Produtor → Comprador)
 
-> Produto: Ebook "Funcionários Digitais" | R$47 | Hotmart | Garantia 7 dias
+> Produto: Ebook "Funcionários Digitais" | R$97 | Hotmart | Garantia 7 dias
 >
 > **Objetivos da sequência (notas internas — não vão nos e-mails):**
 > 1. Reduzir reembolso por abandono: a maioria dos reembolsos de ebook vem de gente que comprou e não abriu. Os e-mails 0–2 empurram o comprador para a PRIMEIRA AÇÃO (Manual do Funcionário em 20 min).

@@ -1,7 +1,7 @@
 # Kit do Afiliado — Funcionários Digitais
 
 > Produto: Ebook "Funcionários Digitais — O Guia Prático de Agentes de IA para Pequenos Negócios e Autônomos"
-> Preço ao cliente: R$47 | Comissão: **60% por venda** | Plataforma: Hotmart | Garantia: 7 dias
+> Preço ao cliente: R$97 | Comissão: **60% por venda** | Plataforma: Hotmart | Garantia: 7 dias
 > Este kit existe para você vender bem E com segurança. Leia a seção de PROIBIÇÕES antes de qualquer coisa — ela protege a sua conta e a do produtor.
 
 ---
@@ -53,34 +53,34 @@ Na dúvida sobre uma copy sua, pergunte ao produtor ANTES de publicar. Resposta 
 ## (b) 10 copies curtas para anúncio/story (até 280 caracteres cada)
 
 **1. Ângulo: tempo**
-Seu dia tem 24h. As perguntas repetidas do WhatsApp não precisam ocupar 3 delas. O ebook Funcionários Digitais ensina a montar um atendente de IA passo a passo, sem programar. R$47, garantia de 7 dias.
+Seu dia tem 24h. As perguntas repetidas do WhatsApp não precisam ocupar 3 delas. O ebook Funcionários Digitais ensina a montar um atendente de IA passo a passo, sem programar. R$97, garantia de 7 dias.
 
 **2. Ângulo: sobrecarga**
-Atendente, vendedor, financeiro, social media. Se você é tudo isso sozinho, o problema não é falta de esforço — é falta de equipe. Aprenda a montar 5 funcionários digitais com IA, sem código. R$47.
+Atendente, vendedor, financeiro, social media. Se você é tudo isso sozinho, o problema não é falta de esforço — é falta de equipe. Aprenda a montar 5 funcionários digitais com IA, sem código. R$97.
 
 **3. Ângulo: atendimento**
 Cliente mandou mensagem às 22h e você respondeu da cama? Um atendente de IA bem configurado responde as dúvidas comuns a qualquer hora — do seu jeito, com suas regras. O guia mostra como, passo a passo.
 
 **4. Ângulo: follow-up perdido**
-Quantos orçamentos você mandou e nunca mais lembrou de retomar? Follow-up esquecido é conversa que esfria. Aprenda a montar um vendedor digital que acompanha cada negociação por você. Guia prático, R$47.
+Quantos orçamentos você mandou e nunca mais lembrou de retomar? Follow-up esquecido é conversa que esfria. Aprenda a montar um vendedor digital que acompanha cada negociação por você. Guia prático, R$97.
 
 **5. Ângulo: conteúdo**
-Semana cheia = Instagram parado. Com um criador de conteúdo digital (IA + seu jeito de falar), você rascunha o mês inteiro em uma sessão. Blueprint completo + 77 prompts prontos no ebook. R$47.
+Semana cheia = Instagram parado. Com um criador de conteúdo digital (IA + seu jeito de falar), você rascunha o mês inteiro em uma sessão. Blueprint completo + 77 prompts prontos no ebook. R$97.
 
 **6. Ângulo: não-técnico**
 Não, você não precisa saber programar pra usar IA no seu negócio. Precisa de um manual claro. Funcionários Digitais: guia prático em português, com ferramentas gratuitas e 5 blueprints prontos pra adaptar.
 
 **7. Ângulo: administrativo**
-Notinha, planilha, cobrança, agenda. O administrativo come suas noites? Um assistente digital organiza isso com IA — e o guia ensina a montagem passo a passo, sem tecniquês. R$47, 7 dias de garantia.
+Notinha, planilha, cobrança, agenda. O administrativo come suas noites? Um assistente digital organiza isso com IA — e o guia ensina a montagem passo a passo, sem tecniquês. R$97, 7 dias de garantia.
 
 **8. Ângulo: transformação de rotina**
-Imagine abrir o WhatsApp e ver as dúvidas comuns já respondidas, o follow-up em dia e o post da semana rascunhado. É isso que funcionários digitais bem montados fazem. Guia prático por R$47.
+Imagine abrir o WhatsApp e ver as dúvidas comuns já respondidas, o follow-up em dia e o post da semana rascunhado. É isso que funcionários digitais bem montados fazem. Guia prático por R$97.
 
 **9. Ângulo: custo de contratar**
 Contratar alguém agora não cabe no caixa? Antes de desistir de ter ajuda, conheça os funcionários digitais: agentes de IA que assumem tarefas repetitivas usando ferramentas gratuitas. Ebook passo a passo.
 
 **10. Ângulo: anti-hype**
-Sem promessa de ficar rico. Sem hype de IA. Só um guia prático pra tirar tarefas repetitivas das suas costas usando agentes de IA — com método, 5 blueprints e checklist de 7 dias. R$47, garantia Hotmart.
+Sem promessa de ficar rico. Sem hype de IA. Só um guia prático pra tirar tarefas repetitivas das suas costas usando agentes de IA — com método, 5 blueprints e checklist de 7 dias. R$97, garantia Hotmart.
 
 ---
 
@@ -94,7 +94,7 @@ O ebook **Funcionários Digitais** parte de uma ideia simples: cada tarefa repet
 
 São 10 capítulos em linguagem de gente, 5 blueprints completos e 4 bônus práticos — incluindo 77 prompts prontos e um checklist de implantação em 7 dias. Tudo com ferramentas gratuitas, sem uma linha de código.
 
-Custa R$47 e tem garantia incondicional de 7 dias pela Hotmart: deu pra testar o método inteiro antes de decidir se fica.
+Custa R$97 e tem garantia incondicional de 7 dias pela Hotmart: deu pra testar o método inteiro antes de decidir se fica.
 
 [LINK DE AFILIADO]
 
@@ -108,7 +108,7 @@ O ebook **Funcionários Digitais** resolve isso com o método do **Manual do Fun
 
 Com o manual pronto, você aplica os blueprints: Atendente de WhatsApp, Vendedor com Follow-up, Criador de Conteúdo, Assistente Administrativo e Analista de Mercado. Passo a passo, com ferramentas gratuitas.
 
-R$47, acesso imediato, garantia de 7 dias pela Hotmart. Se não fizer sentido pra você, reembolso integral sem perguntas.
+R$97, acesso imediato, garantia de 7 dias pela Hotmart. Se não fizer sentido pra você, reembolso integral sem perguntas.
 
 [LINK DE AFILIADO]
 
@@ -122,7 +122,7 @@ Um dos 5 blueprints do ebook **Funcionários Digitais** é exatamente esse: o **
 
 O ebook completo traz esse e mais 4 blueprints (Atendente, Conteúdo, Administrativo, Analista de Mercado), o método do Manual do Funcionário e 4 bônus práticos. Sem programação, com ferramentas gratuitas.
 
-R$47 na Hotmart, com 7 dias de garantia incondicional.
+R$97 na Hotmart, com 7 dias de garantia incondicional.
 
 [LINK DE AFILIADO]
 
@@ -134,7 +134,7 @@ Não serve pra quem procura renda fácil: o material não promete faturamento, n
 
 Agora, se você toca um negócio sozinho, perde horas com mensagens repetidas, follow-up esquecido e papelada, e topa dedicar de 30 a 60 minutos por dia na primeira semana pra montar seu primeiro agente de IA — aí sim, esse guia foi escrito pra você.
 
-10 capítulos, 5 blueprints, 4 bônus, ferramentas gratuitas. R$47, com garantia de 7 dias pela Hotmart.
+10 capítulos, 5 blueprints, 4 bônus, ferramentas gratuitas. R$97, com garantia de 7 dias pela Hotmart.
 
 [LINK DE AFILIADO]
 
@@ -146,7 +146,7 @@ Na maioria dos pequenos negócios, essa conta passa de 2 horas por dia. São 10+
 
 O ebook **Funcionários Digitais** ensina a montar esse "alguém": agentes de IA configurados com o método do Manual do Funcionário, que assumem o repetitivo e te devolvem tempo. A estimativa é honesta: **até 10 horas semanais liberadas, dependendo do quanto você implementar** — e o material inclui uma Planilha de ROI pra você medir isso no seu caso real, em vez de acreditar em promessa de internet.
 
-R$47, plataforma Hotmart, garantia incondicional de 7 dias.
+R$97, plataforma Hotmart, garantia incondicional de 7 dias.
 
 [LINK DE AFILIADO]
 
@@ -159,7 +159,7 @@ R$47, plataforma Hotmart, garantia incondicional de 7 dias.
 **Criativo 1 — "A mesma pergunta"**
 - Texto principal: "Você já respondeu 'qual o horário de vocês?' umas 500 vezes este ano."
 - Texto de apoio: "Monte um atendente de IA que responde por você. Sem programar."
-- CTA na arte: "Conheça o guia • R$47"
+- CTA na arte: "Conheça o guia • R$97"
 - Visual: simulação de conversa de WhatsApp com a mesma pergunta repetida 4x em balões empilhados; o último balão respondido por um robozinho simpático. Feed e story.
 
 **Criativo 2 — "Os 5 crachás"**
@@ -184,7 +184,7 @@ R$47, plataforma Hotmart, garantia incondicional de 7 dias.
 - Card 1: "Sua semana hoje:" + lista (mensagens repetidas, follow-up esquecido, Instagram parado, papelada acumulada).
 - Card 2: "Sua semana com funcionários digitais:" + lista (dúvidas comuns respondidas, follow-up em dia, posts rascunhados, informação organizada).
 - Card 3: "A diferença? Um método: o Manual do Funcionário. Sem programação. Ferramentas gratuitas."
-- Card 4: CTA — "Ebook Funcionários Digitais • R$47 • 7 dias de garantia • link na bio".
+- Card 4: CTA — "Ebook Funcionários Digitais • R$97 • 7 dias de garantia • link na bio".
 - Visual: duas colunas comparativas com checks e X; cores neutras no "antes", cor de destaque no "depois". ATENÇÃO: é comparação de ROTINA, nunca de dinheiro.
 
 **Criativo 6 — "O manual"**
@@ -196,7 +196,7 @@ R$47, plataforma Hotmart, garantia incondicional de 7 dias.
 **Criativo 7 — "Sem hype" (posicionamento honesto)**
 - Texto principal: "Este ebook NÃO promete que você vai ficar rico com IA."
 - Texto de apoio: "Promete um método pra tirar tarefa repetitiva das suas costas. Só isso. E é muito."
-- CTA: "Funcionários Digitais • R$47"
+- CTA: "Funcionários Digitais • R$97"
 - Visual: fundo liso, tipografia gigante, sem imagem — o contraste com anúncios "gritados" é o próprio visual. Funciona muito bem em story.
 
 **Criativo 8 — "A conta das horas"**
@@ -206,7 +206,7 @@ R$47, plataforma Hotmart, garantia incondicional de 7 dias.
 - Visual: relógio/ampulheta com fatias coloridas representando cada tarefa, estilo infográfico simples. Feed e story. NÃO converter horas em dinheiro na arte.
 
 **Criativo 9 — "O que vem na caixa"**
-- Texto principal: "Por R$47: ebook com 10 capítulos + 5 blueprints + 4 bônus"
+- Texto principal: "Por R$97: ebook com 10 capítulos + 5 blueprints + 4 bônus"
 - Texto de apoio: "77 prompts prontos • 5 fluxos de automação • checklist de 7 dias • planilha de ROI"
 - CTA: "Garantia incondicional de 7 dias (Hotmart)"
 - Visual: mockup do ebook no centro com os 4 bônus orbitando como cards menores. Visual de "kit completo". Feed prioritário; versão story empilhada.
@@ -287,7 +287,7 @@ Prometi a lista completa do que vem no ebook Funcionários Digitais. Aqui vai:
 - Checklist de Implantação em 7 Dias (30–60 min/dia);
 - Planilha de ROI (meça a economia de tempo no SEU caso).
 
-**O acordo:** R$47, acesso imediato, e garantia incondicional de 7 dias pela Hotmart — dá pra ler o método inteiro e montar o primeiro agente dentro do prazo de garantia. Se não gostar, reembolso integral sem perguntas.
+**O acordo:** R$97, acesso imediato, e garantia incondicional de 7 dias pela Hotmart — dá pra ler o método inteiro e montar o primeiro agente dentro do prazo de garantia. Se não gostar, reembolso integral sem perguntas.
 
 O que ele NÃO é: promessa de renda, curso de programação ou mágica que trabalha sozinha. É método + trabalho de implementação.
 
@@ -326,7 +326,7 @@ Este é o último e-mail desta sequência sobre o ebook Funcionários Digitais. 
 Então, um resumo pra decidir com calma:
 
 - Se você toca seu negócio sozinho(a) e perde horas com mensagens repetidas, follow-up esquecido, conteúdo atrasado e papelada — o método dos funcionários digitais ataca exatamente isso.
-- O custo é R$47. O risco é zero na prática: 7 dias de garantia incondicional pela Hotmart, tempo suficiente pra ler e montar o primeiro agente.
+- O custo é R$97. O risco é zero na prática: 7 dias de garantia incondicional pela Hotmart, tempo suficiente pra ler e montar o primeiro agente.
 - O que ele exige de você: 30 a 60 minutos por dia na primeira semana. O que ele NÃO promete: dinheiro, clientes garantidos, mágica.
 
 Se fizer sentido: [LINK]
@@ -377,7 +377,7 @@ Um abraço,
 
 ### Boas práticas finais
 
-- Sempre inclua preço (R$47) e garantia (7 dias) nos criativos de fundo de funil — transparência reduz reembolso e reclamação.
+- Sempre inclua preço (R$97) e garantia (7 dias) nos criativos de fundo de funil — transparência reduz reembolso e reclamação.
 - Não use a palavra "renda" em NENHUMA segmentação criativa ou copy (nem "renda extra" como interesse de segmentação combinado a copy ambígua — evite a associação).
 - Teste primeiro os públicos de nicho específico (dor mais nítida) antes do público amplo de "empreendedorismo".
 - UTM em tudo: você vai querer saber qual ângulo converte na SUA audiência.

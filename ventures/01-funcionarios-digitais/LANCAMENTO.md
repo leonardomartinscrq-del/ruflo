@@ -6,7 +6,7 @@
 ## Visão geral do funil
 
 ```
-Afiliados (60% de comissão) ──→ Página de vendas ──→ Checkout Hotmart (R$ 47)
+Afiliados (60% de comissão) ──→ Página de vendas ──→ Checkout Hotmart (R$ 97)
         ↑                                                    │
   Kit de afiliado pronto                          Entrega automática (PDF + bônus)
   (vendas/kit-afiliado.md)                        E-mails pós-venda automáticos
@@ -42,7 +42,7 @@ reembolso de 7 dias e repasse ao afiliado. Por isso o negócio "roda sozinho".
    - Categoria: Negócios e Carreira (ou Marketing Digital)
    - Descrição: use o início de `vendas/pagina-de-vendas.md`
    - Upload: PDF principal + os 4 bônus (a Hotmart entrega tudo junto)
-3. Preço: **R$ 47**. Garantia: **7 dias** (padrão).
+3. Preço: **R$ 97**. Garantia: **7 dias** (padrão).
 4. Página de vendas: monte com a Hotmart Pages usando `vendas/pagina-de-vendas.md`
    seção por seção (já está na ordem certa: hero → dor → mecanismo → entregáveis →
    bônus → para quem é → garantia → FAQ → CTA).
@@ -67,7 +67,7 @@ reembolso de 7 dias e repasse ao afiliado. Por isso o negócio "roda sozinho".
 Avaliações e primeiras vendas atraem afiliados. Três alavancas de custo zero:
 
 1. **Preço de lançamento R$ 29,90 por 7 dias** para gerar volume inicial e avaliações
-   (sobe para R$ 47 depois — escassez REAL, pode comunicar).
+   (sobe para R$ 97 depois — escassez REAL, pode comunicar).
 2. Poste em 3–5 grupos (Facebook/WhatsApp/Telegram) de MEI/empreendedorismo dos quais
    você participe, com tom de ajuda, não de spam (há copy pronta no kit de afiliado).
 3. E-mails pós-venda (`vendas/emails-pos-venda.md`): cadastre na automação da Hotmart
@@ -84,7 +84,7 @@ duas (não é exclusivo). Comece pela Hotmart pelo marketplace de afiliados maio
 - [ ] PDF principal gerado e revisado (passe o olho em 3 capítulos)
 - [ ] 4 bônus em PDF/CSV
 - [ ] Capa criada
-- [ ] Produto cadastrado, preço R$ 47, garantia 7 dias
+- [ ] Produto cadastrado, preço R$ 97, garantia 7 dias
 - [ ] Página de vendas montada com a copy pronta
 - [ ] Afiliação ativa, 60%, kit de afiliado anexado
 - [ ] Produto aprovado pela Hotmart
