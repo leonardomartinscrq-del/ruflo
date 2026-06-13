@@ -10,7 +10,7 @@
 
 ### O produto em 5 linhas
 
-1. Ebook prático (10 capítulos + introdução, ~35.000 palavras) que ensina donos de pequenos negócios e autônomos a montar "funcionários digitais": agentes de IA que assumem tarefas repetitivas.
+1. Ebook prático (10 capítulos + introdução, ~28.000 palavras) que ensina donos de pequenos negócios e autônomos a montar "funcionários digitais": agentes de IA que assumem tarefas repetitivas.
 2. Núcleo do método: o **Manual do Funcionário** — documento simples que transforma IA genérica em agente que conhece o negócio do leitor.
 3. Traz **5 blueprints completos**: Atendente WhatsApp/Instagram, Vendedor com Follow-up, Criador de Conteúdo, Assistente Administrativo/Financeiro e Analista de Mercado.
 4. Usa **ferramentas gratuitas**, zero programação, linguagem para leigos, passo a passo com modelos prontos.
@@ -274,7 +274,7 @@ Amanhã te mostro o que vem dentro, item por item.
 
 Prometi a lista completa do que vem no ebook Funcionários Digitais. Aqui vai:
 
-**O ebook (10 capítulos + introdução, ~35.000 palavras):**
+**O ebook (10 capítulos + introdução, ~28.000 palavras):**
 - Fundamentos de IA sem hype — o que esperar e o que é exagero;
 - As ferramentas gratuitas e como configurá-las (com passo a passo);
 - O método do Manual do Funcionário (o primeiro sai em ~20 minutos);

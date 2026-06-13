@@ -35,7 +35,7 @@
 O guia prático que ensina donos de pequenos negócios e autônomos a montar agentes de IA que assumem o atendimento repetitivo, o follow-up, o conteúdo e a papelada — usando ferramentas gratuitas e um método simples chamado Manual do Funcionário.
 
 **Microprova (texto de apoio):**
-Ebook com 10 capítulos + introdução (~35.000 palavras) • 5 blueprints completos • 4 bônus práticos • Linguagem de gente, não de programador.
+Ebook com 10 capítulos + introdução (~28.000 palavras) • 5 blueprints completos • 4 bônus práticos • Linguagem de gente, não de programador.
 
 **CTA primário:**
 [ QUERO MONTAR MEU PRIMEIRO FUNCIONÁRIO DIGITAL — R$97 ]
@@ -129,7 +129,7 @@ Você não precisa montar os cinco. O ebook recomenda começar por UM — geralm
 <!-- Formato: capítulo + o que aprende + benefício prático.        -->
 <!-- ============================================================ -->
 
-## [O QUE VOCÊ RECEBE] Por dentro do ebook: 10 capítulos + introdução (~35.000 palavras)
+## [O QUE VOCÊ RECEBE] Por dentro do ebook: 10 capítulos + introdução (~28.000 palavras)
 
 ### Parte 1 — Fundamentos sem enrolação (Introdução + Capítulos 1 a 3)
 
@@ -293,7 +293,7 @@ O acesso chega no seu e-mail imediatamente após a confirmação do pagamento, p
 
 Recapitulando o que você leva por **R$97**:
 
-- Ebook completo: 10 capítulos + introdução (~35.000 palavras), em linguagem simples;
+- Ebook completo: 10 capítulos + introdução (~28.000 palavras), em linguagem simples;
 - O método **Manual do Funcionário** com modelos prontos para adaptar;
 - **5 blueprints completos**: Atendente, Vendedor com Follow-up, Criador de Conteúdo, Assistente Administrativo/Financeiro e Analista de Mercado;
 - **Bônus 1:** 77 Prompts Prontos;
